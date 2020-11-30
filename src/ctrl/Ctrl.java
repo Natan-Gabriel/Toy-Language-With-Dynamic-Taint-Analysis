@@ -106,16 +106,18 @@ public class Ctrl implements iCtrl{
 		System.out.println(prg.getStk());
 		System.out.println(prg.getExeDictionary());
 
-		int nextInstruction=prg.getNextInstruction();
+//		int nextInstruction=prg.getNextInstruction();
 
 		boolean end=false;
 
 		while(end==false){
 			oneStepUsingDictionary(prg);
-			nextInstruction+=1;
-			prg.setNextInstruction(nextInstruction);
-			if (nextInstruction==1+prg.getExeDictionary().getSize()){
+//			nextInstruction+=1;
+//			prg.setNextInstruction(nextInstruction);
+			if (prg.getNextInstruction()==1+prg.getExeDictionary().getSize()){
 				end=true;
+				prg.setNextInstruction(1);
+
 			}
 
 		}

@@ -16,10 +16,11 @@ public class main {
 	public static void main(String[] arg) {//throws VarNotDefined, DivByZero, VarIsDefined{
 		
 		
-	// int v; v=2;Print(v)
+	// int v; v=2;v=3;Print(v)
 	IStmt ex1=   new CompStmt(new VarDeclStmt("v",new IntType(),1),
-			 new CompStmt(new AssignStmt("v",new ValueExp(new IntValue(2)),2), new PrintStmt(new
-					 VarExp("v"),3)));
+			 new CompStmt( new CompStmt( new AssignStmt("v",new ValueExp(new IntValue(2)),2),new CompStmt(new GotoStmt(new ValueExp(new IntValue(5)),3),
+					 new AssignStmt("v",new ValueExp(new IntValue(3)),4)) ), new PrintStmt(new
+					 VarExp("v"),5)));
 
 	//int a;int b; a=2+3*5;b=a+1;Print(b)
     IStmt ex2= new CompStmt( new VarDeclStmt("a",new IntType(),1),

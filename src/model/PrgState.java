@@ -16,7 +16,7 @@ public class PrgState{
 	 IStmt originalProgram; //optional field, but good to have
 	 @Override
 	 public String toString() {return "Execution stack is "+exeStack.toString()+ "Execution dictionary is "+exeDictionary.toString()
-			 +", Symbol table is "+symTable.toString()+", Out table is"+out.toString()+", Heap is"+heap.toString();}
+			 +"Next instruction is: "+nextInstruction+", Symbol table is "+symTable.toString()+", Out table is"+out.toString()+", Heap is"+heap.toString();}
 	 public PrgState(MyIStack<IStmt> stk,MyIDictionary<Integer,IStmt> _exeDictionary, MyIDictionary<String,Value> symtbl,MyIList<Value> ot,MyIDictionary<StringValue, BufferedReader >fTbl, MyIHeap heap1,IStmt prg){
 		 exeStack=stk;
 		 symTable=symtbl;

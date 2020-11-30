@@ -36,6 +36,7 @@ public class VarDeclStmt implements IStmt{
 			 return typ+"Eroare la declarare";}
 		 }
 	 public PrgState execute(PrgState state) throws VarIsDefined{
+		 state.setNextInstruction(getStatementNumber()+1);
 		 MyIDictionary<String,Value> sym=state.getSymTable();
 		 Value val;
 		 if (sym.isDefined(name))
