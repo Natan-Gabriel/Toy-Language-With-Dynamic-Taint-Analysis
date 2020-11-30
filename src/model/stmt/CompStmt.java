@@ -14,6 +14,10 @@ public class CompStmt implements IStmt{
 		 MyIStack<IStmt> stk=state.getStk();
 		 stk.push(snd);
 		 stk.push(first);
+//		 MyIDictionary<Integer,IStmt> exeDictionary=state.getExeDictionary();
+//		 exeDictionary.add(first.getStatementNumber(),first);
+//		 exeDictionary.add(snd.getStatementNumber(),snd);
 		 return state;
 	 }
+	public int getStatementNumber(){return 1;}
 }

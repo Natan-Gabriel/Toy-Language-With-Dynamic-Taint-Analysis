@@ -36,5 +36,6 @@ public class IfStmt implements IStmt{
 		 return state;
 	 }
 	 //...
+	 public int getStatementNumber(){return 1;}
 }
 

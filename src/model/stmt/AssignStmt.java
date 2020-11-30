@@ -9,8 +9,9 @@ import MyException.*;
 public class AssignStmt implements IStmt{
 	 String id;
 	 Exp exp;
+	 int instructionNumber;
 	 
-	 public AssignStmt(String i,Exp e) {id=i;exp=e;}
+	 public AssignStmt(String i,Exp e,int _instructionNumber) {id=i;exp=e;instructionNumber=_instructionNumber;}
 	 public String toString() { return id+"="+ exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero{
 		 MyIStack<IStmt> stk=state.getStk();
@@ -25,6 +26,7 @@ public class AssignStmt implements IStmt{
 		 else throw new VarNotDefined("the used variable" +id + " was not declared before");
 		 return state;
 	 }
+	public int getStatementNumber(){return instructionNumber;}
 }
 
 

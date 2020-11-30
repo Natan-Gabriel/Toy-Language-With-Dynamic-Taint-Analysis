@@ -15,6 +15,7 @@ public class Ctrl implements iCtrl{
 	iRepo repo; 
 	boolean flag=true;
 	public Ctrl(iRepo r) {repo=r;}
+//	int nextInstruction=1;
 	
 	Map<Integer,Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer,Value> heap){
 	return heap.entrySet().stream()
@@ -36,7 +37,34 @@ public class Ctrl implements iCtrl{
 		}
 
 	
-	
+	public void parseTree() throws Exception{
+		PrgState prg = repo.getCrtPrg();
+		MyIStack<IStmt> stk=prg.getStk();
+		boolean bool=false;
+		while(bool==false) {
+			bool=true;
+			for (int i = 0; i < stk.getSize(); i++) {
+				IStmt crtStmt = stk.get(i);
+					if(crtStmt instanceof  CompStmt){
+						bool=false;
+						stk.remove(i);
+						crtStmt.execute(prg);
+					}
+			}
+
+		}
+
+		MyIDictionary<Integer,IStmt> exeDictionary=prg.getExeDictionary();
+		for (int i = 0; i < stk.getSize(); i++) {
+			IStmt crtStmt = stk.get(i);
+			exeDictionary.add(crtStmt.getStatementNumber(),crtStmt);
+
+		}
+
+	}
+
+
+
 	public PrgState oneStep(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined,Exception{
 		 if(flag==true)
 			 displayPrgState(state);
@@ -44,31 +72,70 @@ public class Ctrl implements iCtrl{
 		 if(stk.isEmpty()) 
 			 throw new ExeStackEmpty("prgState stack is empty");
 		 IStmt crtStmt = stk.pop();
+//		 IStmt crtStmt = stk.lastElement();
 		 //displayPrgState(state);
 		 return crtStmt.execute(state);
 		 }
+
+	public PrgState oneStepUsingDictionary(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined,Exception{
+		if(flag==true)
+			displayPrgState(state);
+//		MyIStack<IStmt> stk=state.getStk();
+//		if(stk.isEmpty())
+//			throw new ExeStackEmpty("prgState stack is empty");
+//		IStmt crtStmt = stk.pop();
+// 		 IStmt crtStmt = stk.lastElement();
+		//displayPrgState(state);
+
+		int nextInstruction=state.getNextInstruction();
+
+
+		MyIDictionary<Integer,IStmt> exeDictionary=state.getExeDictionary();
+		IStmt crtStmt = exeDictionary.getValue(nextInstruction);
+
+		return crtStmt.execute(state);
+	}
 	public void allStep() throws Exception,ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined {
+
 		 PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyRepoInterface
 		 //System.out.println(prg);//here you can display the prg state
 		 repo.logPrgStateExec();
-			
-		 while (!prg.getStk().isEmpty()){
-			 
-			 oneStep(prg);
-			 
-			 //repo.logPrgStateExec();
-			 
-				repo.logPrgStateExec();
-				
-				prg.getHeap().setContent(unsafeGarbageCollector(
-						 getAddrFromSymTable(prg.getSymTable().getContent().values()),
-						 prg.getHeap().getContent()));
-				//prg.getHeap().setContent(unsafeGarbageCollector(
-				//		 getAddrFromSymTable(prg.getSymTable().values()),
-				//		 prg.getHeap()));
-			 
-			 
-		 }
+
+
+		parseTree();
+		System.out.println(prg.getStk());
+		System.out.println(prg.getExeDictionary());
+
+		int nextInstruction=prg.getNextInstruction();
+
+		boolean end=false;
+
+		while(end==false){
+			oneStepUsingDictionary(prg);
+			nextInstruction+=1;
+			prg.setNextInstruction(nextInstruction);
+			if (nextInstruction==1+prg.getExeDictionary().getSize()){
+				end=true;
+			}
+
+		}
+//		 while (!prg.getStk().isEmpty()){
+//
+//			 oneStep(prg);
+//
+//			 //repo.logPrgStateExec();
+//
+//				repo.logPrgStateExec();
+//
+//				prg.getHeap().setContent(unsafeGarbageCollector(
+//						 getAddrFromSymTable(prg.getSymTable().getContent().values()),
+//						 prg.getHeap().getContent()));
+//				//prg.getHeap().setContent(unsafeGarbageCollector(
+//				//		 getAddrFromSymTable(prg.getSymTable().values()),
+//				//		 prg.getHeap()));
+//
+//
+//		 }
 		 if(flag==true)
 			 displayPrgState(prg);
 		 }

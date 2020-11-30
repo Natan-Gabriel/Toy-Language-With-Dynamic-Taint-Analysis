@@ -9,8 +9,9 @@ import model.PrgState;
 public class VarDeclStmt implements IStmt{
 	 String name;
 	 Type typ;
+	 int instructionNumber;
 
-	 public VarDeclStmt(String n,Type v){name=n;typ=v;}
+	 public VarDeclStmt(String n,Type v,int _instructionNumber){name=n;typ=v;instructionNumber=_instructionNumber;}
 	 public String toString() {
 		 if(typ.defaultValue().equals(new IntValue(0)))
 			 return name+" is of "+"IntType";
@@ -60,5 +61,6 @@ public class VarDeclStmt implements IStmt{
 		 
 		 return state;
 	 }
-	
+
+	public int getStatementNumber(){return instructionNumber;}
 }

@@ -14,4 +14,6 @@ public class MyStack<T> implements MyIStack<T>{
 	 public boolean isEmpty() {return stack.isEmpty();}
 	 public int getSize() {return stack.size();}
 	 public T get(int i) {return stack.get(i);}
+	 public T lastElement(){return stack.lastElement();}
+	public T remove(int index){return  stack.remove(index);}
 }

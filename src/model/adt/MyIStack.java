@@ -10,5 +10,7 @@ public interface MyIStack<T> {
 	public Stack<T> getStack();
 	public int getSize();
 	public T get(int i);
+	public T lastElement();
+	public T remove(int index);
 
 }

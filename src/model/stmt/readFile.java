@@ -55,4 +55,5 @@ public class readFile implements IStmt{
 		 
 		 return state;
 	 }
+	public int getStatementNumber(){return 1;}
 }

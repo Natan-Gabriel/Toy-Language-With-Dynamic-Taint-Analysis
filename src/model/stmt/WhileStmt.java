@@ -32,4 +32,5 @@ public class WhileStmt implements IStmt{
 		
 		 return state;
 	 }
+	public int getStatementNumber(){return 1;}
 }

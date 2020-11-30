@@ -243,3 +243,248 @@ Out:
 0
 FileTable:
 
+ExeStack:
+(((v is of IntType;v=4);WHILE(v>0) (print(v);v=v-1));print(v))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((v is of IntType;v=4);WHILE(v>0) (print(v);v=v-1))
+print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;v=4)
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of IntType
+v=4
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v=4
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=0
+Out:
+FileTable:
+
+ExeStack:
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=4
+Out:
+FileTable:
+
+ExeStack:
+(print(v);v=v-1)
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=4
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=4
+Out:
+FileTable:
+
+ExeStack:
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=4
+Out:
+4
+FileTable:
+
+ExeStack:
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=3
+Out:
+4
+FileTable:
+
+ExeStack:
+(print(v);v=v-1)
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=3
+Out:
+4
+FileTable:
+
+ExeStack:
+print(v)
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=3
+Out:
+4
+FileTable:
+
+ExeStack:
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=3
+Out:
+4
+3
+FileTable:
+
+ExeStack:
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=2
+Out:
+4
+3
+FileTable:
+
+ExeStack:
+(print(v);v=v-1)
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=2
+Out:
+4
+3
+FileTable:
+
+ExeStack:
+print(v)
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=2
+Out:
+4
+3
+FileTable:
+
+ExeStack:
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=2
+Out:
+4
+3
+2
+FileTable:
+
+ExeStack:
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=1
+Out:
+4
+3
+2
+FileTable:
+
+ExeStack:
+(print(v);v=v-1)
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=1
+Out:
+4
+3
+2
+FileTable:
+
+ExeStack:
+print(v)
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=1
+Out:
+4
+3
+2
+FileTable:
+
+ExeStack:
+v=v-1
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=1
+Out:
+4
+3
+2
+1
+FileTable:
+
+ExeStack:
+WHILE(v>0) (print(v);v=v-1)
+print(v)
+SymTable:
+v=0
+Out:
+4
+3
+2
+1
+FileTable:
+
+ExeStack:
+print(v)
+SymTable:
+v=0
+Out:
+4
+3
+2
+1
+FileTable:
+
+ExeStack:
+SymTable:
+v=0
+Out:
+4
+3
+2
+1
+0
+FileTable:
+

@@ -11,4 +11,5 @@ class NopStmt implements IStmt{
 		return state;
 		}
 	 //..........................
+	 public int getStatementNumber(){return 1;}
 	 }

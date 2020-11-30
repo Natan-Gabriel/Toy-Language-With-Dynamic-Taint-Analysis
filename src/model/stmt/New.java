@@ -42,5 +42,6 @@ public class New implements IStmt{
 	//	 System.out.println("hehe");
 		 return state;
 	 }
+	public int getStatementNumber(){return 1;}
 
 }

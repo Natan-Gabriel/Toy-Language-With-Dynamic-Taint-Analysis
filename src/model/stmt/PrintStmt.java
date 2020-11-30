@@ -14,7 +14,8 @@ import model.PrgState;
 
 public class PrintStmt implements IStmt{
 	 Exp exp;
-	 public PrintStmt(Exp e) {exp=e;}
+	 int instructionNumber;
+	 public PrintStmt(Exp e,int _instructionNumber) {exp=e;instructionNumber=_instructionNumber;}
 	 public String toString(){ return "print(" +exp.toString()+")";}
 	 public PrgState execute(PrgState state) throws DivByZero, VarNotDefined
 	 {
@@ -34,5 +35,6 @@ public class PrintStmt implements IStmt{
 		//	 } 
 
 	 }
+	public int getStatementNumber(){return instructionNumber;}
 	
 }
