@@ -1,0 +1,104 @@
+ExeStack:
+((((v is of RefType;v=20);(a is of RefType;a=v));v=30);print(a))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(((v is of RefType;v=20);(a is of RefType;a=v));v=30)
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;v=20);(a is of RefType;a=v))
+v=30
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;v=20)
+(a is of RefType;a=v)
+v=30
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+v=20
+(a is of RefType;a=v)
+v=30
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v=20
+(a is of RefType;a=v)
+v=30
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;a=v)
+v=30
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+a=v
+v=30
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a=v
+v=30
+print(a)
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v=30
+print(a)
+SymTable:
+a=(2,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+SymTable:
+a=(2,Ref(int))
+v=(3,int)
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+a=(2,Ref(int))
+v=(3,int)
+Out:
+20
+FileTable:
+
