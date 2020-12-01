@@ -4,4 +4,5 @@ import model.types.*;
 public interface Value {
 	public Type getType();
 	public String toString();
+	public boolean getTaint();
 }

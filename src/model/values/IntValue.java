@@ -4,8 +4,9 @@ import model.types.*;
 public class IntValue implements Value{
 	int val;
 	boolean taint;
-	public IntValue(int v) {val=v;}
-	public IntValue() {val=0;taint=true;}
+	public IntValue(int v,boolean t) {val=v;taint=t;}
+	public IntValue(int v) {val=v;taint=false;}
+	public IntValue() {val=0;taint=false;}
 	public boolean equals(Object another){
 		 if (another instanceof IntValue)
 			 return true;

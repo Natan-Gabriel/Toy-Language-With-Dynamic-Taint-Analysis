@@ -17,7 +17,7 @@ public class RunExample extends Command{
 				ctrl.allStep();
 				System.out.println("The execution is over");
 			}
-			catch(ExeStackEmpty | VarNotDefined | DivByZero | VarIsDefined e1) {
+			catch(ExeStackEmpty | VarNotDefined | DivByZero | VarIsDefined | TaintedAddress e1) {
 				System.out.println(e1);
 			}
 			catch(Exception e) {

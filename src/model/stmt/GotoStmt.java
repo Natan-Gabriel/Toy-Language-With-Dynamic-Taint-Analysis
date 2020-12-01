@@ -1,6 +1,7 @@
 package model.stmt;
 
 import MyException.DivByZero;
+import MyException.TaintedAddress;
 import MyException.VarNotDefined;
 import model.PrgState;
 import model.adt.MyIDictionary;
@@ -19,7 +20,7 @@ public class GotoStmt implements IStmt{
 
     public GotoStmt(Exp e,int _instructionNumber) {exp=e;instructionNumber=_instructionNumber;}
     public String toString() { return "goto "+ exp.toString();}
-    public PrgState execute(PrgState state) throws VarNotDefined, DivByZero {
+    public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, TaintedAddress {
         MyIStack<IStmt> stk=state.getStk();
         MyIDictionary<Integer,IStmt> exeDictionary=state.getExeDictionary();
 
@@ -30,7 +31,10 @@ public class GotoStmt implements IStmt{
             IntValue i1 = (IntValue)val;
             int n1;
             n1= i1.getVal();
-            state.setNextInstruction(n1);
+            if(i1.getTaint()==false)
+                state.setNextInstruction(n1);
+            else
+                throw new TaintedAddress("goto's argument is an tainted address!");
         }else
             throw new VarNotDefined("goto's argument is not an integer");
 

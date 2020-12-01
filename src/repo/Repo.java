@@ -15,7 +15,7 @@ public class Repo implements iRepo{
 	public PrgState getCrtPrg(int a){return list.get(a-1);}
 	public int getLength() {return list.size();}
 	
-	public void logPrgStateExec() throws Exception{
+	public void logPrgStateExec() throws IOException {
 		
 		try {
 			logFile= new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));

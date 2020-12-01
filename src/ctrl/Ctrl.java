@@ -37,7 +37,7 @@ public class Ctrl implements iCtrl{
 		}
 
 	
-	public void parseTree() throws Exception{
+	public void parseTree() throws DivByZero, VarIsDefined, VarNotDefined, TaintedAddress {
 		PrgState prg = repo.getCrtPrg();
 		MyIStack<IStmt> stk=prg.getStk();
 		boolean bool=false;
@@ -77,7 +77,7 @@ public class Ctrl implements iCtrl{
 		 return crtStmt.execute(state);
 		 }
 
-	public PrgState oneStepUsingDictionary(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined,Exception{
+	public PrgState oneStepUsingDictionary(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined, TaintedAddress {
 		if(flag==true)
 			displayPrgState(state);
 //		MyIStack<IStmt> stk=state.getStk();
@@ -95,14 +95,14 @@ public class Ctrl implements iCtrl{
 
 		return crtStmt.execute(state);
 	}
-	public void allStep() throws Exception,ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined {
+	public void allStep() throws IOException, DivByZero, VarIsDefined, VarNotDefined, TaintedAddress, ExeStackEmpty {
 
 		 PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyRepoInterface
 		 //System.out.println(prg);//here you can display the prg state
 		 repo.logPrgStateExec();
 
+		 parseTree();
 
-		parseTree();
 		System.out.println(prg.getStk());
 		System.out.println(prg.getExeDictionary());
 
@@ -112,6 +112,7 @@ public class Ctrl implements iCtrl{
 
 		while(end==false){
 			oneStepUsingDictionary(prg);
+
 //			nextInstruction+=1;
 //			prg.setNextInstruction(nextInstruction);
 			if (prg.getNextInstruction()==1+prg.getExeDictionary().getSize()){

@@ -621,3 +621,99 @@ SymTable:
 Out:
 FileTable:
 
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto 5;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto 5;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto a;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@66a29884;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+

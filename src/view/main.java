@@ -18,7 +18,7 @@ public class main {
 		
 	// int v; v=2;v=3;Print(v)
 	IStmt ex1=   new CompStmt(new VarDeclStmt("v",new IntType(),1),
-			 new CompStmt( new CompStmt( new AssignStmt("v",new GetInput(),2),new CompStmt(new GotoStmt(new ValueExp(new IntValue(5)),3),
+			 new CompStmt( new CompStmt( new AssignStmt("v",new GetInput(),2),new CompStmt(new GotoStmt(new VarExp("v"),3),
 					 new AssignStmt("v",new ValueExp(new IntValue(3)),4)) ), new PrintStmt(new
 					 VarExp("v"),5)));
 

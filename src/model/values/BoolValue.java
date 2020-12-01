@@ -3,6 +3,7 @@ import model.types.*;
 
 public class BoolValue implements Value{
 	boolean val;
+	boolean taint;
 	public BoolValue(boolean v){val=v;}
 	public BoolValue() {val=false;}
 	public boolean equals(Object another){
@@ -14,4 +15,5 @@ public class BoolValue implements Value{
 	public boolean getVal() {return val;}
 	public String toString() {return Boolean.toString(val);}
 	public Type getType() { return new BoolType();}
+	public boolean getTaint(){return  taint;}
 }

@@ -4,6 +4,6 @@ import MyException.*;
 
 public interface IStmt {
 	public String toString();
-	public PrgState execute(PrgState state) throws VarNotDefined,DivByZero,VarIsDefined;
+	public PrgState execute(PrgState state) throws VarNotDefined,DivByZero,VarIsDefined,TaintedAddress;
 	public int getStatementNumber();
 }

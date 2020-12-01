@@ -18,7 +18,7 @@ public class GetInput implements Exp{
         Scanner console = new Scanner(System.in);
 
         int val = console.nextInt();
-        return new IntValue(val);
+        return new IntValue(val,true);
     }
     public Type getType(MyIDictionary<String,Value> tbl, MyIHeap hp) {
         return new IntType();

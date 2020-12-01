@@ -4,6 +4,7 @@ import model.types.*;
 
 public class StringValue implements Value{
 	String str;
+	boolean taint;
 	public StringValue(String s) {str=s;}
 	public StringValue() {str="";}
 	public boolean equals(Object another){
@@ -15,4 +16,5 @@ public class StringValue implements Value{
 	public Type getType() {return new StringType();}
 	public String getVal() {return str;}
 	public String toString() {return str;}
+	public boolean getTaint(){return  taint;}
 }
