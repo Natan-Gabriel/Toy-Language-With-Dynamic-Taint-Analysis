@@ -4,9 +4,9 @@ import model.types.*;
 public class RefValue implements Value{
 	 int address;
 	 Type locationType;
-	 boolean taint=false;
-	 public RefValue(int a,Type t) {address=a;locationType=t;}
-	 public RefValue() {address=1;locationType=new IntType();}
+	 boolean taint;
+	 public RefValue(int a,Type t) {address=a;locationType=t;taint=false;}
+	 public RefValue() {address=1;locationType=new IntType();taint=false;}
 	 public String toString() {return "("+Integer.toString(address)+","+locationType.toString()+")";}
 	 public int getAddr() {return address;}
 	 public Type getType() { return new RefType(locationType);}

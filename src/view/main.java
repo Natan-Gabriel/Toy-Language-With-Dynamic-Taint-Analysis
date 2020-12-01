@@ -7,6 +7,9 @@ import model.values.*;
 import model.exp.*;
 import java.util.*;
 import java.io.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import MyException.*;
 
 import ctrl.*;
@@ -29,6 +32,20 @@ public class main {
     	ArithExp('*',new ValueExp(new IntValue(3)), new ValueExp(new IntValue(5)))),3),
     	new CompStmt(new AssignStmt("b",new ArithExp('+',new VarExp("a"), new
         ValueExp(new IntValue(1))),4), new PrintStmt(new VarExp("b"),5)))));
+		//int a;int b; a=2+3*5;b=a+1;Print(b)
+	List<IStmt> ex3 = Arrays.asList(new VarDeclStmt("v",new IntType(),1),
+			new AssignStmt("v",new GetInput(),2),new GotoStmt(new VarExp("v"),3),
+					new AssignStmt("v",new ValueExp(new IntValue(3)),4) , new PrintStmt(new
+					VarExp("v"),5));
+
+		Map<Integer, IStmt> map = Stream.of(new Object[][] {
+				{ 1,new VarDeclStmt("v",new IntType(),1)},
+				{ 2, new AssignStmt("v",new GetInput(),2) },
+				{ 3, new GotoStmt(new VarExp("v"),3)},
+				{ 4, new AssignStmt("v",new ValueExp(new IntValue(3)),4)  },
+				{ 5, new PrintStmt(new
+						VarExp("v"),5) }
+		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
     
 
 //  //int a; int v; a=1;(If a>0 Then v=2 Else v=3);Print(v) is represented as
@@ -56,6 +73,9 @@ public class main {
 	MyIList<Value> out2=new MyList<Value>();
 	MyIDictionary<StringValue,BufferedReader> fTbl2=new MyDictionary<StringValue,BufferedReader>();
 	MyIHeap heap2=new MyHeap();
+
+
+
 //
 //	MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
 //	MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();

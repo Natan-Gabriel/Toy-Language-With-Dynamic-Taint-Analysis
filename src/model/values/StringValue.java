@@ -5,8 +5,8 @@ import model.types.*;
 public class StringValue implements Value{
 	String str;
 	boolean taint;
-	public StringValue(String s) {str=s;}
-	public StringValue() {str="";}
+	public StringValue(String s) {str=s;taint=false;}
+	public StringValue() {str="";taint=false;}
 	public boolean equals(Object another){
 		 if (another instanceof StringValue)
 			 return true;

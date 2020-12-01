@@ -10,10 +10,10 @@ import model.values.Value;
 import java.util.Scanner;
 
 public class GetInput implements Exp{
-    Value val;
-    //....
+
+
     public GetInput() {}
-//    public  String toString() {return val.toString();}
+    public  String toString() {return "get_input()";}
     public Value eval(MyIDictionary<String,Value> tbl, MyIHeap hp) {
         Scanner console = new Scanner(System.in);
 

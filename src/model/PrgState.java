@@ -31,6 +31,23 @@ public class PrgState{
 		 //IStmt originalProgram=(IStmt)deepCopy(prg);//recreate the entire original prg
 		 stk.push(prg);
 	 }
+//	public PrgState(MyIStack<IStmt> stk,MyIDictionary<Integer,IStmt> _exeDictionary, MyIDictionary<String,Value> symtbl,MyIDictionary<String,Pair<Value,Value>> _dynaimcSymTable,MyIList<Value> ot,MyIDictionary<StringValue, BufferedReader >fTbl, MyIHeap heap1,List<IStmt> prg){
+//		exeStack=stk;
+//		symTable=symtbl;
+//		dynaimcSymTable=_dynaimcSymTable;
+//		out = ot;
+//		originalProgram=prg;
+//		FileTable=fTbl;
+//		heap=heap1;
+//		exeDictionary=_exeDictionary;
+//		//IStmt originalProgram=(IStmt)Object.clone(prg);
+//		//IStmt originalProgram=(IStmt)deepCopy(prg);//recreate the entire original prg
+//		stk.push(prg);
+//	}
+
+
+
+
 	 public MyIStack<IStmt> getStk() {return exeStack;}
 	 public int getNextInstruction(){return  nextInstruction;}
 	 public MyIDictionary<String,Value> getSymTable(){return symTable;}

@@ -34,7 +34,7 @@ public class GotoStmt implements IStmt{
             if(i1.getTaint()==false)
                 state.setNextInstruction(n1);
             else
-                throw new TaintedAddress("goto's argument is an tainted address!");
+                throw new TaintedAddress("goto's argument ("+ n1 + ") is an tainted address!");
         }else
             throw new VarNotDefined("goto's argument is not an integer");
 
