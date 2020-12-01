@@ -18,7 +18,7 @@ public class main {
 		
 	// int v; v=2;v=3;Print(v)
 	IStmt ex1=   new CompStmt(new VarDeclStmt("v",new IntType(),1),
-			 new CompStmt( new CompStmt( new AssignStmt("v",new ValueExp(new IntValue(2)),2),new CompStmt(new GotoStmt(new ValueExp(new IntValue(5)),3),
+			 new CompStmt( new CompStmt( new AssignStmt("v",new GetInput(),2),new CompStmt(new GotoStmt(new ValueExp(new IntValue(5)),3),
 					 new AssignStmt("v",new ValueExp(new IntValue(3)),4)) ), new PrintStmt(new
 					 VarExp("v"),5)));
 
@@ -44,6 +44,7 @@ public class main {
     MyIStack<IStmt> exeStack1=new MyStack<IStmt>();
     MyIDictionary<Integer,IStmt> exeDictionary1=new MyDictionary<Integer,IStmt>();
 	MyIDictionary<String, Value> symTable1=new MyDictionary<String, Value>();
+	MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable1=new MyDictionary<String,Pair<Value,Value>>();
 	MyIList<Value> out1=new MyList<Value>();
 	MyIDictionary<StringValue,BufferedReader> fTbl1=new MyDictionary<StringValue,BufferedReader>();
 	MyIHeap heap1=new MyHeap();
@@ -51,6 +52,7 @@ public class main {
 	MyIStack<IStmt> exeStack2=new MyStack<IStmt>();
 	MyIDictionary<Integer,IStmt> exeDictionary2=new MyDictionary<Integer,IStmt>();
 	MyIDictionary<String, Value> symTable2=new MyDictionary<String, Value>();
+	MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable2=new MyDictionary<String,Pair<Value,Value>>();
 	MyIList<Value> out2=new MyList<Value>();
 	MyIDictionary<StringValue,BufferedReader> fTbl2=new MyDictionary<StringValue,BufferedReader>();
 	MyIHeap heap2=new MyHeap();
@@ -61,8 +63,8 @@ public class main {
 //	MyIDictionary<StringValue,BufferedReader> fTbl3=new MyDictionary<StringValue,BufferedReader>();
 //	MyIHeap heap3=new MyHeap();
 //
-	PrgState prg1=new PrgState(exeStack1,exeDictionary1,symTable1,out1,fTbl1,heap1,ex1);
-	PrgState prg2=new PrgState(exeStack2,exeDictionary2,symTable2,out2,fTbl2,heap2,ex2);
+	PrgState prg1=new PrgState(exeStack1,exeDictionary1,symTable1,dynaimcSymTable1,out1,fTbl1,heap1,ex1);
+	PrgState prg2=new PrgState(exeStack2,exeDictionary2,symTable2,dynaimcSymTable2,out2,fTbl2,heap2,ex2);
 //	PrgState prg3=new PrgState(exeStack3,symTable3,out3,fTbl3,heap3,ex3);
 
 	ArrayList<PrgState> list1 = new ArrayList<PrgState>();
