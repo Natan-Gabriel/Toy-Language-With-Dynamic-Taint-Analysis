@@ -19,33 +19,78 @@ public class main {
 	public static void main(String[] arg) {//throws VarNotDefined, DivByZero, VarIsDefined{
 		
 		
-	// int v; v=2;v=3;Print(v)
+	// int v; v=get_input(); goto v ; v=3;Print(v)
 	IStmt ex1=   new CompStmt(new VarDeclStmt("v",new IntType(),1),
 			 new CompStmt( new CompStmt( new AssignStmt("v",new GetInput(),2),new CompStmt(new GotoStmt(new VarExp("v"),3),
 					 new AssignStmt("v",new ValueExp(new IntValue(3)),4)) ), new PrintStmt(new
 					 VarExp("v"),5)));
 
-	//int a;int b; a=2+3*5;b=a+1;Print(b)
+
+	Map<Integer, IStmt> map1 = Stream.of(new Object[][] {
+			{ 1,new VarDeclStmt("v",new IntType(),1)},
+			{ 2, new AssignStmt("v",new GetInput(),2) },
+			{ 3, new GotoStmt(new VarExp("v"),3)},
+			{ 4, new AssignStmt("v",new ValueExp(new IntValue(3)),4)  },
+			{ 5, new PrintStmt(new
+					VarExp("v"),5) }
+	}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
+
+
+
+		//int a;int b; a=2+3*5;b=a+1;Print(b)
     IStmt ex2= new CompStmt( new VarDeclStmt("a",new IntType(),1),
     	new CompStmt(new VarDeclStmt("b",new IntType(),2),
     	new CompStmt(new AssignStmt("a", new ArithExp('+',new ValueExp(new IntValue(2)),new
     	ArithExp('*',new ValueExp(new IntValue(3)), new ValueExp(new IntValue(5)))),3),
     	new CompStmt(new AssignStmt("b",new ArithExp('+',new VarExp("a"), new
         ValueExp(new IntValue(1))),4), new PrintStmt(new VarExp("b"),5)))));
-		//int a;int b; a=2+3*5;b=a+1;Print(b)
+
+
+		Map<Integer, IStmt> map2 = Stream.of(new Object[][] {
+				{ 1,new VarDeclStmt("a",new IntType(),1)},
+				{ 2,new VarDeclStmt("b",new IntType(),2) },
+				{ 3, new AssignStmt("a", new ArithExp('+',new ValueExp(new IntValue(2)),new
+						ArithExp('*',new ValueExp(new IntValue(3)), new ValueExp(new IntValue(5)))),3)},
+				{ 4, new AssignStmt("b",new ArithExp('+',new VarExp("a"), new
+						ValueExp(new IntValue(1))),4)  },
+				{ 5, new PrintStmt(new VarExp("b"),5) }
+		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
+
+
+
+
+
+		// int v; v=2; goto 5 ; v=3;Print(v)
 	List<IStmt> ex3 = Arrays.asList(new VarDeclStmt("v",new IntType(),1),
-			new AssignStmt("v",new GetInput(),2),new GotoStmt(new VarExp("v"),3),
+			new AssignStmt("v",new ValueExp(new IntValue(2)),4),new GotoStmt(new ValueExp(new IntValue(5)),3),
 					new AssignStmt("v",new ValueExp(new IntValue(3)),4) , new PrintStmt(new
 					VarExp("v"),5));
 
-		Map<Integer, IStmt> map = Stream.of(new Object[][] {
+
+
+
+
+		Map<Integer, IStmt> map3 = Stream.of(new Object[][] {
 				{ 1,new VarDeclStmt("v",new IntType(),1)},
-				{ 2, new AssignStmt("v",new GetInput(),2) },
-				{ 3, new GotoStmt(new VarExp("v"),3)},
+				{ 2, new AssignStmt("v",new ValueExp(new IntValue(2)),2) },
+				{ 3, new GotoStmt(new ValueExp(new IntValue(5)),3)},
 				{ 4, new AssignStmt("v",new ValueExp(new IntValue(3)),4)  },
 				{ 5, new PrintStmt(new
 						VarExp("v"),5) }
 		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
+
+
+		//
+		Map<Integer, IStmt> map4 = Stream.of(new Object[][] {
+				{ 1,new VarDeclStmt("x",new IntType(),1)},
+				{ 2,  new AssignStmt("x",new ArithExp('*',new GetInput(), new
+						ValueExp(new IntValue(2))),2) },
+				{ 3,new VarDeclStmt("y",new IntType(),3)},
+				{ 4, new AssignStmt("y",new ArithExp('+',new VarExp("x"), new
+						ValueExp(new IntValue(5))),4)},
+				{ 5,new GotoStmt(new VarExp("y"),5)  },
+		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
+
     
 
 //  //int a; int v; a=1;(If a>0 Then v=2 Else v=3);Print(v) is represented as
@@ -59,7 +104,7 @@ public class main {
 //
 //
     MyIStack<IStmt> exeStack1=new MyStack<IStmt>();
-    MyIDictionary<Integer,IStmt> exeDictionary1=new MyDictionary<Integer,IStmt>();
+    MyIDictionary<Integer,IStmt> exeDictionary1=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map1);//new MyDictionary<Integer,IStmt>();
 	MyIDictionary<String, Value> symTable1=new MyDictionary<String, Value>();
 	MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable1=new MyDictionary<String,Pair<Value,Value>>();
 	MyIList<Value> out1=new MyList<Value>();
@@ -67,7 +112,7 @@ public class main {
 	MyIHeap heap1=new MyHeap();
 
 	MyIStack<IStmt> exeStack2=new MyStack<IStmt>();
-	MyIDictionary<Integer,IStmt> exeDictionary2=new MyDictionary<Integer,IStmt>();
+	MyIDictionary<Integer,IStmt> exeDictionary2=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map2);
 	MyIDictionary<String, Value> symTable2=new MyDictionary<String, Value>();
 	MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable2=new MyDictionary<String,Pair<Value,Value>>();
 	MyIList<Value> out2=new MyList<Value>();
@@ -76,16 +121,28 @@ public class main {
 
 
 
-//
-//	MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
-//	MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();
-//	MyIList<Value> out3=new MyList<Value>();
-//	MyIDictionary<StringValue,BufferedReader> fTbl3=new MyDictionary<StringValue,BufferedReader>();
-//	MyIHeap heap3=new MyHeap();
-//
+
+	MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
+	MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
+	MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();
+	MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable3=new MyDictionary<String,Pair<Value,Value>>();
+	MyIList<Value> out3=new MyList<Value>();
+	MyIDictionary<StringValue,BufferedReader> fTbl3=new MyDictionary<StringValue,BufferedReader>();
+	MyIHeap heap3=new MyHeap();
+
+
+	MyIStack<IStmt> exeStack4=new MyStack<IStmt>();
+	MyIDictionary<Integer,IStmt> exeDictionary4=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map4);
+	MyIDictionary<String, Value> symTable4=new MyDictionary<String, Value>();
+	MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable4=new MyDictionary<String,Pair<Value,Value>>();
+	MyIList<Value> out4=new MyList<Value>();
+	MyIDictionary<StringValue,BufferedReader> fTbl4=new MyDictionary<StringValue,BufferedReader>();
+	MyIHeap heap4=new MyHeap();
+
 	PrgState prg1=new PrgState(exeStack1,exeDictionary1,symTable1,dynaimcSymTable1,out1,fTbl1,heap1,ex1);
 	PrgState prg2=new PrgState(exeStack2,exeDictionary2,symTable2,dynaimcSymTable2,out2,fTbl2,heap2,ex2);
-//	PrgState prg3=new PrgState(exeStack3,symTable3,out3,fTbl3,heap3,ex3);
+	PrgState prg3=new PrgState(exeStack3,exeDictionary3,symTable3,dynaimcSymTable3,out3,fTbl3,heap3,ex2);
+	PrgState prg4=new PrgState(exeStack4,exeDictionary4,symTable4,dynaimcSymTable4,out4,fTbl4,heap4,ex2);
 
 	ArrayList<PrgState> list1 = new ArrayList<PrgState>();
 	list1.add(prg1);
@@ -97,11 +154,16 @@ public class main {
 	iRepo repo2=new Repo(list2,"log2.txt");
 	iCtrl ctrl2=new Ctrl(repo2);
 
-//	ArrayList<PrgState> list3 = new ArrayList<PrgState>();
-//	list3.add(prg3);
-//	iRepo repo3=new Repo(list3,"log3.txt");
-//	iCtrl ctrl3=new Ctrl(repo3);
-//
+	ArrayList<PrgState> list3 = new ArrayList<PrgState>();
+	list3.add(prg3);
+	iRepo repo3=new Repo(list3,"log3.txt");
+	iCtrl ctrl3=new Ctrl(repo3);
+
+	ArrayList<PrgState> list4 = new ArrayList<PrgState>();
+	list4.add(prg4);
+	iRepo repo4=new Repo(list4,"log4.txt");
+	iCtrl ctrl4=new Ctrl(repo4);
+
 //	//TESTARE
 //	IStmt ex0=new VarDeclStmt("a",new IntType());
 //
@@ -358,7 +420,8 @@ public class main {
 	menu.addCommand(new ExitCommand("0", "exit"));
 	menu.addCommand(new RunExample("1",ex1.toString(),ctrl1));
 	menu.addCommand(new RunExample("2",ex2.toString(),ctrl2));
-//	menu.addCommand(new RunExample("3",ex3.toString(),ctrl3));
+	menu.addCommand(new RunExample("3",ex3.toString(),ctrl3));
+	menu.addCommand(new RunExample("4",ex3.toString(),ctrl4));
 	menu.show();
 	
     

@@ -101,7 +101,7 @@ public class Ctrl implements iCtrl{
 		 //System.out.println(prg);//here you can display the prg state
 		 repo.logPrgStateExec();
 
-		 parseTree();
+//		 parseTree();
 
 		System.out.println(prg.getStk());
 		System.out.println(prg.getExeDictionary());
