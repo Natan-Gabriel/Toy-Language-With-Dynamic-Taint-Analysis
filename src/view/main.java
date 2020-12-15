@@ -36,7 +36,6 @@ public class main {
 	}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 
 
-
 		//int a;int b; a=2+3*5;b=a+1;Print(b)
     IStmt ex2= new CompStmt( new VarDeclStmt("a",new IntType(),1),
     	new CompStmt(new VarDeclStmt("b",new IntType(),2),
