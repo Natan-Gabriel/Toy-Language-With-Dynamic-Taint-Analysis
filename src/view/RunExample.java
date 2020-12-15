@@ -19,10 +19,10 @@ public class RunExample extends Command{
 				System.out.println("The execution is over");
 			}
 			catch(ExeStackEmpty | VarNotDefined | DivByZero | VarIsDefined | TaintedAddress e1) {
-				System.out.println(Arrays.toString(e1.getStackTrace()));
+				System.out.println(e1);//System.out.println(Arrays.toString(e1.getStackTrace()));
 			}
 			catch(Exception e) {
-				System.out.println(Arrays.toString(e.getStackTrace()));
+				System.out.println(e);//System.out.println(Arrays.toString(e.getStackTrace()));
 			}
 	 }
 

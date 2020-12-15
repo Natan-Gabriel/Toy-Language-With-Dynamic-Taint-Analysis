@@ -254,3 +254,9 @@ SymTable:
 Out:
 FileTable:
 
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+

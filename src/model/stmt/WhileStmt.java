@@ -42,8 +42,12 @@ public class WhileStmt implements IStmt{
 
 
 			 }
-			 else
-				 nextInstructions.push(instructionNumber+s.size()+2);//do nothing
+			 else{
+			 	if(nextInstructions.lastElement()==instructionNumber)
+			 		nextInstructions.pop();
+			 	nextInstructions.push(instructionNumber+s.size()+2);
+			 }
+
 		 }
 		 else throw new VarNotDefined("while  condition is not a boolena value");
 
