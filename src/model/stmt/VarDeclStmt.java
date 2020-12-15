@@ -59,6 +59,10 @@ public class VarDeclStmt implements IStmt{
 			 val=new StringValue();
 		 sym.add(name,val);
 		 state.setSymTable(sym);
+
+		 state.getNextInstructions().push(instructionNumber + 1);
+		 System.out.println("aici"+state.getNextInstructions().lastElement()+"\n");
+
 		 
 		 return state;
 	 }

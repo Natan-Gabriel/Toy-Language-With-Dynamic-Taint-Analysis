@@ -87,8 +87,15 @@ public class Ctrl implements iCtrl{
 // 		 IStmt crtStmt = stk.lastElement();
 		//displayPrgState(state);
 
-		int nextInstruction=state.getNextInstruction();
+//		if(state.getNextInstructions().isEmpty()){
+//			return null;
+//		}
+		int nextInstruction=state.getNextInstructions().pop();
 
+//		if(state.getNextInstructions().lastElement()==-1){
+//			state.getNextInstructions().pop();
+//			nextInstruction=state.getNextInstructions().pop();
+//		}
 
 		MyIDictionary<Integer,IStmt> exeDictionary=state.getExeDictionary();
 		IStmt crtStmt = exeDictionary.getValue(nextInstruction);
@@ -103,11 +110,6 @@ public class Ctrl implements iCtrl{
 
 //		 parseTree();
 
-		System.out.println(prg.getStk());
-		System.out.println(prg.getExeDictionary());
-
-//		int nextInstruction=prg.getNextInstruction();
-
 		boolean end=false;
 
 		while(end==false){
@@ -115,7 +117,7 @@ public class Ctrl implements iCtrl{
 
 //			nextInstruction+=1;
 //			prg.setNextInstruction(nextInstruction);
-			if (prg.getNextInstruction()==1+prg.getExeDictionary().getSize()){
+			if (prg.getNextInstructions().lastElement()==1+prg.getExeDictionary().getSize()){
 				end=true;
 				prg.setNextInstruction(1);
 

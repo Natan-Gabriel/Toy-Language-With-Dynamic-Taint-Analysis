@@ -10,8 +10,7 @@ public class RelationalExp implements Exp{
 	 Exp e2;
 	 //int op; //1-plus, 2-minus, 3-star, 4-divide
 	 String op="<";
-	 //....
-	 //public ArithExp(Exp m,Exp n) {e1=m;e2=n;}
+
 	 public RelationalExp(String a,Exp m,Exp n) {e1=m;e2=n;op=a;}
 	 public String toString() {return e1.toString()+op+e2.toString();}
 	 public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined,DivByZero {

@@ -21,8 +21,10 @@ public class AssignStmt implements IStmt{
 		 if(symTbl.isDefined(id)){
 			 Value val = exp.eval(symTbl,hp);
 			 Type typId= (symTbl.lookup(id)).getType();
-			 if( (val.getType()).equals(typId) )
-		 	 	symTbl.update(id, val);
+			 if( (val.getType()).equals(typId) ) {
+				 symTbl.update(id, val);
+				 state.getNextInstructions().push(instructionNumber + 1);
+			 }
 		 	 else throw new VarNotDefined("declared type of variable"+id+" and type of the assigned expression do not match");}
 		 else throw new VarNotDefined("the used variable" +id + " was not declared before");
 		 return state;

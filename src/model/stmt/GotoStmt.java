@@ -31,7 +31,7 @@ public class GotoStmt implements IStmt{
             IntValue i1 = (IntValue)val;
             int n1;
             n1= i1.getVal();
-            if(i1.getTaint()==false)
+            if(!i1.getTaint())
                 state.setNextInstruction(n1);
             else
                 throw new TaintedAddress("goto's argument ("+ n1 + ") is an tainted address!");
