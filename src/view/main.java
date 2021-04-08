@@ -68,7 +68,7 @@ public class main {
 //	PrgState prg3=new PrgState(exeStack3,symTable3,out3,fTbl3,heap3,ex3);
 
 	ArrayList<PrgState> list1 = new ArrayList<PrgState>();
-	list1.add(prg1);
+	list1.add(prg1); 
 	iRepo repo1=new Repo(list1,"log1.txt");
 	iCtrl ctrl1=new Ctrl(repo1);
 
