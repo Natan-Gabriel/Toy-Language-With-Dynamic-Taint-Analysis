@@ -10,8 +10,9 @@ public class AssignStmt implements IStmt{
 	 String id;
 	 Exp exp;
 	 int instructionNumber;
+	 int lineNumber;
 	 
-	 public AssignStmt(String i,Exp e,int _instructionNumber) {id=i;exp=e;instructionNumber=_instructionNumber;}
+	 public AssignStmt(String i,Exp e,int _instructionNumber,int _lineNumber) {id=i;exp=e;instructionNumber=_instructionNumber;lineNumber=_lineNumber;}
 	 public String toString() { return id+"="+ exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero{
 //		 state.setNextInstruction(getStatementNumber()+1);
@@ -31,6 +32,7 @@ public class AssignStmt implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return instructionNumber;}
+	public int getLineNumber(){return lineNumber;}
 }
 
 

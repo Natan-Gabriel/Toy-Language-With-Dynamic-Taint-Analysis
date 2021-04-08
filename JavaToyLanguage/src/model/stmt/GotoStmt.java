@@ -31,8 +31,24 @@ public class GotoStmt implements IStmt{
             IntValue i1 = (IntValue)val;
             int n1;
             n1= i1.getVal();
-            if(!i1.getTaint())
-                state.getNextInstructions().push(n1);//state.setNextInstruction(n1);
+            int actualInstruction=1;
+            if(!i1.getTaint()) {
+                for (int instr: exeDictionary.keySet()){
+                    if(exeDictionary.getValue(instr) instanceof VarDeclStmt && n1==((VarDeclStmt)exeDictionary.getValue(instr)).getLineNumber())
+                    {
+                        actualInstruction=instr;
+                        System.out.println("INSTR"+instr);
+                        break;
+                    }
+                    else if(exeDictionary.getValue(instr) instanceof AssignStmt && n1==((AssignStmt)exeDictionary.getValue(instr)).getLineNumber())
+                    {
+                        actualInstruction=instr;
+                        System.out.println("INSTR"+instr);
+                        break;
+                    }
+                }
+                state.getNextInstructions().push(actualInstruction);//state.setNextInstruction(n1);
+            }
 
             else
                 throw new TaintedAddress("goto's argument ("+ n1 + ") is an tainted address!");

@@ -24,17 +24,17 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
     ComplexSymbolFactory symbolFactory;
 
   private Symbol symbol(String name, int sym) {
-      return symbolFactory.newSymbol(name, sym, new Location(yyline+1,yycolumn+1,yychar), new Location(yyline+1,yycolumn+yylength(),yychar+yylength()));
+      return symbolFactory.newSymbol(name, sym, new Location(yyline+1,yycolumn+1,(int)yychar), new Location(yyline+1,yycolumn+yylength(),(int)(yychar+yylength())));
   }
   
   private Symbol symbol(String name, int sym, Object val) {
-      Location left = new Location(yyline+1,yycolumn+1,yychar);
-      Location right= new Location(yyline+1,yycolumn+yylength(), yychar+yylength());
+      Location left = new Location(yyline+1,yycolumn+1,(int)yychar);
+      Location right= new Location(yyline+1,yycolumn+yylength(), (int)(yychar+yylength()));
       return symbolFactory.newSymbol(name, sym, left, right,val);
   } 
   private Symbol symbol(String name, int sym, Object val,int buflength) {
-      Location left = new Location(yyline+1,yycolumn+yylength()-buflength,yychar+yylength()-buflength);
-      Location right= new Location(yyline+1,yycolumn+yylength(), yychar+yylength());
+      Location left = new Location(yyline+1,yycolumn+yylength()-buflength,(int)(yychar+yylength()-buflength));
+      Location right= new Location(yyline+1,yycolumn+yylength(), (int)(yychar+yylength()));
       return symbolFactory.newSymbol(name, sym, left, right,val);
   }       
   private void error(String message) {
@@ -43,7 +43,7 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
 %} 
 
 %eofval{
-     return symbolFactory.newSymbol("EOF", EOF, new Location(yyline+1,yycolumn+1,yychar), new Location(yyline+1,yycolumn+1,yychar+1));
+     return symbolFactory.newSymbol("EOF", EOF, new Location(yyline+1,yycolumn+1,(int)yychar), new Location(yyline+1,yycolumn+1,(int)(yychar+1)));
 %eofval}
 
 
@@ -67,6 +67,7 @@ white_space = {new_line} | [ \t\f]
 "if"              { return symbol("if",IF); }
 "else"            { return symbol("else",ELSE); }
 "while"           { return symbol("while",WHILE); }
+"goto"            { return symbol("goto",GOTO); }
 "read"            { return symbol("read",READ); }
 "write"           { return symbol("write",WRITE); }
 
