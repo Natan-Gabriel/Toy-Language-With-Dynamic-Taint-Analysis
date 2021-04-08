@@ -1,0 +1,122 @@
+import java.util.*;
+import java.io.*;
+import java_cup.runtime.Symbol;
+import java_cup.runtime.ComplexSymbolFactory.ComplexSymbol;
+import java_cup.runtime.ComplexSymbolFactory;
+import java_cup.runtime.ScannerBuffer;
+parser code {:
+    int count=1;
+  public boolean syntaxErrors;
+
+
+  Lexer lexer;
+
+  public Parser(Lexer lex, ComplexSymbolFactory sf) {
+    super(lex,sf);
+    lexer = lex;
+  }
+
+  public static void main(String[] args) throws Exception {
+        // initialize the symbol factory
+        ComplexSymbolFactory csf = new ComplexSymbolFactory();
+        // create a buffering scanner wrapper
+        ScannerBuffer lexer = new ScannerBuffer(new Lexer(new BufferedReader(new FileReader(args[0])),csf));
+        // start parsing
+        Parser p = new Parser(lexer,csf);
+
+        //XMLElement e = (XMLElement)p.parse().value;
+        System.out.println("aici");
+        System.out.println(p.parse().value);
+
+        /*for (XMLElement el: SyntaxTreeXPath.query(args[2],e)){
+        	  System.out.println(el.getTagname());
+        }
+
+
+        TestVisitor t = new TestVisitor();
+        SyntaxTreeDFS.dfs(e,t);
+
+        // create XML output file
+        XMLOutputFactory outFactory = XMLOutputFactory.newInstance();
+        XMLStreamWriter sw = outFactory.createXMLStreamWriter(new FileOutputStream(args[1]),"UTF-8");
+        // dump XML output to the file
+        XMLElement.dump(lexer,sw,e,"expr","stmt");
+
+         // transform the parse tree into an AST and a rendered HTML version
+        Transformer transformer = TransformerFactory.newInstance()
+  	    .newTransformer(new StreamSource(new File("tree.xsl")));
+        Source text = new StreamSource(new File(args[1]));
+        transformer.transform(text, new StreamResult(new File("output.xml")));
+        transformer = TransformerFactory.newInstance()
+  	    .newTransformer(new StreamSource(new File("tree-view.xsl")));
+        text = new StreamSource(new File("output.xml"));
+        transformer.transform(text, new StreamResult(new File("ast.html"))); */
+    }
+:};
+
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ, WRITE, BUNOP, ASSIGN;
+terminal Integer TYPE, BINOP, UNOP, COMP, BBINOP, INTCONST;
+terminal String  IDENT,STRINGCONST;
+terminal Boolean BOOLCONST;
+
+
+non terminal String program;
+non terminal String decllist,stmtlist;
+non terminal String decl,stmt;
+non terminal List<String> identlist;
+non terminal expr;
+
+precedence left ELSE, UNOP, BINOP, BUNOP, BBINOP;
+
+program   ::=  decllist:d stmtlist:s
+    {: RESULT = d+s; :}
+    ;
+decllist  ::=  decl:d decllist:dl
+    {:
+    dl+=d; RESULT = dl;
+    :}
+    | /* empty decllist */
+    {: RESULT = ""; :}
+    ;
+
+decl ::= TYPE IDENT:i identlist:il  SEMICOLON
+    {: System.out.println(i) ;
+    String res="";
+    res+="{"+count+",new VarDeclStmt(\""+i+"\",new IntType(),"+count+")},";
+    count++;
+    for(String elem : il){
+        res+="{"+count+",new VarDeclStmt(\""+elem+"\",new IntType(),"+count+")},";
+        count++;
+    }
+
+    RESULT = res; :}
+    ;
+identlist  ::= identlist:il COMMA IDENT:i
+    {: il.add(i); RESULT = il; :}
+     | /* empty identlist*/
+     {: RESULT = new ArrayList<String>(); :}
+    ;
+
+stmtlist  ::= stmtlist:sl stmt:s
+    {: sl=sl+s; RESULT = sl; :}
+    | /* empty stmtlist */
+    {: RESULT = ""; :}
+    ;
+
+stmt ::= SEMICOLON
+    {: :}
+    | IDENT:i ASSIGN expr:e SEMICOLON
+    {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+")},";
+     RESULT = "{"+count+",new AssignStmt(\""+i+"\","+ e +","+count+")},";
+     count++;
+     :}
+
+    | error:e
+    {: parser.report_error("Syntax error, skipped nonsense",e); :}
+    ;
+
+expr ::= INTCONST:c
+    {: //System.out.println("new ValueExp(new IntValue("+c+")");
+      RESULT = "new ValueExp(new IntValue("+c+"))"; :}
+
+    ;
