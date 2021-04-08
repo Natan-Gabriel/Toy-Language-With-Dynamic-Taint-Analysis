@@ -1,0 +1,1291 @@
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(x is of IntType;nop)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;nop)
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+nop
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(x is of IntType;nop)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;nop)
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+nop
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(x is of IntType;nop)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;nop)
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+nop
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+((nop;(z is of IntType;nop));(y is of IntType;(x is of IntType;nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(nop;(z is of IntType;nop))
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+(z is of IntType;nop)
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(z is of IntType;nop)
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+z is of IntType
+nop
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(x is of IntType;nop)
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;nop)
+SymTable:
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+nop
+SymTable:
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(((nop;(z is of IntType;nop));(y is of IntType;(x is of IntType;nop)));(nop;x=2))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((nop;(z is of IntType;nop));(y is of IntType;(x is of IntType;nop)))
+(nop;x=2)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(nop;(z is of IntType;nop))
+(y is of IntType;(x is of IntType;nop))
+(nop;x=2)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+(z is of IntType;nop)
+(y is of IntType;(x is of IntType;nop))
+(nop;x=2)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(z is of IntType;nop)
+(y is of IntType;(x is of IntType;nop))
+(nop;x=2)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+z is of IntType
+nop
+(y is of IntType;(x is of IntType;nop))
+(nop;x=2)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+(y is of IntType;(x is of IntType;nop))
+(nop;x=2)
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+(nop;x=2)
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(x is of IntType;nop)
+(nop;x=2)
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;nop)
+(nop;x=2)
+SymTable:
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+nop
+(nop;x=2)
+SymTable:
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+(nop;x=2)
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(nop;x=2)
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+x=2
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(((nop;(z is of IntType;nop));(y is of IntType;(x is of IntType;nop)));((nop;x=2);y=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((nop;(z is of IntType;nop));(y is of IntType;(x is of IntType;nop)))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(nop;(z is of IntType;nop))
+(y is of IntType;(x is of IntType;nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+(z is of IntType;nop)
+(y is of IntType;(x is of IntType;nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(z is of IntType;nop)
+(y is of IntType;(x is of IntType;nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+z is of IntType
+nop
+(y is of IntType;(x is of IntType;nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+(y is of IntType;(x is of IntType;nop))
+((nop;x=2);y=3)
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+((nop;x=2);y=3)
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(x is of IntType;nop)
+((nop;x=2);y=3)
+SymTable:
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;nop)
+((nop;x=2);y=3)
+SymTable:
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+nop
+((nop;x=2);y=3)
+SymTable:
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(nop;x=2)
+y=3
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+x=2
+y=3
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+y=3
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y=3
+SymTable:
+x=2
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+y=3
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(((y is of IntType;(x is of IntType;nop));((z is of IntType;nop);nop));((nop;x=2);y=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((y is of IntType;(x is of IntType;nop));((z is of IntType;nop);nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(x is of IntType;nop))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(x is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+(z is of IntType;nop)
+nop
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+z is of IntType
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(nop;x=2)
+y=3
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+x=2
+y=3
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+y=3
+SymTable:
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y=3
+SymTable:
+x=2
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+y=3
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(((x is of IntType;(y is of IntType;(a is of IntType;nop)));((z is of IntType;nop);nop));((nop;x=2);y=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((x is of IntType;(y is of IntType;(a is of IntType;nop)));((z is of IntType;nop);nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;(y is of IntType;(a is of IntType;nop)))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+(y is of IntType;(a is of IntType;nop))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(a is of IntType;nop))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(a is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+(z is of IntType;nop)
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+z is of IntType
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(nop;x=2)
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+x=2
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y=3
+SymTable:
+a=0
+x=2
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+a=0
+x=2
+y=3
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(((x is of IntType;(y is of IntType;(a is of IntType;nop)));((z is of IntType;nop);nop));((nop;x=2);y=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((x is of IntType;(y is of IntType;(a is of IntType;nop)));((z is of IntType;nop);nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;(y is of IntType;(a is of IntType;nop)))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+(y is of IntType;(a is of IntType;nop))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(a is of IntType;nop))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(a is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+(z is of IntType;nop)
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+z is of IntType
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(nop;x=2)
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+x=2
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y=3
+SymTable:
+a=0
+x=2
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+a=0
+x=2
+y=3
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(((x is of IntType;(y is of IntType;(a is of IntType;nop)));((z is of IntType;nop);nop));((nop;x=2);y=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((x is of IntType;(y is of IntType;(a is of IntType;nop)));((z is of IntType;nop);nop))
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;(y is of IntType;(a is of IntType;nop)))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+(y is of IntType;(a is of IntType;nop))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(y is of IntType;(a is of IntType;nop))
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+y is of IntType
+(a is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;nop)
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+((z is of IntType;nop);nop)
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+(z is of IntType;nop)
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+z is of IntType
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+((nop;x=2);y=3)
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+(nop;x=2)
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+x=2
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+y=3
+SymTable:
+a=0
+x=0
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+y=3
+SymTable:
+a=0
+x=2
+y=0
+z=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+a=0
+x=2
+y=3
+z=0
+Out:
+FileTable:
+

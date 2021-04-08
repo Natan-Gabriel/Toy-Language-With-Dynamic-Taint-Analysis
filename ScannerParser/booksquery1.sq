@@ -1,0 +1,3 @@
+declare namespace codegen = "http://www2.in.tum.de";
+
+return doc("books.xml")/bookstore/book/title

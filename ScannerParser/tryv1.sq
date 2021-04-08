@@ -1,0 +1,4 @@
+declare namespace codegen = "http://www2.in.tum.de";
+
+let $program := doc('output.xml')//program
+return $program

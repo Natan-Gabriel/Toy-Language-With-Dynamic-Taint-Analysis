@@ -1,0 +1,4 @@
+    int x,y,a;
+    int   z;
+    x=2;
+    y=3;

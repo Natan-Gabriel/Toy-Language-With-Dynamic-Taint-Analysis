@@ -1,0 +1,5 @@
+{1,new VarDeclStmt("x",new IntType(),1)},
+{2,new VarDeclStmt("y",new IntType(),2)},
+ {1, new AssignStmt("y",new ValueExp(new IntValue(10)),3)},
+{1, new AssignStmt("x",new VarExp("y"),3)},
+{5, new PrintStmt(new VarExp("x"),5) },
