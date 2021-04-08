@@ -1,0 +1,452 @@
+ExeStack:
+((((v is of RefType;v=20);(a is of RefType;a=v));print(v));print(a))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(((v is of RefType;v=20);(a is of RefType;a=v));print(v))
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;v=20);(a is of RefType;a=v))
+print(v)
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;v=20)
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+v=20
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v=20
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+a=v
+print(v)
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a=v
+print(v)
+print(a)
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+print(a)
+SymTable:
+a=(2,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+SymTable:
+a=(2,Ref(int))
+v=(1,int)
+Out:
+(1,int)
+FileTable:
+
+ExeStack:
+SymTable:
+a=(2,Ref(int))
+v=(1,int)
+Out:
+(1,int)
+(2,Ref(int))
+FileTable:
+
+ExeStack:
+((((v is of RefType;v=20);(a is of RefType;a=v));print(v));print(a))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(((v is of RefType;v=20);(a is of RefType;a=v));print(v))
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;v=20);(a is of RefType;a=v))
+print(v)
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;v=20)
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+v=20
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v=20
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;a=v)
+print(v)
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+a=v
+print(v)
+print(a)
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a=v
+print(v)
+print(a)
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+print(a)
+SymTable:
+a=(2,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+SymTable:
+a=(2,Ref(int))
+v=(1,int)
+Out:
+(1,int)
+FileTable:
+
+ExeStack:
+SymTable:
+a=(2,Ref(int))
+v=(1,int)
+Out:
+(1,int)
+(2,Ref(int))
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;(a=2+3*5;(b=a+1;print(b)))))
+SymTable:
+Out:
+FileTable:
+
