@@ -80,12 +80,6 @@ public class Ctrl implements iCtrl{
 	public PrgState oneStepUsingDictionary(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined, TaintedAddress {
 		if(flag==true)
 			displayPrgState(state);
-//		MyIStack<IStmt> stk=state.getStk();
-//		if(stk.isEmpty())
-//			throw new ExeStackEmpty("prgState stack is empty");
-//		IStmt crtStmt = stk.pop();
-// 		 IStmt crtStmt = stk.lastElement();
-		//displayPrgState(state);
 
 //		if(state.getNextInstructions().isEmpty()){
 //			return null;

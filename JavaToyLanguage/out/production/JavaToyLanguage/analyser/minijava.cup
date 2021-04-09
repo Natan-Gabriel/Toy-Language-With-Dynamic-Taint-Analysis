@@ -79,8 +79,9 @@ parser code {:
 :};
 
 terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ, WRITE, BUNOP, ASSIGN, GOTO;
-terminal Integer TYPE, BINOP, UNOP, COMP, BBINOP, INTCONST;
+terminal Integer TYPE, UNOP, COMP, BBINOP, INTCONST;
 terminal String  IDENT,STRINGCONST;
+terminal char BINOPPRIORITY1, BINOPPRIORITY2;
 terminal Boolean BOOLCONST;
 
 
@@ -90,7 +91,10 @@ non terminal String decl,stmt;
 non terminal List<String> identlist;
 non terminal Exp expr;
 
-precedence left ELSE, UNOP, BINOP, BUNOP, BBINOP;
+precedence left BINOPPRIORITY2;
+precedence left BINOPPRIORITY1;
+precedence left ELSE, UNOP, BUNOP, BBINOP;
+
 
 program   ::=  decllist:d stmtlist:s
     {: System.out.println("before"+map+"after");
@@ -152,5 +156,25 @@ expr ::= INTCONST:c
     {: //System.out.println("new ValueExp(new IntValue("+c+")");
       //RESULT = "new ValueExp(new IntValue("+c+"))";
      RESULT = new ValueExp(new IntValue(c));  :}
+    | IDENT: i
+    {: RESULT = new VarExp(i); :}
+    | LPAR expr:e RPAR
+    {: RESULT = e;
+     :}
 
+    | expr:e1 BINOPPRIORITY1:op expr:e2
+    {:  System.out.println("BINOP:op"+op);
+    RESULT = new ArithExp(op,e1, e2);
+    :}
+    | expr:e1 BINOPPRIORITY2:op expr:e2
+    {:  System.out.println("BINOP:op"+op);
+    RESULT = new ArithExp(op,e1, e2);
+    :}
+    | BINOPPRIORITY2:op expr:e
+    {:  System.out.println("BINOP:op"+op);
+    if(op=='+')
+        RESULT = e;
+    else if(op=='-')
+        RESULT = new ArithExp('*',e, new ValueExp(new IntValue(-1)));
+    :}
     ;

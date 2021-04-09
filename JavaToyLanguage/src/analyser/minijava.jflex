@@ -95,11 +95,11 @@ white_space = {new_line} | [ \t\f]
 "{"               { return symbol("{",BEGIN); }
 "}"               { return symbol("}",END); }
 "="               { return symbol("=",ASSIGN); }
-"+"               { return symbol("plus",BINOP,"ADD"  ); }
-"-"               { return symbol("minus",BINOP, "SUB"  ); }
-"*"               { return symbol("mul",BINOP, "MUL"  ); }
-"/"               { return symbol("div",BINOP, "DIV"  ); }
-"%"               { return symbol("mod",BINOP, "MOD"  ); }
+"+"               { return symbol("plus",BINOPPRIORITY2,'+'  ); }
+"-"               { return symbol("minus",BINOPPRIORITY2, '-'  ); }
+"*"               { return symbol("mul",BINOPPRIORITY1, '*'  ); }
+"/"               { return symbol("div",BINOPPRIORITY1, '/'  ); }
+
 "<="              { return symbol("leq",COMP,  "LEQ"  ); }
 ">="              { return symbol("geq",COMP,  "GEQ"  ); }
 "=="              { return symbol("eq",COMP,  "EQ"   ); }
