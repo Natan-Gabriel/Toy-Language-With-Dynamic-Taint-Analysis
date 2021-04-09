@@ -2,16 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="226013cf-1399-4c75-850e-7a6ffaee1f60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/Lexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/Lexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/Parser$CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/Parser$CUP$Parser$actions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaToyLanguage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaToyLanguage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/view/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ScannerParser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/minijava.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/simple.minijava" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/sym.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/sym.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScannerParser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ScannerParser/sym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/TerminalFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/TestVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/TestVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/ast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/booksquery1.sq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/ccc.minijvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/ccc.xq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/codegen.sq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/codegen.xq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/cum_se_transforma.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/ismple.minijvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/simple - Copy.minijvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/simple -itworkeDDD.minijvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/simple.minijvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/simple.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/smple.minijvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/tree-view.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/tree-view.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/tree.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScannerParser/tryv1.sq" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +61,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ScannerParser" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cup/lib/JFlex.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -107,10 +126,19 @@
       <workItem from="1607171292322" duration="18000" />
       <workItem from="1608027297081" duration="16536000" />
       <workItem from="1617891114749" duration="9171000" />
+      <workItem from="1617902459059" duration="323000" />
+      <workItem from="1617956563431" duration="1313000" />
+      <workItem from="1617958345925" duration="26000" />
+      <workItem from="1617958752996" duration="2709000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
 </project>

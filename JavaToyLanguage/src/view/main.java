@@ -1,4 +1,5 @@
 package view;
+import analyser.Parser;
 import model.*;
 import model.adt.*;
 import model.stmt.*;
@@ -78,8 +79,18 @@ public class main {
 //						VarExp("v"),5) }
 //		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 
+		Object res=null;
+		try {
+			res=Parser.parse("simple.minijava");
+		} catch (Exception e) {
+			System.out.println("Error: "+e);
+			e.printStackTrace();
+		}
+		System.out.println("res:"+(String)res);
+
 		Map<Integer, IStmt> map3 = Stream.of(new Object[][] {
 				{1,new VarDeclStmt("a",new IntType(),1,1)},{2,new VarDeclStmt("b",new IntType(),2,1)},{3,new VarDeclStmt("c",new IntType(),3,1)},{4,new VarDeclStmt("d",new IntType(),4,1)},{5,new VarDeclStmt("e",new IntType(),5,1)},{6,new VarDeclStmt("f",new IntType(),6,1)},{7,new GotoStmt(new ValueExp(new IntValue(5)),7)},{8,new AssignStmt("a",new ValueExp(new IntValue(2)),8,3)},{9,new AssignStmt("b",new ValueExp(new IntValue(3)),9,4)},{10,new AssignStmt("c",new ValueExp(new IntValue(4)),10,5)},{11,new AssignStmt("d",new ValueExp(new IntValue(5)),11,5)},{12,new GotoStmt(new ValueExp(new IntValue(7)),12)},{13,new AssignStmt("e",new ValueExp(new IntValue(7)),13,6)},{14,new AssignStmt("f",new ValueExp(new IntValue(8)),14,7)},
+
 
 		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 
