@@ -79,22 +79,40 @@ public class main {
 //						VarExp("v"),5) }
 //		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 
+
+
+//		Map<Integer, IStmt> map3 = Stream.of(new Object[][] {
+//				{1,new VarDeclStmt("a",new IntType(),1,1)},{2,new VarDeclStmt("b",new IntType(),2,1)},{3,new VarDeclStmt("c",new IntType(),3,1)},{4,new VarDeclStmt("d",new IntType(),4,1)},{5,new VarDeclStmt("e",new IntType(),5,1)},{6,new VarDeclStmt("f",new IntType(),6,1)},{7,new GotoStmt(new ValueExp(new IntValue(5)),7)},{8,new AssignStmt("a",new ValueExp(new IntValue(2)),8,3)},{9,new AssignStmt("b",new ValueExp(new IntValue(3)),9,4)},{10,new AssignStmt("c",new ValueExp(new IntValue(4)),10,5)},{11,new AssignStmt("d",new ValueExp(new IntValue(5)),11,5)},{12,new GotoStmt(new ValueExp(new IntValue(7)),12)},{13,new AssignStmt("e",new ValueExp(new IntValue(7)),13,6)},{14,new AssignStmt("f",new ValueExp(new IntValue(8)),14,7)},
+//
+//
+//		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
+
+		Map<Integer, IStmt> map3=null;
+
 		Object res=null;
 		try {
-			res=Parser.parse("simple.minijava");
+			map3=(Map<Integer, IStmt>)Parser.parse("simple.minijava");
+			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
+			MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
+			MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();
+			MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable3=new MyDictionary<String,Pair<Value,Value>>();
+			MyIList<Value> out3=new MyList<Value>();
+			MyIDictionary<StringValue,BufferedReader> fTbl3=new MyDictionary<StringValue,BufferedReader>();
+			MyIHeap heap3=new MyHeap();
+
+			PrgState prg3=new PrgState(exeStack3,exeDictionary3,symTable3,dynaimcSymTable3,out3,fTbl3,heap3,ex1);
+
+			ArrayList<PrgState> list3 = new ArrayList<PrgState>();
+			list3.add(prg3);
+			iRepo repo3=new Repo(list3,"log3.txt");
+			iCtrl ctrl3=new Ctrl(repo3);
+			Command cmd=new RunExample("3",ex1.toString(),ctrl3);
+			cmd.execute();
 		} catch (Exception e) {
 			System.out.println("Error: "+e);
 			e.printStackTrace();
 		}
 		System.out.println("res:"+(String)res);
-
-		Map<Integer, IStmt> map3 = Stream.of(new Object[][] {
-				{1,new VarDeclStmt("a",new IntType(),1,1)},{2,new VarDeclStmt("b",new IntType(),2,1)},{3,new VarDeclStmt("c",new IntType(),3,1)},{4,new VarDeclStmt("d",new IntType(),4,1)},{5,new VarDeclStmt("e",new IntType(),5,1)},{6,new VarDeclStmt("f",new IntType(),6,1)},{7,new GotoStmt(new ValueExp(new IntValue(5)),7)},{8,new AssignStmt("a",new ValueExp(new IntValue(2)),8,3)},{9,new AssignStmt("b",new ValueExp(new IntValue(3)),9,4)},{10,new AssignStmt("c",new ValueExp(new IntValue(4)),10,5)},{11,new AssignStmt("d",new ValueExp(new IntValue(5)),11,5)},{12,new GotoStmt(new ValueExp(new IntValue(7)),12)},{13,new AssignStmt("e",new ValueExp(new IntValue(7)),13,6)},{14,new AssignStmt("f",new ValueExp(new IntValue(8)),14,7)},
-
-
-		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
-
-
 
 
 

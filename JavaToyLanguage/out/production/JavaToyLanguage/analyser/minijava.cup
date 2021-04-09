@@ -1,4 +1,8 @@
 package analyser;
+import model.stmt.*;
+import model.exp.*;
+import model.types.*;
+import model.values.*;
 import java.util.*;
 import java.io.*;
 import java_cup.runtime.Symbol;
@@ -7,7 +11,7 @@ import java_cup.runtime.ComplexSymbolFactory;
 import java_cup.runtime.ScannerBuffer;
 parser code {:
     int count=1;
-    Map<Integer, String> hash_map = new HashMap<Integer, String>();
+    static Map<Integer, IStmt> map = new HashMap<Integer, IStmt>();
   public boolean syntaxErrors;
 
 
@@ -55,7 +59,7 @@ parser code {:
         transformer.transform(text, new StreamResult(new File("ast.html"))); */
     }
 
-    public static void parse(String arg) throws Exception {
+    public static Object parse(String arg) throws Exception {
             // initialize the symbol factory
             ComplexSymbolFactory csf = new ComplexSymbolFactory();
             // create a buffering scanner wrapper
@@ -65,7 +69,9 @@ parser code {:
 
             //XMLElement e = (XMLElement)p.parse().value;
             System.out.println("aici");
-            System.out.println(p.parse().value);
+            Object res=p.parse().value;
+            System.out.println("res:"+res);
+            return map;
 
         }
 
@@ -82,12 +88,13 @@ non terminal String program;
 non terminal String decllist,stmtlist;
 non terminal String decl,stmt;
 non terminal List<String> identlist;
-non terminal expr;
+non terminal Exp expr;
 
 precedence left ELSE, UNOP, BINOP, BUNOP, BBINOP;
 
 program   ::=  decllist:d stmtlist:s
-    {: RESULT = d+s; :}
+    {: System.out.println("before"+map+"after");
+     RESULT = d+s; :}
     ;
 decllist  ::=  decl:d decllist:dl
     {:
@@ -99,10 +106,12 @@ decllist  ::=  decl:d decllist:dl
 
 decl ::= TYPE IDENT:i identlist:il  SEMICOLON
     {: System.out.println(i) ;
+    map.put(count,new VarDeclStmt(i,new IntType(),count,ixleft.getLine()));
     String res="";
     res+="{"+count+",new VarDeclStmt(\""+i+"\",new IntType(),"+count+","+ixleft.getLine()+")},";
     count++;
     for(String elem : il){
+        map.put(count,new VarDeclStmt(elem,new IntType(),count,ixleft.getLine()));
         res+="{"+count+",new VarDeclStmt(\""+elem+"\",new IntType(),"+count+","+ixleft.getLine()+")},";
         count++;
     }
@@ -125,11 +134,13 @@ stmt ::= SEMICOLON
     {: :}
     | IDENT:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+     map.put(count,new AssignStmt(i,(Exp)e,count,ixleft.getLine()));
      RESULT = "{"+count+",new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
      count++;
      :}
     | GOTO expr:e SEMICOLON
       {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+       map.put(count,new GotoStmt((Exp)e,count));
        RESULT = "{"+count+",new GotoStmt("+ e +","+count+")},";
        count++;
        :}
@@ -139,6 +150,7 @@ stmt ::= SEMICOLON
 
 expr ::= INTCONST:c
     {: //System.out.println("new ValueExp(new IntValue("+c+")");
-      RESULT = "new ValueExp(new IntValue("+c+"))"; :}
+      //RESULT = "new ValueExp(new IntValue("+c+"))";
+     RESULT = new ValueExp(new IntValue(c));  :}
 
     ;
