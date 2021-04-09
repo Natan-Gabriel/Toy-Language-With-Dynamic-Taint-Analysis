@@ -86,10 +86,12 @@ terminal Boolean BOOLCONST;
 
 
 non terminal String program;
-non terminal String decllist,stmtlist;
-non terminal String decl,stmt;
+non terminal String decllist;
+non terminal String decl;
 non terminal List<String> identlist;
-non terminal Exp expr;
+non terminal Exp expr,logicexpr;
+non terminal IStmt stmt;
+non terminal List<IStmt> stmtlist;
 
 precedence left BINOPPRIORITY2;
 precedence left BINOPPRIORITY1;
@@ -129,9 +131,9 @@ identlist  ::= identlist:il COMMA IDENT:i
     ;
 
 stmtlist  ::= stmtlist:sl stmt:s
-    {: sl=sl+s; RESULT = sl; :}
+    {: sl.add(s); RESULT = sl; :}
     | /* empty stmtlist */
-    {: RESULT = ""; :}
+    {: RESULT = new ArrayList<IStmt>(); :}
     ;
 
 stmt ::= SEMICOLON
@@ -139,17 +141,31 @@ stmt ::= SEMICOLON
     | IDENT:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
      map.put(count,new AssignStmt(i,(Exp)e,count,ixleft.getLine()));
-     RESULT = "{"+count+",new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+     RESULT = new AssignStmt(i,(Exp)e,count,ixleft.getLine());
      count++;
      :}
     | GOTO expr:e SEMICOLON
       {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
        map.put(count,new GotoStmt((Exp)e,count));
-       RESULT = "{"+count+",new GotoStmt("+ e +","+count+")},";
+       RESULT = new GotoStmt((Exp)e,count);
        count++;
        :}
+    | IF LPAR logicexpr:e RPAR BEGIN stmtlist:sl END
+    {:  map.put(count,new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count));
+        count++;
+        RESULT = new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count); :}
+    | IF LPAR logicexpr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END
+    {: map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
+       count++;
+       RESULT = new IfStmt((Exp)e,sl1,sl2,count); :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
+    ;
+
+logicexpr ::= BOOLCONST:c
+    {: RESULT = new ValueExp(new BoolValue(c));  :}
+    | IDENT: i
+    {: RESULT = new VarExp(i); :}
     ;
 
 expr ::= INTCONST:c

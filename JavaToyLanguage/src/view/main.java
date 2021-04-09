@@ -130,28 +130,28 @@ public class main {
 
 		// int x; if(0==0) then x=2 else x=3; Print(x)
 //		Map<Integer, IStmt> map5 = Stream.of(new Object[][] {
-//				{ 1,new VarDeclStmt("x",new IntType(),1)},
+//				{ 1,new VarDeclStmt("x",new IntType(),1,1)},
 //				{2, new IfStmt(new RelationalExp("==",new ValueExp(new IntValue(0)),new ValueExp(new IntValue(0))),
 //						new AssignStmt("x",new ArithExp('*',new GetInput(), new
-//								ValueExp(new IntValue(2))),3),
+//								ValueExp(new IntValue(2))),3,3),
 //						new AssignStmt("x",new ArithExp('*',new GetInput(), new
-//								ValueExp(new IntValue(2))),4),2) },
+//								ValueExp(new IntValue(2))),4,3),2) },
 //				{ 5, new PrintStmt(new
 //						VarExp("v"),5) }
 //		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 
 		// int x; if(0==0) then x=2 else x=3; Print(x)
-//		Map<Integer, IStmt> map5 = Stream.of(new Object[][] {
-//				{ 1,new VarDeclStmt("x",new IntType(),1)},
-//				{2, new IfStmt(new RelationalExp("==",new ValueExp(new IntValue(0)),new ValueExp(new IntValue(0))),
-//						new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ValueExp(new IntValue(2)),3))),
-//						new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ValueExp(new IntValue(3)),5))),2) },
-//				{3, new AssignStmt("x",new ValueExp(new IntValue(2)),3)},
-//				{4,new NopStmt()},
-//				{5, new AssignStmt("x",new ValueExp(new IntValue(3)),5)},
-//				{ 6, new PrintStmt(new
-//						VarExp("x"),6) }
-//		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
+		Map<Integer, IStmt> map5 = Stream.of(new Object[][] {
+				{ 1,new VarDeclStmt("x",new IntType(),1,1)},
+				{2, new IfStmt(new RelationalExp("==",new ValueExp(new IntValue(0)),new ValueExp(new IntValue(0))),
+						new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ValueExp(new IntValue(2)),3,1))),
+						new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ValueExp(new IntValue(3)),5,1))),2) },
+				{3, new AssignStmt("x",new ValueExp(new IntValue(2)),3,1)},
+				{4,new NopStmt()},
+				{5, new AssignStmt("x",new ValueExp(new IntValue(3)),5,1)},
+				{ 6, new PrintStmt(new
+						VarExp("x"),6) }
+		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 //
 //
 //		// int x; x=0 ; while(x<6) { x=x+1 } ; Print(x)

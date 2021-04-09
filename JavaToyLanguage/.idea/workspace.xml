@@ -4,20 +4,14 @@
     <list default="true" id="226013cf-1399-4c75-850e-7a6ffaee1f60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Lexer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/sym.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/sym.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/ctrl/Ctrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/ctrl/Ctrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/view/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/simple.minijava" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/minijava.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/sym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ctrl/Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ctrl/Ctrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,7 @@
       <workItem from="1617902459059" duration="323000" />
       <workItem from="1617956563431" duration="1313000" />
       <workItem from="1617958345925" duration="26000" />
-      <workItem from="1617958752996" duration="10159000" />
+      <workItem from="1617958752996" duration="14113000" />
     </task>
     <servers />
   </component>
