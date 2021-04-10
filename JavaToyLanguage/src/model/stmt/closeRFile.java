@@ -54,4 +54,5 @@ public class closeRFile implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public void setStatementNumber(int number){;}
 }

@@ -87,11 +87,28 @@ public class main {
 //
 //		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 
+//		new RelationalExp("==",new ValueExp(new IntValue(0)),new ValueExp(new IntValue(0)))
+		//new ValueExp(new BoolValue(c))
+		Map<Integer, IStmt> map = Stream.of(new Object[][] {
+				{ 1,new VarDeclStmt("x",new IntType(),1,1)},
+				{2, new IfStmt((Exp)(new ValueExp(new BoolValue(new Boolean("true")))),
+						new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ValueExp(new IntValue(2)),3,1))),
+						new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ValueExp(new IntValue(3)),5,1))),2) },
+				{3, new AssignStmt("x",new ValueExp(new IntValue(2)),3,1)},
+				{4,new NopStmt()},
+				{5, new AssignStmt("x",new ValueExp(new IntValue(3)),5,1)},
+				{ 6, new PrintStmt(new
+						VarExp("x"),6) }
+		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
+
+		System.out.println("classpath:"+System.getProperty("java.class.path"));
+
 		Map<Integer, IStmt> map3=null;
 
 		Object res=null;
 		try {
 			map3=(Map<Integer, IStmt>)Parser.parse("simple.minijava");
+//			map3=map;
 			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
 			MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
 			MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();
@@ -108,11 +125,10 @@ public class main {
 			iCtrl ctrl3=new Ctrl(repo3);
 			Command cmd=new RunExample("3",ex1.toString(),ctrl3);
 			cmd.execute();
-		} catch (Exception e) {
+		} catch ( Exception e) {
 			System.out.println("Error: "+e);
 			e.printStackTrace();
 		}
-		System.out.println("res:"+(String)res);
 
 
 

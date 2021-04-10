@@ -1,5 +1,5 @@
-// Technische Universitaet Muenchen 
-// Fakultaet fuer Informatik 
+// Technische Universitaet Muenchen
+// Fakultaet fuer Informatik
 
 import java_cup.runtime.Symbol;
 import java_cup.runtime.ComplexSymbolFactory;
@@ -26,21 +26,21 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
   private Symbol symbol(String name, int sym) {
       return symbolFactory.newSymbol(name, sym, new Location(yyline+1,yycolumn+1,(int)yychar), new Location(yyline+1,yycolumn+yylength(),(int)(yychar+yylength())));
   }
-  
+
   private Symbol symbol(String name, int sym, Object val) {
       Location left = new Location(yyline+1,yycolumn+1,(int)yychar);
       Location right= new Location(yyline+1,yycolumn+yylength(), (int)(yychar+yylength()));
       return symbolFactory.newSymbol(name, sym, left, right,val);
-  } 
+  }
   private Symbol symbol(String name, int sym, Object val,int buflength) {
       Location left = new Location(yyline+1,yycolumn+yylength()-buflength,(int)(yychar+yylength()-buflength));
       Location right= new Location(yyline+1,yycolumn+yylength(), (int)(yychar+yylength()));
       return symbolFactory.newSymbol(name, sym, left, right,val);
-  }       
+  }
   private void error(String message) {
     System.out.println("Error at line "+(yyline+1)+", column "+(yycolumn+1)+" : "+message);
   }
-%} 
+%}
 
 %eofval{
      return symbolFactory.newSymbol("EOF", EOF, new Location(yyline+1,yycolumn+1,(int)yychar), new Location(yyline+1,yycolumn+1,(int)(yychar+1)));
@@ -73,7 +73,7 @@ white_space = {new_line} | [ \t\f]
 
 /* names */
 {Ident}           { return symbol("Identifier",IDENT, yytext()); }
-  
+
 /* string literals */
 
 /* char literal */
@@ -117,7 +117,7 @@ white_space = {new_line} | [ \t\f]
 }
 
 <STRING> {
-  \"                             { yybegin(YYINITIAL); 
+  \"                             { yybegin(YYINITIAL);
       return symbol("StringConst",STRINGCONST,string.toString(),string.length()); }
   [^\n\r\"\\]+                   { string.append( yytext() ); }
   \\t                            { string.append('\t'); }

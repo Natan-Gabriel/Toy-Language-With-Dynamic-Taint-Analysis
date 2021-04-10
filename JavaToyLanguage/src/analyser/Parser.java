@@ -223,7 +223,7 @@ public class Parser extends java_cup.runtime.lr_parser {
             //XMLElement e = (XMLElement)p.parse().value;
             System.out.println("aici");
             Object res=p.parse().value;
-            System.out.println("res:"+res);
+            System.out.println("res:"+res+"res_printed");
             return map;
 
         }
@@ -439,9 +439,19 @@ class CUP$Parser$actions {
 		Location slxleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).xleft;
 		Location slxright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).xright;
 		List<IStmt> sl = (List<IStmt>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
-		  map.put(count,new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count));
+		
+
+        for(IStmt stmt : sl){
+            int newStatementNumber=stmt.getStatementNumber()+1;
+            stmt.setStatementNumber(newStatementNumber);
+            map.put(newStatementNumber,stmt);
+        }
+        RESULT = new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size());
+        System.out.println("count-sl.size()"+(count-sl.size()));
+        System.out.println("count,sl.size()"+count+sl.size());
+        map.put(count-sl.size(),new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size()));
         count++;
-        RESULT = new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count); 
+    
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("stmt",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-6)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -459,9 +469,28 @@ class CUP$Parser$actions {
 		Location sl2xleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).xleft;
 		Location sl2xright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).xright;
 		List<IStmt> sl2 = (List<IStmt>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
-		 map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
+		
+       /*map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
        count++;
-       RESULT = new IfStmt((Exp)e,sl1,sl2,count); 
+       RESULT = new IfStmt((Exp)e,sl1,sl2,count); */
+
+
+       for(IStmt stmt : sl1){
+           int newStatementNumber=stmt.getStatementNumber()+1;
+           stmt.setStatementNumber(newStatementNumber);
+           map.put(newStatementNumber,stmt);
+       }
+       for(IStmt stmt : sl2){
+          int newStatementNumber=stmt.getStatementNumber()+1;
+          stmt.setStatementNumber(newStatementNumber);
+          map.put(newStatementNumber,stmt);
+      }
+       RESULT = new IfStmt((Exp)e,sl1,sl2,count-sl1.size()-sl2.size());
+       //System.out.println("count-sl.size()"+(count-sl.size()));
+       //System.out.println("count,sl.size()"+count+sl.size());
+       map.put(count-sl1.size()-sl2.size(),new IfStmt((Exp)e,sl1,sl2,count-sl1.size()-sl2.size()));
+       count++;
+     
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("stmt",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-10)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;

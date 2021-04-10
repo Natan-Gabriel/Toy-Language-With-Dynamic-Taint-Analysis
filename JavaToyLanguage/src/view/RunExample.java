@@ -22,6 +22,7 @@ public class RunExample extends Command{
 				System.out.println(e1);//System.out.println(Arrays.toString(e1.getStackTrace()));
 			}
 			catch(Exception e) {
+		 		e.printStackTrace();
 				System.out.println(e);//System.out.println(Arrays.toString(e.getStackTrace()));
 			}
 	 }

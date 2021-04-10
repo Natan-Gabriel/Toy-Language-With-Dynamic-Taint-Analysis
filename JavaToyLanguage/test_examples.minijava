@@ -1,0 +1,36 @@
+    int a,b,c,d,e,f;
+    goto 5;
+    a=2;
+    b=3;
+    c=4;d=5;goto 7;
+    e=7;
+    f=8;
+
+
+
+    int a,b,c,d,e,f;
+    goto 5;
+    a=2;
+    b= 3 + 3 ;
+    c=4;d=- ( 5+10) /5- 4 * 4 + 10- 3;goto 7;
+    e=7;
+    f=8;
+    if(true){
+        a=100;
+        a=101;
+    };
+    f=9;
+
+
+
+    int a,b,c;
+    if(false){
+        a=100;
+        b=101;
+    }
+    else{
+
+        b=201;
+    }
+    c=10;
+    c=1

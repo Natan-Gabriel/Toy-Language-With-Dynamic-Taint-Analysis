@@ -70,7 +70,7 @@ parser code {:
             //XMLElement e = (XMLElement)p.parse().value;
             System.out.println("aici");
             Object res=p.parse().value;
-            System.out.println("res:"+res);
+            System.out.println("res:"+res+"res_printed");
             return map;
 
         }
@@ -151,13 +151,42 @@ stmt ::= SEMICOLON
        count++;
        :}
     | IF LPAR logicexpr:e RPAR BEGIN stmtlist:sl END
-    {:  map.put(count,new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count));
+    {:
+
+        for(IStmt stmt : sl){
+            int newStatementNumber=stmt.getStatementNumber()+1;
+            stmt.setStatementNumber(newStatementNumber);
+            map.put(newStatementNumber,stmt);
+        }
+        RESULT = new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size());
+        System.out.println("count-sl.size()"+(count-sl.size()));
+        System.out.println("count,sl.size()"+count+sl.size());
+        map.put(count-sl.size(),new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size()));
         count++;
-        RESULT = new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count); :}
+    :}
     | IF LPAR logicexpr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END
-    {: map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
+    {:
+       /*map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
        count++;
-       RESULT = new IfStmt((Exp)e,sl1,sl2,count); :}
+       RESULT = new IfStmt((Exp)e,sl1,sl2,count); */
+
+
+       for(IStmt stmt : sl1){
+           int newStatementNumber=stmt.getStatementNumber()+1;
+           stmt.setStatementNumber(newStatementNumber);
+           map.put(newStatementNumber,stmt);
+       }
+       for(IStmt stmt : sl2){
+          int newStatementNumber=stmt.getStatementNumber()+1;
+          stmt.setStatementNumber(newStatementNumber);
+          map.put(newStatementNumber,stmt);
+      }
+       RESULT = new IfStmt((Exp)e,sl1,sl2,count-sl1.size()-sl2.size());
+       //System.out.println("count-sl.size()"+(count-sl.size()));
+       //System.out.println("count,sl.size()"+count+sl.size());
+       map.put(count-sl1.size()-sl2.size(),new IfStmt((Exp)e,sl1,sl2,count-sl1.size()-sl2.size()));
+       count++;
+     :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;

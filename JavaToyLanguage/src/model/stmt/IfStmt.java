@@ -22,13 +22,14 @@ public class IfStmt implements IStmt{
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
+		 System.out.println("exp:"+exp);
 		 Value val = exp.eval(symTbl,hp);
-
+		 System.out.println("val:"+val);
 		 MyIStack<Integer> nextInstructions=state.getNextInstructions();
 		 if (val.getType().equals(new BoolType())) {
 			 BoolValue v = (BoolValue) val;
 			 if (v.getVal()) {
-				 nextInstructions.push(instructionNumber+thenS.size()+elseS.size()+2);
+				 nextInstructions.push(instructionNumber+thenS.size()+elseS.size()+1);
 			 	for(int i=thenS.size()-1;i>=0;i--) {
 
 
@@ -56,5 +57,6 @@ public class IfStmt implements IStmt{
 	 }
 	 //...
 	 public int getStatementNumber(){return instructionNumber;}
+	public void setStatementNumber(int number){instructionNumber=number;}
 }
 

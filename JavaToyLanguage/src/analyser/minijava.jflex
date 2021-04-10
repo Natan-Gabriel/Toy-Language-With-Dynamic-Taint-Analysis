@@ -46,12 +46,11 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
      return symbolFactory.newSymbol("EOF", EOF, new Location(yyline+1,yycolumn+1,(int)yychar), new Location(yyline+1,yycolumn+1,(int)(yychar+1)));
 %eofval}
 
+BoolLiteral = true | false
 
 Ident = [a-zA-Z$_] [a-zA-Z0-9$_]*
 
 IntLiteral = 0 | [1-9][0-9]*
-
-BoolLiteral = true | false
 
 new_line = \r|\n|\r\n;
 
@@ -71,15 +70,15 @@ white_space = {new_line} | [ \t\f]
 "read"            { return symbol("read",READ); }
 "write"           { return symbol("write",WRITE); }
 
+/* bool literal */
+{BoolLiteral} { return symbol("Boolconst",BOOLCONST, new Boolean(yytext())); }
+
 /* names */
 {Ident}           { return symbol("Identifier",IDENT, yytext()); }
   
 /* string literals */
 
 /* char literal */
-
-/* bool literal */
-{BoolLiteral} { return symbol("Boolconst",BOOLCONST, new Boolean(Boolean.parseBool(yytext()))); }
 
 /* literals */
 {IntLiteral} { return symbol("Intconst",INTCONST, new Integer(Integer.parseInt(yytext()))); }

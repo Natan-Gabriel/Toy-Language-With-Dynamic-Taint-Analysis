@@ -16,7 +16,8 @@ public class AssignStmt implements IStmt{
 	 public String toString() { return id+"="+ exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero{
 //		 state.setNextInstruction(getStatementNumber()+1);
-		 state.getNextInstructions().push(getStatementNumber()+1);
+		 if(state.getNextInstructions().isEmpty())
+		 	state.getNextInstructions().push(getStatementNumber()+1);
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
@@ -25,13 +26,14 @@ public class AssignStmt implements IStmt{
 			 Type typId= (symTbl.lookup(id)).getType();
 			 if( (val.getType()).equals(typId) ) {
 				 symTbl.update(id, val);
-				 state.getNextInstructions().push(instructionNumber + 1);
+				 //state.getNextInstructions().push(instructionNumber + 1);
 			 }
 		 	 else throw new VarNotDefined("declared type of variable"+id+" and type of the assigned expression do not match");}
 		 else throw new VarNotDefined("the used variable" +id + " was not declared before");
 		 return state;
 	 }
 	public int getStatementNumber(){return instructionNumber;}
+	public void setStatementNumber(int number){instructionNumber=number;}
 	public int getLineNumber(){return lineNumber;}
 }
 

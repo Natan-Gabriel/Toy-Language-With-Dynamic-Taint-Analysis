@@ -59,4 +59,5 @@ public class GotoStmt implements IStmt{
         return state;
     }
     public int getStatementNumber(){return instructionNumber;}
+    public void setStatementNumber(int number){instructionNumber=number;}
 }

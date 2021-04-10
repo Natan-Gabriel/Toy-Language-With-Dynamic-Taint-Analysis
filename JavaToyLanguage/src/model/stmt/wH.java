@@ -38,4 +38,5 @@ public class wH implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public void setStatementNumber(int number){;}
 }
