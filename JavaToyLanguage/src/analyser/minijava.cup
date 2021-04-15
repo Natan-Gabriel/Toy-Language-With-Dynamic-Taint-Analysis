@@ -74,13 +74,23 @@ parser code {:
             return map;
 
         }
+        /*logicexpr1::= BOOLCONST:c
+            {: RESULT = new ValueExp(new BoolValue(c));  : }
+            |  IDENT:i
+            {: RESULT = new VarExp(i); : }
+            | LPAR logicexpr:e RPAR
+            {: RESULT = e; : }
+            | expr:e1 COMP:op expr:e2
+            {: //| expr:e1 COMP:op expr:e2 RESULT = new RelationalExp(op,e1,e2);
+             : }
+            ;*/
 
 
 :};
 
-terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ, WRITE, BUNOP, ASSIGN, GOTO;
-terminal Integer TYPE, UNOP, COMP, BBINOP, INTCONST;
-terminal String  IDENT,STRINGCONST;
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ_INTEGER, READ_HEAP, WRITE, BUNOP, ASSIGN, GOTO;
+terminal Integer TYPE, UNOP, INTCONST;
+terminal String  IDENT,STRINGCONST, COMP, BBINOP;
 terminal char BINOPPRIORITY1, BINOPPRIORITY2;
 terminal Boolean BOOLCONST;
 
@@ -89,10 +99,11 @@ non terminal String program;
 non terminal String decllist;
 non terminal String decl;
 non terminal List<String> identlist;
-non terminal Exp expr,logicexpr;
+non terminal Exp expr,logicexpr,relexp,logicexpr1;
 non terminal IStmt stmt;
 non terminal List<IStmt> stmtlist;
 
+precedence left COMP;
 precedence left BINOPPRIORITY2;
 precedence left BINOPPRIORITY1;
 precedence left ELSE, UNOP, BUNOP, BBINOP;
@@ -150,7 +161,7 @@ stmt ::= SEMICOLON
        RESULT = new GotoStmt((Exp)e,count);
        count++;
        :}
-    | IF LPAR logicexpr:e RPAR BEGIN stmtlist:sl END
+    | IF LPAR expr:e RPAR BEGIN stmtlist:sl END
     {:
 
         for(IStmt stmt : sl){
@@ -164,7 +175,9 @@ stmt ::= SEMICOLON
         map.put(count-sl.size(),new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size()));
         count++;
     :}
-    | IF LPAR logicexpr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END
+
+
+    | IF LPAR expr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END
     {:
        /*map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
        count++;
@@ -191,16 +204,22 @@ stmt ::= SEMICOLON
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;
 
+
 logicexpr ::= BOOLCONST:c
-    {: RESULT = new ValueExp(new BoolValue(c));  :}
-    | IDENT: i
-    {: RESULT = new VarExp(i); :}
+    {: System.out.println("BOOLCONST");
+       RESULT = new ValueExp(new BoolValue(c));  :}
+    | expr:e1 COMP:op expr:e2
+    {:  RESULT = new RelationalExp(op,e1,e2); //RelationalExp
+     :}
+
     ;
+
 
 expr ::= INTCONST:c
     {: //System.out.println("new ValueExp(new IntValue("+c+")");
       //RESULT = "new ValueExp(new IntValue("+c+"))";
      RESULT = new ValueExp(new IntValue(c));  :}
+
     | IDENT: i
     {: RESULT = new VarExp(i); :}
     | LPAR expr:e RPAR
@@ -222,4 +241,20 @@ expr ::= INTCONST:c
     else if(op=='-')
         RESULT = new ArithExp('*',e, new ValueExp(new IntValue(-1)));
     :}
+    | expr:e1 BBINOP:op expr:e2
+     {: RESULT = new LogicExp(op,e1,e2); //LogicExp
+      :}
+    | logicexpr : l
+     {:System.out.println("BOOLCONST");
+       RESULT = l;
+     :}
+     | READ_INTEGER
+     {:
+      RESULT = new GetInput();
+     :}
+     | READ_HEAP LPAR expr:e RPAR
+     {:
+      RESULT = new rH(e);
+     :}
+
     ;

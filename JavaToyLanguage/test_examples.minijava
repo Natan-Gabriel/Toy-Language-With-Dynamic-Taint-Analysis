@@ -34,3 +34,19 @@
     }
     c=10;
     c=1
+
+
+
+    int a,b,c;
+    c=read_integer();
+    goto c;
+    if( (2==3) || (3==4) || false){
+        a=100;
+        b=101;
+    }
+    else{
+
+        b=201;
+    }
+    c=10;
+    c=1;

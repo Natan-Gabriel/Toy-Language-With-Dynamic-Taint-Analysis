@@ -67,7 +67,8 @@ white_space = {new_line} | [ \t\f]
 "else"            { return symbol("else",ELSE); }
 "while"           { return symbol("while",WHILE); }
 "goto"            { return symbol("goto",GOTO); }
-"read"            { return symbol("read",READ); }
+"read_integer()"            { return symbol("read_integer",READ_INTEGER); }
+"read_heap()"            { return symbol("read_heap",READ_HEAP); }
 "write"           { return symbol("write",WRITE); }
 
 /* bool literal */
@@ -99,14 +100,14 @@ white_space = {new_line} | [ \t\f]
 "*"               { return symbol("mul",BINOPPRIORITY1, '*'  ); }
 "/"               { return symbol("div",BINOPPRIORITY1, '/'  ); }
 
-"<="              { return symbol("leq",COMP,  "LEQ"  ); }
-">="              { return symbol("geq",COMP,  "GEQ"  ); }
-"=="              { return symbol("eq",COMP,  "EQ"   ); }
-"!="              { return symbol("neq",COMP,  "NEQ"  ); }
-"<"               { return symbol("less",COMP,  "LESS"   ); }
-">"               { return symbol("gt",COMP,  "GT"   ); }
-"&&"              { return symbol("and",BBINOP,"AND"  ); }
-"||"              { return symbol("or",BBINOP,"OR"   ); }
+"<="              { return symbol("leq",COMP,  "<="  ); }
+">="              { return symbol("geq",COMP,  ">="  ); }
+"=="              { return symbol("eq",COMP,  "=="   ); }
+"!="              { return symbol("neq",COMP,  "!="  ); }
+"<"               { return symbol("less",COMP,  "<"   ); }
+">"               { return symbol("gt",COMP,  ">"   ); }
+"&&"              { return symbol("and",BBINOP,"and"  ); }
+"||"              { return symbol("or",BBINOP,"or"   ); }
 "!"               { return symbol("not",BUNOP,"NOT"); }
 
 

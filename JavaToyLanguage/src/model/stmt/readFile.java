@@ -19,7 +19,7 @@ public class readFile implements IStmt{
 	 
 	 public readFile(Exp e,String v) {exp=e;var_name=v;}
 	 public String toString() { return exp.toString();}
-	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero,VarIsDefined{
+	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();

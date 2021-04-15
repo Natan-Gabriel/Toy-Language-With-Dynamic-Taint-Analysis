@@ -18,7 +18,7 @@ public class ArithExp implements Exp{
 	 public ArithExp(char a,Exp m,Exp n) {oper=a;e1=m;e2=n;if (a=='+') op=1;
 	 		if (a=='-') op=2;if (a=='*') op=3;if (a=='/') op=4;}
 	 public  String toString() {return e1.toString()+oper+e2.toString();}
-	 public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined,DivByZero {
+	 public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 Value v1,v2;
 		 v1= e1.eval(tbl,hp);
 		 if (v1.getType().equals(new IntType())) {
@@ -42,7 +42,7 @@ public class ArithExp implements Exp{
 			 throw new VarNotDefined("first operand is not an integer");
 		 return new IntValue(1/1);
 	 }
-	 public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined,DivByZero {
+	 public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 return eval(tbl,hp).getType();
 	 }
 

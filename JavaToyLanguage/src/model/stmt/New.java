@@ -14,7 +14,7 @@ public class New implements IStmt{
 	public New(String s,Exp e) {var_name=s;exp=e;}
 	public String toString() { return var_name+"="+exp.toString();}
 	@Override
-	public PrgState execute(PrgState state) throws VarNotDefined, DivByZero,VarIsDefined{
+	public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
 		 //System.out.println("hehe");
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();

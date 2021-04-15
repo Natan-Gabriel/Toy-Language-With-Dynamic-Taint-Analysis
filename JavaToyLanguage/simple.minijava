@@ -1,5 +1,6 @@
     int a,b,c;
-    if(true){
+    c=read_integer();
+    if( (2==3) || (3==4) || false){
         a=100;
         b=101;
     }
@@ -9,4 +10,5 @@
     }
     c=10;
     c=1;
+
 

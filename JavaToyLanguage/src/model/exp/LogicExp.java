@@ -10,9 +10,10 @@ public class LogicExp implements Exp{
 	int op;
 	//....
 	public LogicExp(String a,Exp m,Exp n) {e1=m;e2=n;if (a=="and") op=1;
-		if (a=="or") op=2;}
+		if (a=="or") op=2;
+	System.out.println("a is"+a);}
 	public  String toString() {return "Exp1 "+e1.toString()+" Exp2 "+e2.toString()+"Operation"+Integer.toString(op);}
-	public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero{
+	public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 Value v1,v2;
 		 v1= e1.eval(tbl,hp);
 		 if (v1.getType().equals(new BoolType())) {
@@ -25,15 +26,16 @@ public class LogicExp implements Exp{
 				 n2 = i2.getVal();
 				 if (op==1) return new BoolValue(n1 && n2);
 				 if (op ==2) return new BoolValue(n1||n2);
-				
+				 //return new BoolValue(false);
+				 throw new CustomException("is an invalid operator");
 				 
 			 }else
 				 throw new VarNotDefined("second operand is not a boolean");
 		 }else
 			 throw new VarNotDefined("first operand is not a boolean");
-		 return new BoolValue(false);
+		 //return new BoolValue(false);
 	}
-	public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined,DivByZero {
+	public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 return eval(tbl,hp).getType();
 	 }
 }

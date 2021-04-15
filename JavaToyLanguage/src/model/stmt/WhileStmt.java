@@ -16,7 +16,7 @@ public class WhileStmt implements IStmt{
 	 
 	 public WhileStmt(Exp e, List<IStmt> s1,int _instructionNumber ) {exp=e;s=s1;instructionNumber=_instructionNumber;}
 	 public String toString() { return "WHILE("+exp.toString()+") "+s.toString();}
-	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero{
+	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();

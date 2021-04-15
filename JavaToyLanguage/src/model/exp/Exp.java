@@ -8,5 +8,5 @@ import MyException.*;
 
 public interface Exp {
 	//public  String toString();
-	Value eval(MyIDictionary<String, Value> symTbl,MyIHeap hp) throws  VarNotDefined,DivByZero; 
+	Value eval(MyIDictionary<String, Value> symTbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException;
 }

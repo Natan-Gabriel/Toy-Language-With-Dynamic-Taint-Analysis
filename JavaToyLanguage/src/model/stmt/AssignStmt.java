@@ -14,7 +14,7 @@ public class AssignStmt implements IStmt{
 	 
 	 public AssignStmt(String i,Exp e,int _instructionNumber,int _lineNumber) {id=i;exp=e;instructionNumber=_instructionNumber;lineNumber=_lineNumber;}
 	 public String toString() { return id+"="+ exp.toString();}
-	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero{
+	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 //		 state.setNextInstruction(getStatementNumber()+1);
 		 if(state.getNextInstructions().isEmpty())
 		 	state.getNextInstructions().push(getStatementNumber()+1);

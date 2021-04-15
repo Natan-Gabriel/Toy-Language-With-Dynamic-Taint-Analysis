@@ -1,4 +1,5 @@
 package model.stmt;
+import MyException.CustomException;
 import MyException.DivByZero;
 import MyException.VarNotDefined;
 //import model.MyException;
@@ -17,8 +18,7 @@ public class PrintStmt implements IStmt{
 	 int instructionNumber;
 	 public PrintStmt(Exp e,int _instructionNumber) {exp=e;instructionNumber=_instructionNumber;}
 	 public String toString(){ return "print(" +exp.toString()+")";}
-	 public PrgState execute(PrgState state) throws DivByZero, VarNotDefined
-	 {
+	 public PrgState execute(PrgState state) throws DivByZero, VarNotDefined, CustomException {
 		 //try {
 		 MyIList<Value> lst=state.getOut();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();

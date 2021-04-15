@@ -13,7 +13,7 @@ public class wH implements IStmt{
 
 	 public wH(String v,Exp e) {var_name=v;exp=e;}
 	 public String toString() { return var_name+","+exp.toString();}
-	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero,VarIsDefined{
+	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();

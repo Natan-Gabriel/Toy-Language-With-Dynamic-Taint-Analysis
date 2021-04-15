@@ -18,7 +18,7 @@ public class IfStmt implements IStmt{
 	 
 	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _instructionNumber) {exp=e; thenS=t;elseS=el;instructionNumber=_instructionNumber;}
 	 public String toString(){ return "IF("+ exp.toString()+") THEN(" +thenS.toString()+")ELSE("+elseS.toString()+")";}
-	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero{
+	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
