@@ -16,11 +16,14 @@ import java.io.*;
 public class OpenRFile implements IStmt{
 	 Exp exp;
 	 BufferedReader file;
+	 int instructionNumber;
 	 
-	 public OpenRFile(Exp e) {exp=e;}
-	 public String toString() { return exp.toString();}
+	 public OpenRFile(Exp e,int _instructionNumber) {exp=e;instructionNumber=_instructionNumber;}
+	 public String toString() { return "Open: "+exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
-		 MyIStack<IStmt> stk=state.getStk();
+		if(state.getNextInstructions().isEmpty())
+		 	state.getNextInstructions().push(getStatementNumber()+1); 
+		MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
 		 Value val = exp.eval(symTbl,hp);
@@ -39,9 +42,9 @@ public class OpenRFile implements IStmt{
 			 throw new VarNotDefined("File does not exist");
 		 }
 		 fTbl.add(val1,file);
-		 
+		 System.out.println("fTbl"+fTbl);
 		 return state;
 	 }
-	public int getStatementNumber(){return 1;}
+	public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){;}
 }

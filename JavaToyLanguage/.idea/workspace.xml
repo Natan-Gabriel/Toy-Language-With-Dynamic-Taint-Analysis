@@ -4,55 +4,24 @@
     <list default="true" id="226013cf-1399-4c75-850e-7a6ffaee1f60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Lexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Lexer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.cup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/simple.minijava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/sym.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/sym.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/ctrl/Ctrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/ctrl/Ctrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/ArithExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/ArithExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/Exp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/Exp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/LogicExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/LogicExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/RelationalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/RelationalExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/rH.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/exp/rH.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/AssignStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/AssignStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/GotoStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/GotoStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/IStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/IStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/IfStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/IfStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/New.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/New.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/OpenRFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/OpenRFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/PrintStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/PrintStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/WhileStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/WhileStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/closeRFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/closeRFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/readFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/wH.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/model/stmt/wH.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/simple.minijava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/minijava.cup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/simple.minijava" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/sym.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analyser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/sym.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ctrl/Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ctrl/Ctrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/exp/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/ArithExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/exp/Exp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/Exp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/exp/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/LogicExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/exp/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/RelationalExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/exp/rH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/rH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/AssignStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/GotoStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/GotoStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/IStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/IStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/IfStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/New.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/stmt/OpenRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/OpenRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/PrintStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/WhileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/WhileStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/stmt/closeRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/closeRFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/stmt/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/readFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/wH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/wH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_examples.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/test_examples.minijava" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/values/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/values/StringValue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,13 +93,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,7 +136,8 @@
       <workItem from="1618050735389" duration="13722000" />
       <workItem from="1618230626841" duration="5564000" />
       <workItem from="1618403270856" duration="1204000" />
-      <workItem from="1618476017771" duration="12568000" />
+      <workItem from="1618476017771" duration="12773000" />
+      <workItem from="1618557092686" duration="5146000" />
     </task>
     <servers />
   </component>
@@ -204,6 +176,11 @@
           <url>file://$PROJECT_DIR$/src/model/stmt/IfStmt.java</url>
           <line>24</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ctrl/Ctrl.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

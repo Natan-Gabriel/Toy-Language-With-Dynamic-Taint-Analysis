@@ -8,33 +8,36 @@ package analyser;
 /** CUP generated interface containing symbol constants. */
 public interface sym {
   /* terminals */
-  public static final int IDENT = 20;
+  public static final int IDENT = 23;
   public static final int SEMICOLON = 2;
   public static final int ELSE = 9;
-  public static final int STRINGCONST = 21;
-  public static final int COMP = 22;
-  public static final int GOTO = 16;
+  public static final int STRINGCONST = 24;
+  public static final int COMP = 25;
+  public static final int GOTO = 19;
   public static final int WHILE = 10;
   public static final int END = 7;
-  public static final int INTCONST = 19;
-  public static final int BBINOP = 23;
+  public static final int INTCONST = 22;
+  public static final int BBINOP = 26;
   public static final int IF = 8;
   public static final int READ_INTEGER = 11;
-  public static final int WRITE = 13;
+  public static final int WRITE = 16;
   public static final int BEGIN = 6;
-  public static final int TYPE = 17;
+  public static final int TYPE = 20;
   public static final int COMMA = 3;
   public static final int EOF = 0;
-  public static final int BINOPPRIORITY2 = 25;
-  public static final int BINOPPRIORITY1 = 24;
+  public static final int CLOSE_FILE = 15;
+  public static final int BINOPPRIORITY2 = 28;
+  public static final int READ_FILE = 14;
+  public static final int BINOPPRIORITY1 = 27;
+  public static final int BUNOP = 17;
   public static final int error = 1;
-  public static final int BUNOP = 14;
-  public static final int ASSIGN = 15;
+  public static final int OPEN_FILE = 13;
+  public static final int ASSIGN = 18;
   public static final int READ_HEAP = 12;
   public static final int RPAR = 5;
   public static final int LPAR = 4;
-  public static final int BOOLCONST = 26;
-  public static final int UNOP = 18;
+  public static final int BOOLCONST = 29;
+  public static final int UNOP = 21;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
@@ -49,6 +52,9 @@ public interface sym {
   "WHILE",
   "READ_INTEGER",
   "READ_HEAP",
+  "OPEN_FILE",
+  "READ_FILE",
+  "CLOSE_FILE",
   "WRITE",
   "BUNOP",
   "ASSIGN",

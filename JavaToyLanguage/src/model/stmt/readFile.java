@@ -8,6 +8,7 @@ import MyException.*;
 import model.*;
 import model.adt.*;
 import model.exp.Exp;
+import model.exp.ValueExp;
 import model.types.* ;
 import model.values.*;
 
@@ -16,11 +17,14 @@ public class readFile implements IStmt{
 	 BufferedReader file;
 	 String var_name;
 	 String line="";
+	 int instructionNumber;
 	 
-	 public readFile(Exp e,String v) {exp=e;var_name=v;}
-	 public String toString() { return exp.toString();}
+	 public readFile(Exp e,String v,int _instructionNumber) {exp=e;var_name=v;instructionNumber=_instructionNumber;}
+	 public String toString() { return "Read "+exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
-		 MyIStack<IStmt> stk=state.getStk();
+		if(state.getNextInstructions().isEmpty())
+		 	state.getNextInstructions().push(getStatementNumber()+1); 
+		MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
 		 
@@ -34,8 +38,15 @@ public class readFile implements IStmt{
 		 	 	throw new VarNotDefined("The var is not a string");
 		 StringValue val1=(StringValue)val;
 		 MyIDictionary<StringValue, BufferedReader> fTbl=state.getFileTable();
+		//  System.out.println("fTbl"+fTbl);
+		//  System.out.println("val1"+val1);
+		//  System.out.println("fTbl.isDefined(val1)"+fTbl.isDefined(val1));
+		//  System.out.println("fTbl.keySet()"+fTbl.keySet());
+		//  System.out.println("fTbl.isDefined(integer.txt)"+fTbl.isDefined(new StringValue("integer.txt")));
+		//  System.out.println("new StringValue(\"integer.txt\") instanceof StringValue"+(new StringValue("integer.txt") instanceof StringValue));
+		 
 		 if(!fTbl.isDefined(val1))
-			 throw new VarNotDefined("File does not exist");
+			 throw new VarNotDefined("File "+val1+" does not exist");
 			 
 		 file=fTbl.getValue(val1);
 		 try {
@@ -55,6 +66,6 @@ public class readFile implements IStmt{
 		 
 		 return state;
 	 }
-	public int getStatementNumber(){return 1;}
+	public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){;}
 }

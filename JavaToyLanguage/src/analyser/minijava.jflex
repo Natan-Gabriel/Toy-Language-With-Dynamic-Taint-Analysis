@@ -69,6 +69,9 @@ white_space = {new_line} | [ \t\f]
 "goto"            { return symbol("goto",GOTO); }
 "read_integer()"            { return symbol("read_integer",READ_INTEGER); }
 "read_heap()"            { return symbol("read_heap",READ_HEAP); }
+"open_file"            { return symbol("read_file",OPEN_FILE); }
+"read_file"            { return symbol("read_file",READ_FILE); }
+"close_file"            { return symbol("read_file",CLOSE_FILE); }
 "write"           { return symbol("write",WRITE); }
 
 /* bool literal */

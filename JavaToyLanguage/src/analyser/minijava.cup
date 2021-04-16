@@ -88,7 +88,7 @@ parser code {:
 
 :};
 
-terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ_INTEGER, READ_HEAP, WRITE, BUNOP, ASSIGN, GOTO;
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, BUNOP, ASSIGN, GOTO;
 terminal Integer TYPE, UNOP, INTCONST;
 terminal String  IDENT,STRINGCONST, COMP, BBINOP;
 terminal char BINOPPRIORITY1, BINOPPRIORITY2;
@@ -99,7 +99,7 @@ non terminal String program;
 non terminal String decllist;
 non terminal String decl;
 non terminal List<String> identlist;
-non terminal Exp expr,logicexpr,relexp,logicexpr1;
+non terminal Exp expr,logicexpr,relexp,logicexpr1,stringexp;
 non terminal IStmt stmt;
 non terminal List<IStmt> stmtlist;
 
@@ -200,6 +200,38 @@ stmt ::= SEMICOLON
        map.put(count-sl1.size()-sl2.size(),new IfStmt((Exp)e,sl1,sl2,count-sl1.size()-sl2.size()));
        count++;
      :}
+    | WHILE LPAR expr:e RPAR BEGIN stmtlist:sl END
+        {:
+
+            for(IStmt stmt : sl){
+                int newStatementNumber=stmt.getStatementNumber()+1;
+                stmt.setStatementNumber(newStatementNumber);
+                map.put(newStatementNumber,stmt);
+            }
+            RESULT = new WhileStmt((Exp)e,sl,count-sl.size());
+            System.out.println("count-sl.size()"+(count-sl.size()));
+            System.out.println("count,sl.size()"+count+sl.size());
+            map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
+            count++;
+        :}
+    | OPEN_FILE LPAR expr:e RPAR SEMICOLON
+          {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+           map.put(count,new OpenRFile((Exp)e,count));
+           RESULT = new OpenRFile((Exp)e,count);
+           count++;
+           :}
+    | READ_FILE LPAR expr:e COMMA IDENT:i RPAR SEMICOLON
+      {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+       map.put(count,new readFile((Exp)e,i,count));
+       RESULT = new readFile((Exp)e,i,count);
+       count++;
+       :}
+    | CLOSE_FILE LPAR expr:e RPAR SEMICOLON
+      {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+       map.put(count,new closeRFile((Exp)e,count));
+       RESULT = new closeRFile((Exp)e,count);
+       count++;
+       :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;
@@ -213,7 +245,10 @@ logicexpr ::= BOOLCONST:c
      :}
 
     ;
-
+stringexp ::= STRINGCONST:sc
+    {: System.out.println("STRINGCONST");
+      RESULT = new ValueExp(new StringValue(sc));  :}
+    ;
 
 expr ::= INTCONST:c
     {: //System.out.println("new ValueExp(new IntValue("+c+")");
@@ -255,6 +290,10 @@ expr ::= INTCONST:c
      | READ_HEAP LPAR expr:e RPAR
      {:
       RESULT = new rH(e);
+     :}
+     | stringexp:s
+     {: //System.out.println("stringexp");
+        RESULT = s;
      :}
 
     ;

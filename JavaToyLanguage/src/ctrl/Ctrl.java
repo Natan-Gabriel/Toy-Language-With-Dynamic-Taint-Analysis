@@ -111,6 +111,7 @@ public class Ctrl implements iCtrl{
 
 //			nextInstruction+=1;
 //			prg.setNextInstruction(nextInstruction);
+			System.out.println("prg.getNextInstructions(): "+prg.getNextInstructions());
 			if (prg.getNextInstructions().lastElement()==1+prg.getExeDictionary().getSize()){
 				end=true;
 				prg.setNextInstruction(1);
