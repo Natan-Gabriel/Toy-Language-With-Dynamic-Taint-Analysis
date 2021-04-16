@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="226013cf-1399-4c75-850e-7a6ffaee1f60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/integer.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Lexer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" afterDir="false" />
@@ -10,18 +11,14 @@
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.cup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/minijava.jflex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/sym.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/analyser/sym.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/ctrl/Ctrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/ctrl/Ctrl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/simple.minijava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/minijava.cup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/minijava.jflex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/sym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ctrl/Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ctrl/Ctrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/OpenRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/OpenRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/closeRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/closeRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/stmt/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/readFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/values/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/values/StringValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/stmt/WhileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/stmt/WhileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_examples.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/test_examples.minijava" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +134,7 @@
       <workItem from="1618230626841" duration="5564000" />
       <workItem from="1618403270856" duration="1204000" />
       <workItem from="1618476017771" duration="12773000" />
-      <workItem from="1618557092686" duration="5146000" />
+      <workItem from="1618557092686" duration="10917000" />
     </task>
     <servers />
   </component>

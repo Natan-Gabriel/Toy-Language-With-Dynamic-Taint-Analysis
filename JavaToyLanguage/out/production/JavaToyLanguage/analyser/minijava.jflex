@@ -66,6 +66,7 @@ white_space = {new_line} | [ \t\f]
 "if"              { return symbol("if",IF); }
 "else"            { return symbol("else",ELSE); }
 "while"           { return symbol("while",WHILE); }
+"for"           { return symbol("for",FOR); }
 "goto"            { return symbol("goto",GOTO); }
 "read_integer()"            { return symbol("read_integer",READ_INTEGER); }
 "read_heap()"            { return symbol("read_heap",READ_HEAP); }

@@ -88,7 +88,7 @@ parser code {:
 
 :};
 
-terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, BUNOP, ASSIGN, GOTO;
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, BUNOP, ASSIGN, GOTO;
 terminal Integer TYPE, UNOP, INTCONST;
 terminal String  IDENT,STRINGCONST, COMP, BBINOP;
 terminal char BINOPPRIORITY1, BINOPPRIORITY2;
@@ -214,6 +214,28 @@ stmt ::= SEMICOLON
             map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
             count++;
         :}
+    | FOR LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END
+    {:
+        int newStatementNumber;
+        System.out.println("s1.getStatementNumber()"+s1.getStatementNumber());
+        /*for(IStmt stmt : sl){
+            newStatementNumber=stmt.getStatementNumber()+1;
+            stmt.setStatementNumber(newStatementNumber);
+            map.put(newStatementNumber,stmt);
+        }*/
+
+        newStatementNumber=s3.getStatementNumber()+1+sl.size();
+        s3.setStatementNumber(newStatementNumber);
+        map.put(newStatementNumber,s3);
+
+        sl.add(s3);
+
+        RESULT = new WhileStmt((Exp)e,sl,count-sl.size());
+        System.out.println("count-sl.size()"+(count-sl.size()));
+        System.out.println("count,sl.size()"+count+sl.size());
+        map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
+        count++;
+    :}
     | OPEN_FILE LPAR expr:e RPAR SEMICOLON
           {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
            map.put(count,new OpenRFile((Exp)e,count));
@@ -241,7 +263,7 @@ logicexpr ::= BOOLCONST:c
     {: System.out.println("BOOLCONST");
        RESULT = new ValueExp(new BoolValue(c));  :}
     | expr:e1 COMP:op expr:e2
-    {:  RESULT = new RelationalExp(op,e1,e2); //RelationalExp
+    {: System.out.println("COMP"); RESULT = new RelationalExp(op,e1,e2); //RelationalExp
      :}
 
     ;

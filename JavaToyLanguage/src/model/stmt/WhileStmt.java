@@ -43,9 +43,8 @@ public class WhileStmt implements IStmt{
 
 			 }
 			 else{
-			 	if(nextInstructions.lastElement()==instructionNumber)
-			 		nextInstructions.pop();
-			 	nextInstructions.push(instructionNumber+s.size()+2);
+				 nextInstructions.push(instructionNumber+s.size()+1);
+				 System.out.println("nextInstructions:"+nextInstructions);
 			 }
 
 		 }
