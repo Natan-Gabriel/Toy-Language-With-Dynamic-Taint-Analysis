@@ -38,13 +38,13 @@ public class GotoStmt implements IStmt{
                     if(exeDictionary.getValue(instr) instanceof VarDeclStmt && n1==((VarDeclStmt)exeDictionary.getValue(instr)).getLineNumber())
                     {
                         actualInstruction=instr;
-                        System.out.println("INSTR"+instr);
+                        //System.out.println("INSTR"+instr);
                         break;
                     }
                     else if(exeDictionary.getValue(instr) instanceof AssignStmt && n1==((AssignStmt)exeDictionary.getValue(instr)).getLineNumber())
                     {
                         actualInstruction=instr;
-                        System.out.println("INSTR"+instr);
+                        //System.out.println("INSTR"+instr);
                         break;
                     }
                 }

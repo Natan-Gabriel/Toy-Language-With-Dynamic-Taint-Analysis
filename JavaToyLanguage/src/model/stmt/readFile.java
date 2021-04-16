@@ -51,7 +51,7 @@ public class readFile implements IStmt{
 		 file=fTbl.getValue(val1);
 		 try {
 		 line=file.readLine();
-		 System.out.println(line);
+		 //System.out.println(line);
 		 }
 		 catch(Exception e){
 			 return state;

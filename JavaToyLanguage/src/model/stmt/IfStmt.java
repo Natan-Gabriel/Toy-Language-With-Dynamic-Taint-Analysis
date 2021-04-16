@@ -28,8 +28,9 @@ public class IfStmt implements IStmt{
 		 MyIStack<Integer> nextInstructions=state.getNextInstructions();
 		 if (val.getType().equals(new BoolType())) {
 			 BoolValue v = (BoolValue) val;
+			 nextInstructions.push(instructionNumber+thenS.size()+elseS.size()+1);
 			 if (v.getVal()) {
-				 nextInstructions.push(instructionNumber+thenS.size()+elseS.size()+1);
+
 			 	for(int i=thenS.size()-1;i>=0;i--) {
 
 
@@ -39,7 +40,7 @@ public class IfStmt implements IStmt{
 //					state.getNextInstructions().push(thenS.getStatementNumber()+2);
 
 					 nextInstructions.push(thenS.get(i).getStatementNumber());
-					 System.out.println("s.get(i).getStatementNumber()"+thenS.get(i).getStatementNumber());
+					 //System.out.println("s.get(i).getStatementNumber()"+thenS.get(i).getStatementNumber());
 
 
 				 }

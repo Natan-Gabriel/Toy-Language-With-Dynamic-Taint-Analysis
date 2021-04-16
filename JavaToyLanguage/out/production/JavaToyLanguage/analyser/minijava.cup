@@ -88,7 +88,7 @@ parser code {:
 
 :};
 
-terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, BUNOP, ASSIGN, GOTO;
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO;
 terminal Integer TYPE, UNOP, INTCONST;
 terminal String  IDENT,STRINGCONST, COMP, BBINOP;
 terminal char BINOPPRIORITY1, BINOPPRIORITY2;
@@ -254,6 +254,12 @@ stmt ::= SEMICOLON
        RESULT = new closeRFile((Exp)e,count);
        count++;
        :}
+    | PRINT LPAR expr:e RPAR SEMICOLON
+    {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+       map.put(count,new PrintStmt((Exp)e,count));
+       RESULT = new PrintStmt((Exp)e,count);
+       count++;
+      :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;

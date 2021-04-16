@@ -37,14 +37,14 @@ public class WhileStmt implements IStmt{
 //					}
 
 					 nextInstructions.push(s.get(i).getStatementNumber());
-					 System.out.println("s.get(i).getStatementNumber()"+s.get(i).getStatementNumber());
+					 //System.out.println("s.get(i).getStatementNumber()"+s.get(i).getStatementNumber());
 				 }
 
 
 			 }
 			 else{
 				 nextInstructions.push(instructionNumber+s.size()+1);
-				 System.out.println("nextInstructions:"+nextInstructions);
+				 //System.out.println("nextInstructions:"+nextInstructions);
 			 }
 
 		 }

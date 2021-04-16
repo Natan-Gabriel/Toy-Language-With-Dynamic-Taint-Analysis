@@ -13,8 +13,8 @@ import repo.*;
 
 public class Ctrl implements iCtrl{
 	iRepo repo; 
-	boolean flag=true;
-	public Ctrl(iRepo r) {repo=r;}
+	boolean flag=false;
+	public Ctrl(iRepo r,boolean f) {repo=r;flag=f;}
 //	int nextInstruction=1;
 	
 	Map<Integer,Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer,Value> heap){
@@ -111,7 +111,7 @@ public class Ctrl implements iCtrl{
 
 //			nextInstruction+=1;
 //			prg.setNextInstruction(nextInstruction);
-			System.out.println("prg.getNextInstructions(): "+prg.getNextInstructions());
+//			System.out.println("prg.getNextInstructions(): "+prg.getNextInstructions());
 			if (prg.getNextInstructions().lastElement()==1+prg.getExeDictionary().getSize()){
 				end=true;
 				prg.setNextInstruction(1);

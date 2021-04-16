@@ -74,6 +74,7 @@ white_space = {new_line} | [ \t\f]
 "read_file"            { return symbol("read_file",READ_FILE); }
 "close_file"            { return symbol("read_file",CLOSE_FILE); }
 "write"           { return symbol("write",WRITE); }
+"print"           { return symbol("print",PRINT); }
 
 /* bool literal */
 {BoolLiteral} { return symbol("Boolconst",BOOLCONST, new Boolean(yytext())); }

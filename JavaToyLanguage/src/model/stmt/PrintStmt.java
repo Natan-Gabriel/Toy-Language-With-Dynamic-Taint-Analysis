@@ -25,6 +25,7 @@ public class PrintStmt implements IStmt{
 		 MyIHeap hp= state.getHeap();
 		 Value val = exp.eval(symTbl,hp);
 		 lst.add(val);
+		 System.out.println(val);
 		 //state.setNextInstruction(getStatementNumber()+1);
 		 state.getNextInstructions().push(getStatementNumber()+1);
 		 return state;

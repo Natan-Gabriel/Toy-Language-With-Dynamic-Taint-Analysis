@@ -1,0 +1,2 @@
+cd ~/Desktop/facultate/Licenta/ThesisProject/JavaToyLanguage/out/production/JavaToyLanguage
+java -cp ~/Desktop/facultate/Licenta/cup/lib/java-cup-11b-runtime.jar:. view.main $1 $2

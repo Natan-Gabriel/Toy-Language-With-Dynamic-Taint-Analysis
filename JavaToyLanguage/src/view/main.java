@@ -18,8 +18,7 @@ import repo.*;
 
 public class main {
 	public static void main(String[] arg) {//throws VarNotDefined, DivByZero, VarIsDefined{
-		
-		
+
 	// int v; v=get_input(); goto v ; v=3;Print(v)
 	IStmt ex1=   new CompStmt(new VarDeclStmt("v",new IntType(),1,1),
 			 new CompStmt( new CompStmt( new AssignStmt("v",new GetInput(),2,1),new CompStmt(new GotoStmt(new VarExp("v"),3),
@@ -101,13 +100,21 @@ public class main {
 						VarExp("x"),6) }
 		}).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
 
-		System.out.println("classpath:"+System.getProperty("java.class.path"));
+		//System.out.println("classpath:"+System.getProperty("java.class.path"));
 
 		Map<Integer, IStmt> map3=null;
 
 		Object res=null;
 		try {
-			map3=(Map<Integer, IStmt>)Parser.parse("simple.minijava");
+			if(arg.length==0){
+				System.out.println("Please input a file name");
+				return;
+			}
+			boolean flag=false;
+			if(arg.length>=2){
+				flag= Boolean.parseBoolean(arg[1]);
+			}
+			map3=(Map<Integer, IStmt>)Parser.parse(arg[0]);
 //			map3=map;
 			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
 			MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
@@ -122,7 +129,7 @@ public class main {
 			ArrayList<PrgState> list3 = new ArrayList<PrgState>();
 			list3.add(prg3);
 			iRepo repo3=new Repo(list3,"log3.txt");
-			iCtrl ctrl3=new Ctrl(repo3);
+			iCtrl ctrl3=new Ctrl(repo3,flag);
 			Command cmd=new RunExample("3",ex1.toString(),ctrl3);
 			cmd.execute();
 		} catch ( Exception e) {
@@ -262,7 +269,7 @@ public class main {
 	ArrayList<PrgState> list3 = new ArrayList<PrgState>();
 	list3.add(prg3);
 	iRepo repo3=new Repo(list3,"log3.txt");
-	iCtrl ctrl3=new Ctrl(repo3);
+	iCtrl ctrl3=new Ctrl(repo3,false);
 
 //	ArrayList<PrgState> list4 = new ArrayList<PrgState>();
 //	list4.add(prg4);
@@ -280,15 +287,15 @@ public class main {
 //	iCtrl ctrl6=new Ctrl(repo6);
 
 			
-	TextMenu menu = new TextMenu();
-	menu.addCommand(new ExitCommand("0", "exit"));
+//	TextMenu menu = new TextMenu();
+//	menu.addCommand(new ExitCommand("0", "exit"));
 //	menu.addCommand(new RunExample("1",ex1.toString(),ctrl1));
 //	menu.addCommand(new RunExample("2",ex2.toString(),ctrl2));
-	menu.addCommand(new RunExample("3",ex1.toString(),ctrl3));
+//	menu.addCommand(new RunExample("3",ex1.toString(),ctrl3));
 //	menu.addCommand(new RunExample("4",ex3.toString(),ctrl4));
 //	menu.addCommand(new RunExample("5",ex3.toString(),ctrl5));
 //	menu.addCommand(new RunExample("6",ex3.toString(),ctrl6));
-	menu.show();
+//	menu.show();
 	
     
     

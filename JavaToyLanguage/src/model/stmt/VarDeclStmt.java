@@ -63,7 +63,7 @@ public class VarDeclStmt implements IStmt{
 
 		 if(state.getNextInstructions().isEmpty())
 		 	state.getNextInstructions().push(instructionNumber + 1);
-		 System.out.println("aici"+state.getNextInstructions().lastElement()+"\n");
+		 //System.out.println("aici"+state.getNextInstructions().lastElement()+"\n");
 
 		 
 		 return state;

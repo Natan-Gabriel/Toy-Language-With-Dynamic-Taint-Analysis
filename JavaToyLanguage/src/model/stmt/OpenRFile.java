@@ -42,7 +42,7 @@ public class OpenRFile implements IStmt{
 			 throw new VarNotDefined("File does not exist");
 		 }
 		 fTbl.add(val1,file);
-		 System.out.println("fTbl"+fTbl);
+		 //System.out.println("fTbl"+fTbl);
 		 return state;
 	 }
 	public int getStatementNumber(){return instructionNumber;}
