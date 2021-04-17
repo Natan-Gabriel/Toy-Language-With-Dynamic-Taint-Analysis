@@ -1,0 +1,30 @@
+int a,i,aux;
+aux=0;
+a=11;
+
+aux=0;
+
+if(a<=1){
+    aux=1;
+}
+else{
+
+    for(i=2;i<=a/2;i=i+1;){
+       a=11;
+
+    }
+}
+
+
+print("i is:");
+print(i);
+
+print("aux is:");
+print(aux);
+
+if(aux==1){
+    print("a is not prime");
+}
+else{
+    print("a is prime");
+}
