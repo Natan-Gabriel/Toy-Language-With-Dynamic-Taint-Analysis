@@ -9,7 +9,7 @@ public class RelationalExp implements Exp{
 	 Exp e1;
 	 Exp e2;
 	 //int op; //1-plus, 2-minus, 3-star, 4-divide
-	 String op="<";
+	 String op;
 
 	 public RelationalExp(String a,Exp m,Exp n) {e1=m;e2=n;op=a;}
 	 public String toString() {return e1.toString()+op+e2.toString();}
@@ -35,7 +35,7 @@ public class RelationalExp implements Exp{
 				 throw new VarNotDefined("second operand is not an integer");
 		 }else
 			 throw new VarNotDefined("first operand is not an integer");
-		
+
 	 }
 	 public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 return eval(tbl,hp).getType();

@@ -36,11 +36,11 @@ public class ArithExp implements Exp{
 					 if(n2==0) 
 						 throw new DivByZero("division by zero");
 					 else return new IntValue(n1/n2,i1.getTaint() || i2.getTaint());
+				 throw new CustomException("invalid operator");
 			 }else
 				 throw new VarNotDefined("second operand is not an integer");
 		 }else
 			 throw new VarNotDefined("first operand is not an integer");
-		 return new IntValue(1/1);
 	 }
 	 public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 return eval(tbl,hp).getType();

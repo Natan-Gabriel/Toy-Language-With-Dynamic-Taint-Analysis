@@ -58,3 +58,27 @@ SymTable:
 Out:
 FileTable:
 
+ExeStack:
+(v is of IntType;((v=get_input();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=get_input();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=get_input();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=get_input();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
