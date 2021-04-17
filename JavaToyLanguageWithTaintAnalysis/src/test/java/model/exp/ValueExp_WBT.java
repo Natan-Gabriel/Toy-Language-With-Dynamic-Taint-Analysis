@@ -7,6 +7,7 @@ import ctrl.iCtrl;
 import model.PrgState;
 import model.adt.*;
 import model.stmt.IStmt;
+import model.values.BoolValue;
 import model.values.IntValue;
 import model.values.StringValue;
 import model.values.Value;
@@ -23,7 +24,8 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-public class GetInput_WBT {
+public class ValueExp_WBT {
+
     static MyIStack<IStmt> exeStack;
     static MyIDictionary<Integer,IStmt> exeDictionary;
     static MyIDictionary<String, Value> symTable;
@@ -48,44 +50,15 @@ public class GetInput_WBT {
         fTbl = new MyDictionary<StringValue, BufferedReader>();
         heap = new MyHeap();
     }
+
     @Test
     public void tc_AllValid() throws CustomException, VarNotDefined, DivByZero {
 
-        GetInput exp = new GetInput();
-
-        InputStream original = System.in; // backup System.in to restore it later
-        ByteArrayInputStream in = new ByteArrayInputStream("44".getBytes());
-        System.setIn(in);
-
-        IntValue res = (IntValue)exp.eval(symTable,heap);
-
-        System.setIn(original);
-
-        assertEquals(res.getVal(),44);
+        ValueExp exp = new ValueExp(new IntValue(7));
+        Value res = exp.eval(symTable,heap);
+        assertEquals(res,new IntValue(7));
 
     }
 
-    @Test
-    public void tc_AllInvalid() throws CustomException, VarNotDefined, DivByZero {
-
-        GetInput exp = new GetInput();
-
-        InputStream original = System.in; // backup System.in to restore it later
-        ByteArrayInputStream in = new ByteArrayInputStream("string".getBytes());
-        System.setIn(in);
-
-        boolean aux=true;
-        try {
-            Value res = exp.eval(symTable,heap);
-        }
-        catch(CustomException e){
-            aux=false;
-        }
-        assertFalse(aux);
-
-        System.setIn(original);
-
-
-    }
 
 }

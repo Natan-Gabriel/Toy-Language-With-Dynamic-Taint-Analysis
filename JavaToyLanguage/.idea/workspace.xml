@@ -2,11 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="226013cf-1399-4c75-850e-7a6ffaee1f60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_close3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaToyLanguage/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaToyLanguage/log3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/exp/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/ArithExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/exp/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/RelationalExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/exp/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exp/VarExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_close.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_close2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_open.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_open2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_read.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_read2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_read3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_read4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_read5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/files/test_read6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/exp/GetInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/exp/GetInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/exp/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/exp/VarExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/stmt/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/stmt/readFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/values/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/values/IntValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/values/RefValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/values/RefValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/test/java/model/exp/GetInput_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/test/java/model/exp/GetInput_WBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/test/java/model/stmt/AssignStmt_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/test/java/model/stmt/AssignStmt_WBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/exp/GetInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/exp/GetInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/exp/VarExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/exp/VarExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/stmt/readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/stmt/readFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/values/IntValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/values/IntValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/values/RefValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/values/RefValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/test-classes/model/exp/GetInput_WBT.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/test-classes/model/exp/GetInput_WBT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/test-classes/model/stmt/AssignStmt_WBT.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/test-classes/model/stmt/AssignStmt_WBT.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

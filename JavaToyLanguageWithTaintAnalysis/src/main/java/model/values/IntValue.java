@@ -1,6 +1,8 @@
 package model.values;
 import model.types.*;
 
+import java.util.Objects;
+
 public class IntValue implements Value{
 	int val;
 	boolean taint;
@@ -13,6 +15,7 @@ public class IntValue implements Value{
 		 else
 			 return false;
 	 }
+
 	public Type getType() {return new IntType();}
 	public int getVal() {return val;}
 	public boolean getTaint(){return  taint;}

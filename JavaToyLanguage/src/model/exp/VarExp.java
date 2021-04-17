@@ -8,7 +8,10 @@ public class VarExp implements Exp{
 	//....
 	public VarExp(String s) {id=s;}
 	public String toString() {return id;}
-	public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp)  {return tbl.lookup(id);}
+	public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp)  {
+		
+		return tbl.lookup(id);
+	}
 	public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) {
 			return eval(tbl,hp).getType();
 	}

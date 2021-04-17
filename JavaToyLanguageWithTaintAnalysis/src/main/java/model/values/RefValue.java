@@ -7,6 +7,8 @@ public class RefValue implements Value{
 	 boolean taint;
 	 public RefValue(int a,Type t) {address=a;locationType=t;taint=false;}
 	 public RefValue() {address=1;locationType=new IntType();taint=false;}
+
+
 	 public String toString() {return "("+Integer.toString(address)+","+locationType.toString()+")";}
 	 public int getAddr() {return address;}
 	 public Type getType() { return new RefType(locationType);}
