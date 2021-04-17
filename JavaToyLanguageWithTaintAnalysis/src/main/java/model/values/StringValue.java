@@ -10,7 +10,7 @@ public class StringValue implements Value{
 	public StringValue(String s) {str=s;taint=false;}
 	public StringValue() {str="";taint=false;}
 	public boolean equals(Object another){
-		 if ((another instanceof StringValue) && ((StringValue) another).getVal()==str)
+		 if ((another instanceof StringValue) && ((StringValue) another).getVal().equals(str))
 			 return true;
 		 else
 			 return false;

@@ -40,6 +40,7 @@ public class closeRFile implements IStmt{
 		 	 	throw new VarNotDefined("The var is not a string");
 		 StringValue val1=(StringValue)val;
 		 MyIDictionary<StringValue, BufferedReader> fTbl=state.getFileTable();
+		 //System.out.println("fTbl in closeRFile"+fTbl);
 		 if(!fTbl.isDefined(val1))
 			 throw new VarNotDefined("VarNotDefined");
 			 

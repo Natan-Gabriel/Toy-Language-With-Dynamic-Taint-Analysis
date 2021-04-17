@@ -20,7 +20,7 @@ public class WhileStmt implements IStmt{
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
-
+		 //System.out.println("WHILE");
 		 MyIStack<Integer> nextInstructions=state.getNextInstructions();
 
 		 Value val=exp.eval(symTbl,hp);
@@ -53,6 +53,7 @@ public class WhileStmt implements IStmt{
 		
 		 return state;
 	 }
+	 public List<IStmt> getStatements() {return s;}
 	public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){instructionNumber=number;}
 }

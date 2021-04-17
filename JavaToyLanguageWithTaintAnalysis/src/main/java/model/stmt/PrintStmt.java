@@ -27,7 +27,8 @@ public class PrintStmt implements IStmt{
 		 lst.add(val);
 		 System.out.println(val);
 		 //state.setNextInstruction(getStatementNumber()+1);
-		 state.getNextInstructions().push(getStatementNumber()+1);
+		 if(state.getNextInstructions().isEmpty())
+		 	state.getNextInstructions().push(getStatementNumber()+1);
 		 return state;
 		 //}
 		// catch(DivByZero e) {
