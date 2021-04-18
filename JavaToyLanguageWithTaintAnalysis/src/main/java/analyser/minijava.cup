@@ -31,8 +31,8 @@ parser code {:
         Parser p = new Parser(lexer,csf);
 
         //XMLElement e = (XMLElement)p.parse().value;
-        System.out.println("aici");
-        System.out.println(p.parse().value);
+        //System.out.println("aici");
+        //System.out.println(p.parse().value);
 
         /*for (XMLElement el: SyntaxTreeXPath.query(args[2],e)){
         	  System.out.println(el.getTagname());
@@ -68,9 +68,9 @@ parser code {:
             Parser p = new Parser(lexer,csf);
 
             //XMLElement e = (XMLElement)p.parse().value;
-            System.out.println("aici");
+            //System.out.println("aici");
             Object res=p.parse().value;
-            System.out.println("res:"+res+"res_printed");
+            //System.out.println("res:"+res+"res_printed");
             return map;
 
         }
@@ -110,7 +110,7 @@ precedence left ELSE, UNOP, BUNOP, BBINOP;
 
 
 program   ::=  decllist:d stmtlist:s
-    {: System.out.println("before"+map+"after");
+    {: //System.out.println("before"+map+"after");
      RESULT = d+s; :}
     ;
 decllist  ::=  decl:d decllist:dl
@@ -122,7 +122,7 @@ decllist  ::=  decl:d decllist:dl
     ;
 
 decl ::= TYPE IDENT:i identlist:il  SEMICOLON
-    {: System.out.println(i) ;
+    {: //System.out.println(i) ;
     map.put(count,new VarDeclStmt(i,new IntType(),count,ixleft.getLine()));
     String res="";
     res+="{"+count+",new VarDeclStmt(\""+i+"\",new IntType(),"+count+","+ixleft.getLine()+")},";
@@ -170,8 +170,8 @@ stmt ::= SEMICOLON
             map.put(newStatementNumber,stmt);
         }
         RESULT = new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size());
-        System.out.println("count-sl.size()"+(count-sl.size()));
-        System.out.println("count,sl.size()"+count+sl.size());
+        //System.out.println("count-sl.size()"+(count-sl.size()));
+        //System.out.println("count,sl.size()"+count+sl.size());
         map.put(count-sl.size(),new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size()));
         count++;
     :}
@@ -209,15 +209,17 @@ stmt ::= SEMICOLON
                 map.put(newStatementNumber,stmt);
             }
             RESULT = new WhileStmt((Exp)e,sl,count-sl.size());
-            System.out.println("count-sl.size()"+(count-sl.size()));
-            System.out.println("count,sl.size()"+count+sl.size());
+            //System.out.println(e);
+            //System.out.println(sl);
+            //System.out.println("count-sl.size()"+(count-sl.size()));
+            //System.out.println("count,sl.size()"+count+sl.size());
             map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
             count++;
         :}
     | FOR LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END
     {:
         int newStatementNumber;
-        System.out.println("s1.getStatementNumber()"+s1.getStatementNumber());
+        //System.out.println("s1.getStatementNumber()"+s1.getStatementNumber());
         /*for(IStmt stmt : sl){
             newStatementNumber=stmt.getStatementNumber()+1;
             stmt.setStatementNumber(newStatementNumber);
@@ -231,8 +233,8 @@ stmt ::= SEMICOLON
         sl.add(s3);
 
         RESULT = new WhileStmt((Exp)e,sl,count-sl.size());
-        System.out.println("count-sl.size()"+(count-sl.size()));
-        System.out.println("count,sl.size()"+count+sl.size());
+        //System.out.println("count-sl.size()"+(count-sl.size()));
+        //System.out.println("count,sl.size()"+count+sl.size());
         map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
         count++;
     :}
@@ -269,12 +271,13 @@ logicexpr ::= BOOLCONST:c
     {: System.out.println("BOOLCONST");
        RESULT = new ValueExp(new BoolValue(c));  :}
     | expr:e1 COMP:op expr:e2
-    {: System.out.println("COMP"); RESULT = new RelationalExp(op,e1,e2); //RelationalExp
+    {: //System.out.println("COMP");
+    RESULT = new RelationalExp(op,e1,e2); //RelationalExp
      :}
 
     ;
 stringexp ::= STRINGCONST:sc
-    {: System.out.println("STRINGCONST");
+    {: //System.out.println("STRINGCONST");
       RESULT = new ValueExp(new StringValue(sc));  :}
     ;
 
@@ -290,15 +293,15 @@ expr ::= INTCONST:c
      :}
 
     | expr:e1 BINOPPRIORITY1:op expr:e2
-    {:  System.out.println("BINOP:op"+op);
+    {:  //System.out.println("BINOP:op"+op);
     RESULT = new ArithExp(op,e1, e2);
     :}
     | expr:e1 BINOPPRIORITY2:op expr:e2
-    {:  System.out.println("BINOP:op"+op);
+    {:  //System.out.println("BINOP:op"+op);
     RESULT = new ArithExp(op,e1, e2);
     :}
     | BINOPPRIORITY2:op expr:e
-    {:  System.out.println("BINOP:op"+op);
+    {:  //System.out.println("BINOP:op"+op);
     if(op=='+')
         RESULT = e;
     else if(op=='-')
@@ -308,7 +311,7 @@ expr ::= INTCONST:c
      {: RESULT = new LogicExp(op,e1,e2); //LogicExp
       :}
     | logicexpr : l
-     {:System.out.println("BOOLCONST");
+     {: //System.out.println("BOOLCONST");
        RESULT = l;
      :}
      | READ_INTEGER

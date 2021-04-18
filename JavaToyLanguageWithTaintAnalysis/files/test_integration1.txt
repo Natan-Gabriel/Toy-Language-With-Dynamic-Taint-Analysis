@@ -1,0 +1,32 @@
+int number,index,aux,factorial_with_while,factorial_with_for,expected_result;
+
+open_file("files/integer.txt");
+read_file("files/integer.txt",number);
+read_file("files/integer.txt",expected_result);
+close_file("files/integer.txt");
+
+
+factorial_with_while=1;
+factorial_with_for=1;
+
+aux=0;
+
+for(index=1;index<=number;index=index+1;){
+    factorial_with_for=factorial_with_for*index;
+}
+
+index=1;
+while(index<=number){
+    factorial_with_while=factorial_with_while*index;
+    index=index+1;
+}
+
+print(factorial_with_while);
+print(factorial_with_for);
+
+if(factorial_with_while==factorial_with_for){
+    print("both ways of computing are correct");
+}
+else{
+    print("something went wrong");
+}

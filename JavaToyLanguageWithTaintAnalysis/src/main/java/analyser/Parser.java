@@ -315,8 +315,8 @@ public class Parser extends java_cup.runtime.lr_parser {
         Parser p = new Parser(lexer,csf);
 
         //XMLElement e = (XMLElement)p.parse().value;
-        System.out.println("aici");
-        System.out.println(p.parse().value);
+        //System.out.println("aici");
+        //System.out.println(p.parse().value);
 
         /*for (XMLElement el: SyntaxTreeXPath.query(args[2],e)){
         	  System.out.println(el.getTagname());
@@ -352,9 +352,9 @@ public class Parser extends java_cup.runtime.lr_parser {
             Parser p = new Parser(lexer,csf);
 
             //XMLElement e = (XMLElement)p.parse().value;
-            System.out.println("aici");
+            //System.out.println("aici");
             Object res=p.parse().value;
-            System.out.println("res:"+res+"res_printed");
+            //System.out.println("res:"+res+"res_printed");
             return map;
 
         }
@@ -406,7 +406,7 @@ class CUP$Parser$actions {
 		Location sxleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xleft;
 		Location sxright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xright;
 		List<IStmt> s = (List<IStmt>)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 System.out.println("before"+map+"after");
+		 //System.out.println("before"+map+"after");
      RESULT = d+s; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("program",0, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -462,7 +462,7 @@ class CUP$Parser$actions {
 		Location ilxleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).xleft;
 		Location ilxright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).xright;
 		List<String> il = (List<String>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
-		 System.out.println(i) ;
+		 //System.out.println(i) ;
     map.put(count,new VarDeclStmt(i,new IntType(),count,ixleft.getLine()));
     String res="";
     res+="{"+count+",new VarDeclStmt(\""+i+"\",new IntType(),"+count+","+ixleft.getLine()+")},";
@@ -588,8 +588,8 @@ class CUP$Parser$actions {
             map.put(newStatementNumber,stmt);
         }
         RESULT = new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size());
-        System.out.println("count-sl.size()"+(count-sl.size()));
-        System.out.println("count,sl.size()"+count+sl.size());
+        //System.out.println("count-sl.size()"+(count-sl.size()));
+        //System.out.println("count,sl.size()"+count+sl.size());
         map.put(count-sl.size(),new IfStmt((Exp)e,sl,new ArrayList<IStmt>(),count-sl.size()));
         count++;
     
@@ -654,8 +654,10 @@ class CUP$Parser$actions {
                 map.put(newStatementNumber,stmt);
             }
             RESULT = new WhileStmt((Exp)e,sl,count-sl.size());
-            System.out.println("count-sl.size()"+(count-sl.size()));
-            System.out.println("count,sl.size()"+count+sl.size());
+            //System.out.println(e);
+            //System.out.println(sl);
+            //System.out.println("count-sl.size()"+(count-sl.size()));
+            //System.out.println("count,sl.size()"+count+sl.size());
             map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
             count++;
         
@@ -681,7 +683,7 @@ class CUP$Parser$actions {
 		List<IStmt> sl = (List<IStmt>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
 		
         int newStatementNumber;
-        System.out.println("s1.getStatementNumber()"+s1.getStatementNumber());
+        //System.out.println("s1.getStatementNumber()"+s1.getStatementNumber());
         /*for(IStmt stmt : sl){
             newStatementNumber=stmt.getStatementNumber()+1;
             stmt.setStatementNumber(newStatementNumber);
@@ -695,8 +697,8 @@ class CUP$Parser$actions {
         sl.add(s3);
 
         RESULT = new WhileStmt((Exp)e,sl,count-sl.size());
-        System.out.println("count-sl.size()"+(count-sl.size()));
-        System.out.println("count,sl.size()"+count+sl.size());
+        //System.out.println("count-sl.size()"+(count-sl.size()));
+        //System.out.println("count,sl.size()"+count+sl.size());
         map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
         count++;
     
@@ -809,7 +811,8 @@ class CUP$Parser$actions {
 		Location e2xleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xleft;
 		Location e2xright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xright;
 		Exp e2 = (Exp)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 System.out.println("COMP"); RESULT = new RelationalExp(op,e1,e2); //RelationalExp
+		 //System.out.println("COMP");
+    RESULT = new RelationalExp(op,e1,e2); //RelationalExp
      
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("logicexpr",5, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -822,7 +825,7 @@ class CUP$Parser$actions {
 		Location scxleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xleft;
 		Location scxright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xright;
 		String sc = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 System.out.println("STRINGCONST");
+		 //System.out.println("STRINGCONST");
       RESULT = new ValueExp(new StringValue(sc));  
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("stringexp",8, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -880,7 +883,7 @@ class CUP$Parser$actions {
 		Location e2xleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xleft;
 		Location e2xright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xright;
 		Exp e2 = (Exp)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		  System.out.println("BINOP:op"+op);
+		  //System.out.println("BINOP:op"+op);
     RESULT = new ArithExp(op,e1, e2);
     
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("expr",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
@@ -900,7 +903,7 @@ class CUP$Parser$actions {
 		Location e2xleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xleft;
 		Location e2xright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xright;
 		Exp e2 = (Exp)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		  System.out.println("BINOP:op"+op);
+		  //System.out.println("BINOP:op"+op);
     RESULT = new ArithExp(op,e1, e2);
     
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("expr",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
@@ -917,7 +920,7 @@ class CUP$Parser$actions {
 		Location exleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xleft;
 		Location exright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xright;
 		Exp e = (Exp)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		  System.out.println("BINOP:op"+op);
+		  //System.out.println("BINOP:op"+op);
     if(op=='+')
         RESULT = e;
     else if(op=='-')
@@ -953,7 +956,7 @@ class CUP$Parser$actions {
 		Location lxleft = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xleft;
 		Location lxright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.peek()).xright;
 		Exp l = (Exp)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		System.out.println("BOOLCONST");
+		 //System.out.println("BOOLCONST");
        RESULT = l;
      
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("expr",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
