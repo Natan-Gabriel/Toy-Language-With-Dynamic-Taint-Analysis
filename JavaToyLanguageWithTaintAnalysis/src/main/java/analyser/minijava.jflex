@@ -48,7 +48,7 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
 
 BoolLiteral = true | false
 
-Ident = [a-zA-Z$_] [a-zA-Z0-9$_]*
+Ident = [a-zA-Z_] [a-zA-Z0-9_]*
 
 IntLiteral = 0 | [1-9][0-9]*
 

@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="226013cf-1399-4c75-850e-7a6ffaee1f60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/analyser/minijava.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/stmt/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/stmt/PrintStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/values/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/src/main/java/model/values/StringValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/stmt/PrintStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/stmt/PrintStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/values/StringValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguageWithTaintAnalysis/target/classes/model/values/StringValue.class" afterDir="false" />
-    </list>
+    <list default="true" id="226013cf-1399-4c75-850e-7a6ffaee1f60" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
