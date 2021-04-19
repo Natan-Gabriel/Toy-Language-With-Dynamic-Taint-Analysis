@@ -8,6 +8,7 @@ import model.PrgState;
 import model.adt.*;
 import model.stmt.IStmt;
 import model.stmt.NopStmt;
+import model.values.IntValue;
 import model.values.StringValue;
 import model.values.Value;
 import org.junit.Test;
@@ -18,6 +19,8 @@ import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 public class Big_Bang_Integration {
 
@@ -46,6 +49,10 @@ public class Big_Bang_Integration {
         iCtrl ctrl = new Ctrl(repo, false);
         ctrl.allStep();
 
+        MyIList<Value> res=new MyList<Value>();
+        res.add(new IntValue(720));
+        res.add(new IntValue(720));
+        assertEquals(out,res);
 
 
     }

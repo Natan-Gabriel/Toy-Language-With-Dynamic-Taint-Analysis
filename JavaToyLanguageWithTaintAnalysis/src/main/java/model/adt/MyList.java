@@ -8,15 +8,15 @@ public class MyList<T> implements MyIList<T>{
 	//	ArrayList<T> list1 = new ArrayList<T>(list); 
 	//	ArrayList<T> b1 = new ArrayList<T>(b.getList()); 
 	//    return list1.equals(b1);}
-	/*@Override
+	@Override
     public boolean equals(Object other) {
         if (this == other)
             return true;
         if (!(other instanceof MyList))
             return false;
-        MyIList fc = (MyIList) other;
+        MyIList<T> fc = (MyIList<T>) other;
         return list.equals(fc.getList());
-    }*/
+    }
 	public MyList(ArrayList<T> l){list=l;}
 	public MyList(){list=new ArrayList<T>();}
 	public ArrayList<T> getList(){return list;}

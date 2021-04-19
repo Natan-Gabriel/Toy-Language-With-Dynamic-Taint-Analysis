@@ -23,10 +23,3 @@ while(index<=number){
 
 print(factorial_with_while);
 print(factorial_with_for);
-
-if(factorial_with_while==factorial_with_for){
-    print("both ways of computing are correct");
-}
-else{
-    print("something went wrong");
-}
