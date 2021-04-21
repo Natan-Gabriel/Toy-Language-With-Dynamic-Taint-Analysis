@@ -28,7 +28,7 @@ public class Big_Bang_Integration {
         IStmt ex=new NopStmt();
         boolean flag = false;
 
-        Map<Integer, IStmt> map = (Map<Integer, IStmt>) Parser.parse("files/test_integration1.txt");
+        Map<Integer, IStmt> map = (Map<Integer, IStmt>) Parser.parse("files/test_integration_if_nested.txt");
         System.out.println("map:"+map);
         MyIStack<IStmt> exeStack = new MyStack<IStmt>();
         MyIDictionary<Integer, IStmt> exeDictionary = new MyDictionary<Integer, IStmt>((HashMap<Integer, IStmt>) map);
@@ -44,7 +44,8 @@ public class Big_Bang_Integration {
         list.add(prg);
         iRepo repo = new Repo(list, "log.txt");
         iCtrl ctrl = new Ctrl(repo, true);
-        ctrl.allStep();
+//        ctrl.allStep();
+        ctrl.givenNumberOfSteps(7);
 
 
 

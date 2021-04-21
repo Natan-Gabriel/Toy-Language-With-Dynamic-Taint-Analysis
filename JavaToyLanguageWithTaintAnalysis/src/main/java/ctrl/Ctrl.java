@@ -139,6 +139,26 @@ public class Ctrl implements iCtrl{
 		 if(flag==true)
 			 displayPrgState(prg);
 		 }
+	public void givenNumberOfSteps(int number) throws IOException, DivByZero, VarIsDefined, VarNotDefined, TaintedAddress, ExeStackEmpty, CustomException {
+
+		PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyRepoInterface
+		repo.logPrgStateExec();
+
+		boolean end=false;
+
+		while(end==false && number>0){
+			oneStepUsingDictionary(prg);
+			if (prg.getNextInstructions().lastElement()==1+prg.getExeDictionary().getSize()){
+				end=true;
+				prg.setNextInstruction(1);
+
+			}
+			number-=1;
+		}
+
+		if(flag==true)
+			displayPrgState(prg);
+	}
 	public void allStep(int b) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined,Exception{
 		 PrgState prg = repo.getCrtPrg(b); // repo is the controller field of type MyRepoInterface
 		 //System.out.println(prg);//here you can display the prg state

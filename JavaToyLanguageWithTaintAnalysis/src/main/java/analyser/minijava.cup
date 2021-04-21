@@ -9,6 +9,7 @@ import java_cup.runtime.Symbol;
 import java_cup.runtime.ComplexSymbolFactory.ComplexSymbol;
 import java_cup.runtime.ComplexSymbolFactory;
 import java_cup.runtime.ScannerBuffer;
+import javafx.util.Pair;
 parser code {:
     int count=1;
     static Map<Integer, IStmt> map = new HashMap<Integer, IStmt>();
@@ -101,7 +102,7 @@ non terminal String decl;
 non terminal List<String> identlist;
 non terminal Exp expr,logicexpr,relexp,logicexpr1,stringexp;
 non terminal Pair<List<IStmt>, List<IStmt>> stmt;
-non terminal List<IStmt> stmtlist;
+non terminal Pair<List<IStmt>, List<IStmt>> stmtlist;
 
 precedence left COMP;
 precedence left BINOPPRIORITY2;
@@ -142,9 +143,9 @@ identlist  ::= identlist:il COMMA IDENT:i
     ;
 
 stmtlist  ::= stmtlist:sl stmt:s
-    {: sl.addAll(s); RESULT = sl; :}
+    {: sl.getKey().addAll(s.getKey()); sl.getValue().addAll(s.getValue()); RESULT = sl; :}
     | /* empty stmtlist */
-    {: RESULT = new ArrayList<IStmt>(); :}
+    {: RESULT = new Pair<List<IStmt>,List<IStmt>>(new ArrayList<IStmt>(),new ArrayList<IStmt>()); :}
     ;
 
 stmt ::= SEMICOLON
@@ -153,8 +154,9 @@ stmt ::= SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
      map.put(count,new AssignStmt(i,(Exp)e,count,ixleft.getLine()));
 
-     Pair<List<IStmt>, List<IStmt>> res = new Pair<>(new ArrayList<String>(Arrays.asList(new AssignStmt(i,(Exp)e,count,ixleft.getLine()))),
-                                            new ArrayList<String>(Arrays.asList(new AssignStmt(i,(Exp)e,count,ixleft.getLine()))));
+     IStmt stmt = new AssignStmt(i,(Exp)e,count,ixleft.getLine());
+     Pair<List<IStmt>, List<IStmt>> res = new Pair<>(new ArrayList<IStmt>(Arrays.asList(stmt)),
+                                            new ArrayList<IStmt>(Arrays.asList(stmt)));
      System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},");
      RESULT = res;
      count++;
@@ -162,14 +164,13 @@ stmt ::= SEMICOLON
 
     | IF LPAR expr:e RPAR BEGIN stmtlist:sl1 END
         {:
-           /*map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
-           count++;
-           RESULT = new IfStmt((Exp)e,sl1,sl2,count); */
-
-           for(IStmt stmt : sl1.getKey()){
+           //System.out.println("sl1.getValue():"+sl1.getValue());
+           for(IStmt stmt : sl1.getValue()){
 
                int newStatementNumber=stmt.getStatementNumber()+1;
+               System.out.println("stmt.getStatementNumber():"+stmt.getStatementNumber());
                stmt.setStatementNumber(newStatementNumber);
+               System.out.println("stmt.getStatementNumber():"+stmt.getStatementNumber());
                map.put(newStatementNumber,stmt);
                System.out.println(stmt+"with number"+newStatementNumber);
 
@@ -183,119 +184,23 @@ stmt ::= SEMICOLON
 
           //Pair<List<IStmt>, List<IStmt>> pair = new Pair<>(1, "One");
 
-          direct_children.add(new IfStmt((Exp)e,sl1,new ArrayList<IStmt>(),count-sl1.size()));
-          all_children.add(new IfStmt((Exp)e,sl1,new ArrayList<IStmt>(),count-sl1.size()));
-          all_children.addAll(sl1);
+          System.out.println("This is sl1.getKey():"+sl1.getKey());
+          List<IStmt> empty_list = new ArrayList<IStmt>();
+          IStmt if_stmt = new IfStmt((Exp)e,sl1.getKey(),empty_list,count-sl1.getValue().size());
+          direct_children.add(if_stmt);
+          all_children.add(if_stmt);
+          all_children.addAll(sl1.getValue());
+
+
             System.out.println("count in if"+count);
 
-            Pair<List<IStmt>, List<IStmt>> pair = new Pair<>(direct_children, all_children);
+           Pair<List<IStmt>, List<IStmt>> res = new Pair<>(direct_children, all_children);
+
+           System.out.println("Pair<List<IStmt>, List<IStmt>> res = "+res);
            RESULT = res;
-           map.put(count-sl1.size()-sl2.size(),new IfStmt((Exp)e,sl1.getKey(),new Pair<>(new ArrayList<IStmt>(),new ArrayList<IStmt>()),count-sl1.getValue().size()));
+           map.put(count-sl1.getValue().size(),if_stmt);
            count++;
          :}
-
-
-    | IF LPAR expr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END
-    {:
-       /*map.put(count,new IfStmt((Exp)e,sl1,sl2,count));
-       count++;
-       RESULT = new IfStmt((Exp)e,sl1,sl2,count); */
-
-       List<IStmt> aux = new ArrayList<IStmt>();
-
-       for(IStmt stmt : sl1){
-
-           int newStatementNumber=stmt.getStatementNumber()+1;
-           stmt.setStatementNumber(newStatementNumber);
-           map.put(newStatementNumber,stmt);
-           System.out.println(stmt+"with number"+newStatementNumber);
-
-       }
-
-       for(IStmt stmt : sl2){
-
-          int newStatementNumber=stmt.getStatementNumber()+1;
-          stmt.setStatementNumber(newStatementNumber);
-          map.put(newStatementNumber,stmt);
-          System.out.println(stmt+"with number"+newStatementNumber);
-      }
-
-       /*for(IStmt stmt : aux){
-          int newStatementNumber=stmt.getStatementNumber()+1;
-          stmt.setStatementNumber(newStatementNumber);
-          map.put(newStatementNumber,stmt);
-       }*/
-
-      System.out.println("sl1"+sl1);
-      System.out.println("sl2"+sl2);
-      List<IStmt> res = new ArrayList<IStmt>();
-      res.add(new IfStmt((Exp)e,sl1,sl2,count-sl1.size()-sl2.size()));
-      res.addAll(sl1);
-      res.addAll(sl2);
-        System.out.println("count in if"+count);
-       RESULT = res;
-       //System.out.println("count-sl.size()"+(count-sl.size()));
-       //System.out.println("count,sl.size()"+count+sl.size());
-       map.put(count-sl1.size()-sl2.size(),new IfStmt((Exp)e,sl1,sl2,count-sl1.size()-sl2.size()));
-       count++;
-     :}
-    | WHILE LPAR expr:e RPAR BEGIN stmtlist:sl END
-        {:
-
-            for(IStmt stmt : sl){
-                int newStatementNumber=stmt.getStatementNumber()+1;
-                stmt.setStatementNumber(newStatementNumber);
-                map.put(newStatementNumber,stmt);
-            }
-            List<IStmt> res = new ArrayList<IStmt>();
-            res.add(new WhileStmt((Exp)e,sl,count-sl.size()));
-            res.addAll(sl);
-            RESULT = res;
-
-            System.out.println("count-sl.size()"+(count-sl.size()));
-            System.out.println("count,sl.size()"+count+sl.size());
-            map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
-            count++;
-        :}
-    | FOR LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END
-    {:
-        int newStatementNumber;
-        System.out.println("s1.getStatementNumber()"+s1.get(0).getStatementNumber());
-        System.out.println("sl.size()"+sl.size());
-        /*for(IStmt stmt : sl){
-            newStatementNumber=stmt.getStatementNumber()+1;
-            stmt.setStatementNumber(newStatementNumber);
-            map.put(newStatementNumber,stmt);
-        }*/
-
-        newStatementNumber=s3.get(0).getStatementNumber()+1+sl.size();
-        s3.get(0).setStatementNumber(newStatementNumber);
-        map.put(newStatementNumber,s3.get(0));
-
-        //sl.addAll(s1);
-        sl.addAll(s3);
-
-        List<IStmt> res = new ArrayList<IStmt>();
-        res.addAll(s1);
-        res.add(new WhileStmt((Exp)e,sl,count-sl.size()));
-        res.addAll(sl);
-        //res.addAll(s3);
-        RESULT = res;
-        System.out.println("count-sl.size()"+(count-sl.size()));
-        System.out.println("count,sl.size()"+count+sl.size());
-        map.put(count-sl.size(), new WhileStmt((Exp)e,sl,count-sl.size()));
-        count++;
-    :}
-
-    | PRINT LPAR expr:e RPAR SEMICOLON
-        {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
-           List<IStmt> res = new ArrayList<IStmt>();
-           res.add(new PrintStmt((Exp)e,count));
-
-           map.put(count,new PrintStmt((Exp)e,count));
-           RESULT = res;
-           count++;
-          :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;
