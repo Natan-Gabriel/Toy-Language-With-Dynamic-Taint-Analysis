@@ -186,7 +186,9 @@ stmt ::= SEMICOLON
 
           System.out.println("This is sl1.getKey():"+sl1.getKey());
           List<IStmt> empty_list = new ArrayList<IStmt>();
-          IStmt if_stmt = new IfStmt((Exp)e,sl1.getKey(),empty_list,count-sl1.getValue().size());
+          IfStmt if_stmt = new IfStmt((Exp)e,sl1.getKey(),empty_list,count-sl1.getValue().size(),sl1.getValue().size());
+          //if_stmt.setNextInstruction(count+1);
+          System.out.println("if_stmt.setNextInstruction is: "+(count+1));
           direct_children.add(if_stmt);
           all_children.add(if_stmt);
           all_children.addAll(sl1.getValue());

@@ -44,8 +44,8 @@ public class Big_Bang_Integration {
         list.add(prg);
         iRepo repo = new Repo(list, "log.txt");
         iCtrl ctrl = new Ctrl(repo, true);
-//        ctrl.allStep();
-        ctrl.givenNumberOfSteps(7);
+        ctrl.allStep();
+//        ctrl.givenNumberOfSteps(7);
 
 
 

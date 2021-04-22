@@ -15,8 +15,9 @@ public class IfStmt implements IStmt{
 	 List<IStmt> thenS;
 	 List<IStmt> elseS;
 	 int instructionNumber;
+	 int totalLength;
 	 
-	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _instructionNumber) {exp=e; thenS=t;elseS=el;instructionNumber=_instructionNumber;}
+	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _instructionNumber, int _totalLength) {exp=e; thenS=t;elseS=el;instructionNumber=_instructionNumber;totalLength = _totalLength;}
 	 public String toString(){ return "IF("+ exp.toString()+") THEN(" +thenS.toString()+")ELSE("+elseS.toString()+") instructionNumber"+instructionNumber;}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -29,7 +30,8 @@ public class IfStmt implements IStmt{
 		 if (val.getType().equals(new BoolType())) {
 			 BoolValue v = (BoolValue) val;
 			 System.out.println("instructionNumber+thenS.size()+elseS.size()+1:"+(instructionNumber+thenS.size()+elseS.size()+1));
-			 nextInstructions.push(instructionNumber+thenS.size()+elseS.size()+1);
+			 if (nextInstructions.getSize()==0 || nextInstructions.lastElement()!=instructionNumber+totalLength+1) // to avoid adding of same if ending instruction (in case of nested if's)
+			 	nextInstructions.push(instructionNumber+totalLength+1);
 			 if (v.getVal()) {
 
 			 	for(int i=thenS.size()-1;i>=0;i--) {
@@ -60,5 +62,7 @@ public class IfStmt implements IStmt{
 	 //...
 	 public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){instructionNumber=number;}
+	//public void  setNextInstruction(int number){nextInstruction=number;}
+
 }
 
