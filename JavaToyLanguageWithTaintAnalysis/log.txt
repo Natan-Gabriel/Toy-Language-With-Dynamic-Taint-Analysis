@@ -994,3 +994,15 @@ SymTable:
 Out:
 FileTable:
 
+ExeStack:
+nop
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+Out:
+FileTable:
+
