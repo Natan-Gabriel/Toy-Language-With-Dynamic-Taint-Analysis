@@ -1,0 +1,14 @@
+int i,j,k,factorial;
+
+for(i=0;i<5;i=i+1;)
+{
+    for(j=0;j<5;j=j+1;){
+        factorial=1;
+        for(k=1;k<=i+j;k=k+1;){
+            factorial=factorial*k;
+        }
+        print(factorial);
+        print(" ");
+    }
+    print("\n");
+}
