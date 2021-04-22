@@ -12,7 +12,7 @@ import java_cup.runtime.ScannerBuffer;
 import javafx.util.Pair;
 parser code {:
     int count=1;
-    static Map<Integer, IStmt> map = new HashMap<Integer, IStmt>();
+  static  Map<Integer, IStmt> map = new HashMap<Integer, IStmt>();
   public boolean syntaxErrors;
 
 
@@ -60,7 +60,7 @@ parser code {:
         transformer.transform(text, new StreamResult(new File("ast.html"))); */
     }
 
-    public static Object parse(String arg) throws Exception {
+    public synchronized static Object parse(String arg) throws Exception {
             // initialize the symbol factory
             ComplexSymbolFactory csf = new ComplexSymbolFactory();
             // create a buffering scanner wrapper
@@ -70,6 +70,7 @@ parser code {:
 
             //XMLElement e = (XMLElement)p.parse().value;
             System.out.println("aici");
+            map = new HashMap<Integer, IStmt>();
             Object res=p.parse().value;
             System.out.println("res:"+res+"res_printed");
             return map;
@@ -98,10 +99,10 @@ terminal Boolean BOOLCONST;
 
 non terminal String program;
 non terminal String decllist;
-non terminal String decl;
-non terminal List<String> identlist;
+non terminal Pair<String,Exp> assignment;
+non terminal List<Pair<String,Exp>> identlist;
 non terminal Exp expr,logicexpr,relexp,logicexpr1,stringexp;
-non terminal Pair<List<IStmt>, List<IStmt>> stmt;
+non terminal Pair<List<IStmt>, List<IStmt>> stmt,decl;
 non terminal Pair<List<IStmt>, List<IStmt>> stmtlist;
 
 precedence left COMP;
@@ -110,11 +111,11 @@ precedence left BINOPPRIORITY1;
 precedence left ELSE, UNOP, BUNOP, BBINOP;
 
 
-program   ::=  decllist:d stmtlist:s
+program   ::=  stmtlist:s
     {: System.out.println("before"+map+"after");
-     RESULT = d+s; :}
+     RESULT = s.toString(); :}
     ;
-decllist  ::=  decl:d decllist:dl
+decllist  ::= decl:d decllist:dl
     {:
     dl+=d; RESULT = dl;
     :}
@@ -122,24 +123,54 @@ decllist  ::=  decl:d decllist:dl
     {: RESULT = ""; :}
     ;
 
-decl ::= TYPE IDENT:i identlist:il  SEMICOLON
-    {: System.out.println(i) ;
-    map.put(count,new VarDeclStmt(i,new IntType(),count,ixleft.getLine()));
-    String res="";
-    res+="{"+count+",new VarDeclStmt(\""+i+"\",new IntType(),"+count+","+ixleft.getLine()+")},";
+decl ::= TYPE assignment:i identlist:il SEMICOLON
+    {:
+    IStmt decl_stmt,assign_stmt ;
+    Pair<List<IStmt>, List<IStmt>> res = new Pair<>(new ArrayList<IStmt>(),
+                                                new ArrayList<IStmt>());
+    decl_stmt = new VarDeclStmt(i.getKey(),new IntType(),count,ixleft.getLine());
+    res.getKey().add(decl_stmt);
+    res.getValue().add(decl_stmt);
+    map.put(count,decl_stmt);
     count++;
-    for(String elem : il){
-        map.put(count,new VarDeclStmt(elem,new IntType(),count,ixleft.getLine()));
-        res+="{"+count+",new VarDeclStmt(\""+elem+"\",new IntType(),"+count+","+ixleft.getLine()+")},";
+    if(i.getValue()!=null){
+        assign_stmt = new AssignStmt(i.getKey(),(Exp)i.getValue(),count,ixleft.getLine());
+        res.getKey().add(assign_stmt);
+        res.getValue().add(assign_stmt);
+        map.put(count,assign_stmt);
         count++;
+    }
+
+    for(Pair<String,Exp> elem : il){
+        decl_stmt = new VarDeclStmt(elem.getKey(),new IntType(),count,ixleft.getLine());
+        res.getKey().add(decl_stmt);
+        res.getValue().add(decl_stmt);
+        map.put(count,decl_stmt);
+        count++;
+        if(elem.getValue()!=null){
+            assign_stmt = new AssignStmt(elem.getKey(),(Exp)elem.getValue(),count,ixleft.getLine());
+            res.getKey().add(assign_stmt);
+            res.getValue().add(assign_stmt);
+            map.put(count,assign_stmt);
+            count++;
+        }
     }
 
     RESULT = res; :}
     ;
-identlist  ::= identlist:il COMMA IDENT:i
+assignment ::= IDENT:i ASSIGN expr:e
+     {:
+     RESULT = new Pair<String,Exp>(i,e);
+     :}
+     | IDENT:i
+     {:
+        RESULT = new Pair<String,Exp>(i,null);
+     :}
+    ;
+identlist  ::= identlist:il COMMA assignment:i
     {: il.add(i); RESULT = il; :}
      | /* empty identlist*/
-     {: RESULT = new ArrayList<String>(); :}
+     {: RESULT = new ArrayList<Pair<String,Exp>>(); :}
     ;
 
 stmtlist  ::= stmtlist:sl stmt:s
@@ -150,6 +181,16 @@ stmtlist  ::= stmtlist:sl stmt:s
 
 stmt ::= SEMICOLON
     {: :}
+    | decl:d
+    {:
+      /*
+      List<IStmt> direct_children = new ArrayList<IStmt>();
+      List<IStmt> all_children = new ArrayList<IStmt>();
+      Pair<List<IStmt>, List<IStmt>> res = new Pair<>(direct_children, all_children);
+      */
+      RESULT=d;
+
+    :}
     | IDENT:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
      map.put(count,new AssignStmt(i,(Exp)e,count,ixleft.getLine()));

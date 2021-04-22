@@ -105,6 +105,9 @@ public class Ctrl implements iCtrl{
 //		 parseTree();
 
 		boolean end=false;
+		if(prg.getExeDictionary().getSize()==0){
+			end=true;
+		}
 
 		while(end==false){
 			oneStepUsingDictionary(prg);
@@ -145,6 +148,9 @@ public class Ctrl implements iCtrl{
 		repo.logPrgStateExec();
 
 		boolean end=false;
+		if(prg.getExeDictionary().getSize()==0){
+			end=true;
+		}
 
 		while(end==false && number>0){
 			oneStepUsingDictionary(prg);
