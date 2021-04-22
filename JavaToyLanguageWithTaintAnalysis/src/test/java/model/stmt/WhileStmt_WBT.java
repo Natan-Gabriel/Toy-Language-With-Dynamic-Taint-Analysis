@@ -37,7 +37,7 @@ public class WhileStmt_WBT {
                 {1, new VarDeclStmt("x", new IntType(), 1, 1)},
                 {2, new WhileStmt(new ValueExp(new IntValue(5)),
                         new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ArithExp('+',new VarExp("x"), new
-                                ValueExp(new IntValue(1))),3,1))),2)},
+                                ValueExp(new IntValue(1))),3,1))),2,1)},
                 {3, new AssignStmt("x",new ArithExp('+',new VarExp("x"), new
                         ValueExp(new IntValue(1))),3,1)},
         }).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));
@@ -76,7 +76,7 @@ public class WhileStmt_WBT {
                 {1, new VarDeclStmt("x", new IntType(), 1, 1)},
                 {2, new WhileStmt(new RelationalExp("<=",new VarExp("x"),new ValueExp(new IntValue(11))),
                         new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x",new ArithExp('+',new VarExp("x"), new
-                                ValueExp(new IntValue(1))),3,1))),2)},
+                                ValueExp(new IntValue(1))),3,1))),2,1)},
                 {3, new AssignStmt("x",new ArithExp('+',new VarExp("x"), new
                         ValueExp(new IntValue(1))),3,1)},
         }).collect(Collectors.toMap(data ->(Integer) data[0], data -> (IStmt) data[1]));

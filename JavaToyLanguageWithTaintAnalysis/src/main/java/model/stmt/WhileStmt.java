@@ -13,8 +13,9 @@ public class WhileStmt implements IStmt{
 	 Exp exp;
 	List<IStmt> s;
 	int instructionNumber;
+	int totalLength;
 	 
-	 public WhileStmt(Exp e, List<IStmt> s1,int _instructionNumber ) {exp=e;s=s1;instructionNumber=_instructionNumber;}
+	 public WhileStmt(Exp e, List<IStmt> s1,int _instructionNumber,int _totalLength ) {exp=e;s=s1;instructionNumber=_instructionNumber; totalLength=_totalLength;}
 	 public String toString() { return "WHILE("+exp.toString()+") "+s.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -43,7 +44,8 @@ public class WhileStmt implements IStmt{
 
 			 }
 			 else{
-				 nextInstructions.push(instructionNumber+s.size()+1);
+				 if (nextInstructions.getSize()==0 || nextInstructions.lastElement()!=instructionNumber+totalLength+1) // to avoid adding of same if ending instruction (in case of nested if's)
+				 	 nextInstructions.push(instructionNumber+totalLength+1);
 				 //System.out.println("nextInstructions:"+nextInstructions);
 			 }
 

@@ -254,6 +254,77 @@ stmt ::= SEMICOLON
        map.put(count-sl1.getValue().size()-sl2.getValue().size(),if_stmt);
        count++;
      :}
+
+    | WHILE LPAR expr:e RPAR BEGIN stmtlist:sl END
+    {:
+
+        for(IStmt stmt : sl.getValue()){
+            int newStatementNumber=stmt.getStatementNumber()+1;
+            stmt.setStatementNumber(newStatementNumber);
+            map.put(newStatementNumber,stmt);
+        }
+
+          List<IStmt> direct_children = new ArrayList<IStmt>();
+          List<IStmt> all_children = new ArrayList<IStmt>();
+
+          WhileStmt while_stmt = new WhileStmt((Exp)e,sl.getKey(),count-sl.getValue().size(),sl.getValue().size());
+          direct_children.add(while_stmt);
+          all_children.add(while_stmt);
+          all_children.addAll(sl.getValue());
+
+        Pair<List<IStmt>, List<IStmt>> res = new Pair<>(direct_children, all_children);
+
+        RESULT = res;
+
+
+        map.put(count-sl.getValue().size(), while_stmt);
+        count++;
+    :}
+    | FOR LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END
+    {:
+
+        /*for(IStmt stmt : sl.getValue()){
+            int newStatementNumber=stmt.getStatementNumber()+1;
+            stmt.setStatementNumber(newStatementNumber);
+            map.put(newStatementNumber,stmt);
+        }*/
+
+          List<IStmt> direct_children = new ArrayList<IStmt>();
+          List<IStmt> all_children = new ArrayList<IStmt>();
+
+          sl.getKey().addAll(s3.getKey()); // s3 becomes part of while statement (last statement in while)
+          sl.getValue().addAll(s3.getValue());
+          WhileStmt while_stmt = new WhileStmt((Exp)e,sl.getKey(),count-sl.getValue().size(),sl.getValue().size());
+          direct_children.addAll(s1.getKey());
+          direct_children.add(while_stmt);
+          all_children.addAll(s1.getValue());
+          all_children.add(while_stmt);
+          all_children.addAll(sl.getValue());
+
+        Pair<List<IStmt>, List<IStmt>> res = new Pair<>(direct_children, all_children);
+
+        RESULT = res;
+
+        System.out.println("count-sl.getValue().size():"+(count-sl.getValue().size()));
+
+        s3.getKey().get(0).setStatementNumber(s3.getKey().get(0).getStatementNumber() + sl.getValue().size());
+        map.put(s3.getKey().get(0).getStatementNumber(), s3.getKey().get(0));
+
+
+        map.put(count-sl.getValue().size(), while_stmt);
+        System.out.println("map in for stmt:"+map);
+        count++;
+    :}
+    | PRINT LPAR expr:e RPAR SEMICOLON
+    {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
+       map.put(count,new PrintStmt((Exp)e,count));
+       IStmt stmt = new PrintStmt((Exp)e,count);
+       Pair<List<IStmt>, List<IStmt>> res = new Pair<>(new ArrayList<IStmt>(Arrays.asList(stmt)),
+                                                   new ArrayList<IStmt>(Arrays.asList(stmt)));
+       RESULT = res;
+       count++;
+
+    :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;
