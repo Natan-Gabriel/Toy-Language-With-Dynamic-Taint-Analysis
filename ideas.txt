@@ -1,0 +1,2 @@
+-nu se poate sa fie 2 instructiuni consecutive cu aceeasi valoare (e.g. [...,8,8]) - de aia adaug check-ul ala 
+	la nextInstructions.

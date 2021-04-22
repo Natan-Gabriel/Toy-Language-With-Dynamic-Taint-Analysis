@@ -5,10 +5,7 @@ import MyException.DivByZero;
 import MyException.TaintedAddress;
 import MyException.VarNotDefined;
 import model.PrgState;
-import model.adt.MyIDictionary;
-import model.adt.MyIHeap;
-import model.adt.MyIList;
-import model.adt.MyIStack;
+import model.adt.*;
 import model.exp.Exp;
 import model.types.IntType;
 import model.types.Type;
@@ -35,20 +32,49 @@ public class GotoStmt implements IStmt{
             int actualInstruction=1;
             if(!i1.getTaint()) {
                 for (int instr: exeDictionary.keySet()){
-                    if(exeDictionary.getValue(instr) instanceof VarDeclStmt && n1==((VarDeclStmt)exeDictionary.getValue(instr)).getLineNumber())
+                    if(exeDictionary.getValue(instr) instanceof VarDeclStmt && n1<=((VarDeclStmt)exeDictionary.getValue(instr)).getLineNumber())
                     {
                         actualInstruction=instr;
-                        //System.out.println("INSTR"+instr);
                         break;
                     }
-                    else if(exeDictionary.getValue(instr) instanceof AssignStmt && n1==((AssignStmt)exeDictionary.getValue(instr)).getLineNumber())
+                    else if(exeDictionary.getValue(instr) instanceof AssignStmt && n1<=((AssignStmt)exeDictionary.getValue(instr)).getLineNumber())
                     {
                         actualInstruction=instr;
-                        //System.out.println("INSTR"+instr);
                         break;
                     }
                 }
-                state.getNextInstructions().push(actualInstruction);//state.setNextInstruction(n1);
+                //state.getNextInstructions().push(actualInstruction);//state.setNextInstruction(n1);
+                state.setNextInstructions(new MyStack<Integer>());
+
+                for (int instr: exeDictionary.keySet()){
+                    if (instr==actualInstruction){
+                        state.getNextInstructions().push(actualInstruction);
+                        return state;
+                    }
+                    else if(exeDictionary.lookup(instr) instanceof WhileStmt){
+                        WhileStmt stmt = (WhileStmt)exeDictionary.lookup(instr);
+                        int startingStatement = stmt.getStatements().get(0).getStatementNumber();
+                        int endingStatement = startingStatement + stmt.getTotalLength()-1;
+                        if(startingStatement<=actualInstruction && actualInstruction<=endingStatement){
+                            state.getNextInstructions().push(instr);
+                            System.out.println("endingStatement:"+endingStatement);
+                            for(int index=endingStatement;index>actualInstruction;){
+                                if(exeDictionary.lookup(index) instanceof WhileStmt){
+                                    state.getNextInstructions().push(index);
+                                    index = index - ((WhileStmt)exeDictionary.lookup(index)).getTotalLength() - 1;
+                                }
+                                else{
+                                    state.getNextInstructions().push(index);
+                                    index--;
+                                }
+                            }
+                        }
+                        return state;
+
+                    }
+
+
+                }
             }
 
             else

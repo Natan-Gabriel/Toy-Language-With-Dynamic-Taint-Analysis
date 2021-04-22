@@ -26,7 +26,7 @@ public class Big_Bang_One {
         IStmt ex=new NopStmt();
         boolean flag = false;
 
-        Map<Integer, IStmt> map = (Map<Integer, IStmt>) Parser.parse("files/test_integration_if_nested.txt");
+        Map<Integer, IStmt> map = (Map<Integer, IStmt>) Parser.parse("files/dumb2.txt");
         System.out.println("map:"+map);
         MyIStack<IStmt> exeStack = new MyStack<IStmt>();
         MyIDictionary<Integer, IStmt> exeDictionary = new MyDictionary<Integer, IStmt>((HashMap<Integer, IStmt>) map);

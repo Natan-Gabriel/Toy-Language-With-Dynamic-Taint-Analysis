@@ -58,4 +58,5 @@ public class WhileStmt implements IStmt{
 	 public List<IStmt> getStatements() {return s;}
 	public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){instructionNumber=number;}
+	public int getTotalLength(){return totalLength;}
 }

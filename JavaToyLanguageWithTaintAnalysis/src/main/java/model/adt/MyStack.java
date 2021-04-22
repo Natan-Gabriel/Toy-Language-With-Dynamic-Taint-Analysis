@@ -10,7 +10,7 @@ public class MyStack<T> implements MyIStack<T>{
 	 public Stack<T> getStack(){return stack;}
 	 public String toString() {return stack.toString();}
 	 public T pop() {return stack.pop();}
-	 public void push(T v) {stack.push(v);}
+	 public void push(T v) { if (stack.size()==0 || stack.lastElement()!=v) stack.push(v);}
 	 public boolean isEmpty() {return stack.isEmpty();}
 	 public int getSize() {return stack.size();}
 	 public T get(int i) {return stack.get(i);}

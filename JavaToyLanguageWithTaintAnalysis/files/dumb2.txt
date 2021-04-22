@@ -1,0 +1,21 @@
+int i,j,k,sum;
+i=0;
+j=0;
+goto 17;
+while(i<5)
+{
+    j=0;
+    while(j<5){
+        sum=0;
+        k=0;
+        while(k<=i+j){
+            sum=sum+k;
+            k=k+1;
+        }
+        print(sum);
+        print(" ");
+        j=j+1;
+    }
+    print("\n");
+    i=i+1;
+}

@@ -356,10 +356,20 @@ stmt ::= SEMICOLON
         System.out.println("map in for stmt:"+map);
         count++;
     :}
+    | GOTO expr:e SEMICOLON
+      {:
+          IStmt stmt = new GotoStmt((Exp)e,count);
+          map.put(count,stmt);
+          Pair<List<IStmt>, List<IStmt>> res = new Pair<>(new ArrayList<IStmt>(Arrays.asList(stmt)),
+                                                      new ArrayList<IStmt>(Arrays.asList(stmt)));
+          RESULT = res;
+          count++;
+      :}
+
     | PRINT LPAR expr:e RPAR SEMICOLON
-    {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+count+","+ixleft.getLine()+")},";
-       map.put(count,new PrintStmt((Exp)e,count));
+    {:
        IStmt stmt = new PrintStmt((Exp)e,count);
+       map.put(count,stmt);
        Pair<List<IStmt>, List<IStmt>> res = new Pair<>(new ArrayList<IStmt>(Arrays.asList(stmt)),
                                                    new ArrayList<IStmt>(Arrays.asList(stmt)));
        RESULT = res;
