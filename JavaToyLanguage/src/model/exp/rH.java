@@ -10,7 +10,7 @@ public class rH implements Exp{
 	//....
 	public rH(Exp e1) {e=e1;}
 	public  String toString() {return e.toString();}
-	public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero{
+	public Value eval(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 Value v= e.eval(tbl,hp);
 		 if(!(v instanceof RefValue))
 			 throw new VarNotDefined("The value is not a RefValue");
@@ -20,7 +20,7 @@ public class rH implements Exp{
 		 return hp.getValue(a);
 			 
 	}
-	public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined,DivByZero {
+	public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {
 		 return eval(tbl,hp).getType();
 	 }
 }

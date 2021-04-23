@@ -1,7 +1,21 @@
-    int a,b,c,d,e,f;
-    a=3;
-    a=2;
-    b=3;
-    c=4;d=6;d=7;
-    e=7;
-    f=8;
+int i,j,k,sum;
+i=0;
+j=0;
+
+while(i<5)
+{
+    j=0;
+    while(j<5){
+        sum=0;
+        k=0;
+        while(k<=i+j){
+            sum=sum+k;
+            k=k+1;
+        }
+        print(sum);
+        print(" ");
+        j=j+1;
+    }
+    print("\n");
+    i=i+1;
+}

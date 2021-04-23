@@ -1,4 +1,4 @@
-rm Parser.java Lexer.java
+#rm Parser.java Lexer.java
 #rm *.class
 jflex minijava.jflex
 java -jar ~/Desktop/facultate/Licenta/cup/lib/java-cup-11b.jar -locations -interface -parser Parser minijava.cup

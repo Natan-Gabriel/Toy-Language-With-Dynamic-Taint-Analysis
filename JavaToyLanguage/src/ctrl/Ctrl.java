@@ -37,7 +37,7 @@ public class Ctrl implements iCtrl{
 		}
 
 	
-	public void parseTree() throws DivByZero, VarIsDefined, VarNotDefined, TaintedAddress {
+	public void parseTree() throws DivByZero, VarIsDefined, VarNotDefined, TaintedAddress, CustomException {
 		PrgState prg = repo.getCrtPrg();
 		MyIStack<IStmt> stk=prg.getStk();
 		boolean bool=false;
@@ -79,7 +79,7 @@ public class Ctrl implements iCtrl{
 		 return crtStmt.execute(state);
 		 }
 
-	public PrgState oneStepUsingDictionary(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined, TaintedAddress {
+	public PrgState oneStepUsingDictionary(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined, TaintedAddress, CustomException {
 		if(flag==true)
 			displayPrgState(state);
 //		MyIStack<IStmt> stk=state.getStk();

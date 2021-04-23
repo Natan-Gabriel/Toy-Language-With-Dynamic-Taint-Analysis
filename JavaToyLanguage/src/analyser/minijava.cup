@@ -54,9 +54,10 @@ parser code {:
 
 :};
 
-terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, READ, WRITE, BUNOP, ASSIGN;
-terminal Integer TYPE, BINOP, UNOP, COMP, BBINOP, INTCONST;
-terminal String  IDENT,STRINGCONST;
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO;
+terminal Integer TYPE, BINOP, UNOP, BBINOP, INTCONST;
+terminal String  IDENT,STRINGCONST,COMP;
+terminal char BINOPPRIORITY1,BINOPPRIORITY2;
 terminal Boolean BOOLCONST;
 
 
@@ -64,8 +65,11 @@ non terminal IStmt program;
 non terminal IStmt decllist,stmtlist;
 non terminal IStmt decl,stmt;
 non terminal List<String> identlist;
-non terminal Exp expr;
+non terminal Exp expr,logicexpr,stringexp;
 
+precedence left COMP;
+precedence left BINOPPRIORITY2;
+precedence left BINOPPRIORITY1;
 precedence left ELSE, UNOP, BINOP, BUNOP, BBINOP;
 
 program   ::=  decllist:d stmtlist:s
@@ -105,13 +109,49 @@ stmt ::= SEMICOLON
     | IDENT:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+ixleft.getLine()+")");
      RESULT = new AssignStmt(i,e,ixleft.getLine()); :}
-
+    | WHILE LPAR expr:e RPAR BEGIN stmtlist:sl END
+    {:
+        RESULT = new WhileStmt(e,sl);
+    :}
+    | PRINT LPAR expr:e RPAR SEMICOLON
+    {:
+       RESULT = new PrintStmt((Exp)e,new Integer(1));
+    :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
+    ;
+
+logicexpr ::= expr:e1 COMP:op expr:e2
+    {: System.out.println("COMP");
+        RESULT = new RelationalExp(op,e1,e2); //RelationalExp
+    :}
+
+    ;
+
+stringexp ::= STRINGCONST:sc
+    {: System.out.println("STRINGCONST");
+      RESULT = new ValueExp(new StringValue(sc));  :}
     ;
 
 expr ::= INTCONST:c
     {: //System.out.println("new ValueExp(new IntValue("+c+")");
       RESULT = new ValueExp(new IntValue(c)); :}
-
+    | IDENT: i
+        {: RESULT = new VarExp(i); :}
+    | expr:e1 BINOPPRIORITY1:op expr:e2
+    {:  System.out.println("BINOP:op"+op);
+        RESULT = new ArithExp(op,e1, e2);
+    :}
+    | expr:e1 BINOPPRIORITY2:op expr:e2
+    {:  System.out.println("new ArithExp("+op+","+e1+","+ e2+")");
+        RESULT = new ArithExp(op,e1, e2);
+    :}
+    | logicexpr : l
+       {:      //System.out.println("BOOLCONST");
+         RESULT = l;
+       :}
+    | stringexp:s
+     {: //System.out.println("stringexp");
+        RESULT = s;
+     :}
     ;

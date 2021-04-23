@@ -13,7 +13,7 @@ public class AssignStmt implements IStmt{
 	 
 	 public AssignStmt(String i,Exp e,int _instructionNumber) {id=i;exp=e;instructionNumber=_instructionNumber;}
 	 public String toString() { return id+"="+ exp.toString();}
-	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero{
+	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 state.setNextInstruction(getStatementNumber()+1);
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();

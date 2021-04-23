@@ -47,12 +47,11 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
     return symbolFactory.newSymbol("EOF", EOF, new Location(yyline+1,yycolumn+1,(int)yychar), new Location(yyline+1,yycolumn+1,(int)(yychar+1)));
 %eofval}
 
+BoolLiteral = true | false
 
 Ident = [a-zA-Z$_] [a-zA-Z0-9$_]*
 
 IntLiteral = 0 | [1-9][0-9]*
-
-BoolLiteral = true | false
 
 new_line = \r|\n|\r\n;
 
@@ -68,8 +67,16 @@ white_space = {new_line} | [ \t\f]
 "if"              { return symbol("if",IF); }
 "else"            { return symbol("else",ELSE); }
 "while"           { return symbol("while",WHILE); }
-"read"            { return symbol("read",READ); }
+"for"           { return symbol("for",FOR); }
+"goto"            { return symbol("goto",GOTO); }
+"read_integer()"            { return symbol("read_integer",READ_INTEGER); }
+"read_heap()"            { return symbol("read_heap",READ_HEAP); }
+"open_file"            { return symbol("read_file",OPEN_FILE); }
+"read_file"            { return symbol("read_file",READ_FILE); }
+"close_file"            { return symbol("read_file",CLOSE_FILE); }
 "write"           { return symbol("write",WRITE); }
+"print"           { return symbol("print",PRINT); }
+
 
 /* names */
 {Ident}           { return symbol("Identifier",IDENT, yytext()); }
@@ -95,17 +102,17 @@ white_space = {new_line} | [ \t\f]
 "{"               { return symbol("{",BEGIN); }
 "}"               { return symbol("}",END); }
 "="               { return symbol("=",ASSIGN); }
-"+"               { return symbol("plus",BINOP,"ADD"  ); }
-"-"               { return symbol("minus",BINOP, "SUB"  ); }
-"*"               { return symbol("mul",BINOP, "MUL"  ); }
-"/"               { return symbol("div",BINOP, "DIV"  ); }
+"+"               { return symbol("plus",BINOPPRIORITY2,'+'  ); }
+"-"               { return symbol("minus",BINOPPRIORITY2, '-'  ); }
+"*"               { return symbol("mul",BINOPPRIORITY1, '*'  ); }
+"/"               { return symbol("div",BINOPPRIORITY1, '/'  ); }
 "%"               { return symbol("mod",BINOP, "MOD"  ); }
-"<="              { return symbol("leq",COMP,  "LEQ"  ); }
-">="              { return symbol("geq",COMP,  "GEQ"  ); }
-"=="              { return symbol("eq",COMP,  "EQ"   ); }
-"!="              { return symbol("neq",COMP,  "NEQ"  ); }
-"<"               { return symbol("less",COMP,  "LESS"   ); }
-">"               { return symbol("gt",COMP,  "GT"   ); }
+"<="              { return symbol("leq",COMP,  "<="  ); }
+">="              { return symbol("geq",COMP,  ">="  ); }
+"=="              { return symbol("eq",COMP,  "=="   ); }
+"!="              { return symbol("neq",COMP,  "!="  ); }
+"<"               { return symbol("less",COMP,  "<"   ); }
+">"               { return symbol("gt",COMP,  ">"   ); }
 "&&"              { return symbol("and",BBINOP,"AND"  ); }
 "||"              { return symbol("or",BBINOP,"OR"   ); }
 "!"               { return symbol("not",BUNOP,"NOT"); }

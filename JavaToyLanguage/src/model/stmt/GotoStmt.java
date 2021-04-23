@@ -1,5 +1,6 @@
 package model.stmt;
 
+import MyException.CustomException;
 import MyException.DivByZero;
 import MyException.TaintedAddress;
 import MyException.VarNotDefined;
@@ -20,7 +21,7 @@ public class GotoStmt implements IStmt{
 
     public GotoStmt(Exp e,int _instructionNumber) {exp=e;instructionNumber=_instructionNumber;}
     public String toString() { return "goto "+ exp.toString();}
-    public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, TaintedAddress {
+    public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, TaintedAddress, CustomException {
         MyIStack<IStmt> stk=state.getStk();
         MyIDictionary<Integer,IStmt> exeDictionary=state.getExeDictionary();
 
