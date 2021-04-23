@@ -122,7 +122,8 @@ public class main {
 		list.add(prg);
 		iRepo repo=new Repo(list,"log.txt");
 		iCtrl ctrl=new Ctrl(repo);
-		ctrl.allStep();
+		//ctrl.allStep();
+		System.out.println("IStmt ex:"+ex);
 	} catch ( Exception e) {
 		System.out.println("Error: "+e);
 		e.printStackTrace();

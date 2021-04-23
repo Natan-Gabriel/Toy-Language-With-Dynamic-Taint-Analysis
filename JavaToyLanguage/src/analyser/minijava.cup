@@ -98,7 +98,7 @@ identlist  ::= COMMA IDENT:i identlist:il
      {: RESULT = new ArrayList<String>(); :}
     ;
 
-stmtlist  ::= stmtlist:sl stmt:s
+stmtlist  ::= stmt:s stmtlist:sl
     {: sl=new CompStmt(sl,s); RESULT = sl; :}
     | /* empty stmtlist */
     {: RESULT = new NopStmt(); :}
