@@ -1,4 +1,5 @@
 package view;
+import analyser.Parser;
 import model.*;
 import model.adt.*;
 import model.stmt.*;
@@ -92,6 +93,45 @@ public class main {
 	list3.add(prg3);
 	iRepo repo3=new Repo(list3,"log3.txt");
 	iCtrl ctrl3=new Ctrl(repo3);
+
+
+	//Map<Integer, IStmt> map=null;
+	try {
+//		if(arg.length==0){
+//			System.out.println("Please input a file name");
+//			return;
+//		}
+//		boolean flag=false;
+//		if(arg.length>=2){
+//			flag= Boolean.parseBoolean(arg[1]);
+//		}
+
+		IStmt ex = (IStmt) Parser.parse("simple.minijava");
+		MyIStack<IStmt> exeStack=new MyStack<IStmt>();
+		MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();
+		MyIDictionary<Integer,IStmt> exeDictionary=new MyDictionary<Integer,IStmt>(); //((HashMap<Integer, IStmt>) map);
+		MyIDictionary<String, Value> symTable=new MyDictionary<String, Value>();
+		MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable=new MyDictionary<String,Pair<Value,Value>>();
+		MyIList<Value> out=new MyList<Value>();
+		MyIDictionary<StringValue,BufferedReader> fTbl=new MyDictionary<StringValue,BufferedReader>();
+		MyIHeap heap=new MyHeap();
+
+		PrgState prg=new PrgState(exeStack,exeStack_executed,exeDictionary,symTable,dynaimcSymTable,out,fTbl,heap,ex);
+
+		ArrayList<PrgState> list = new ArrayList<PrgState>();
+		list.add(prg);
+		iRepo repo=new Repo(list,"log.txt");
+		iCtrl ctrl=new Ctrl(repo);
+		ctrl.allStep();
+	} catch ( Exception e) {
+		System.out.println("Error: "+e);
+		e.printStackTrace();
+	}
+
+
+
+
+
 //
 //	//TESTARE
 //	IStmt ex0=new VarDeclStmt("a",new IntType());
@@ -345,12 +385,12 @@ public class main {
 //						System.out.println(e);
 //					}
 			
-	TextMenu menu = new TextMenu();
-	menu.addCommand(new ExitCommand("0", "exit"));
-	menu.addCommand(new RunExample("1",ex1.toString(),ctrl1));
-	menu.addCommand(new RunExample("2",ex2.toString(),ctrl2));
-	menu.addCommand(new RunExample("3",ex3.toString(),ctrl3));
-	menu.show();
+//	TextMenu menu = new TextMenu();
+//	menu.addCommand(new ExitCommand("0", "exit"));
+//	menu.addCommand(new RunExample("1",ex1.toString(),ctrl1));
+//	menu.addCommand(new RunExample("2",ex2.toString(),ctrl2));
+//	menu.addCommand(new RunExample("3",ex3.toString(),ctrl3));
+//	menu.show();
 	
     
     

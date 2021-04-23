@@ -17,19 +17,20 @@ public class PrgState{
 	 MyIList<Value> out;
 	 MyIHeap heap; //delta
 	 IStmt originalProgram; //optional field, but good to have
-	 @Override
+
+	@Override
 	 public String toString() {return "Execution stack is "+exeStack.toString()+" exeStack_executed is "+exeStack_executed.toString()+ "Execution dictionary is "+exeDictionary.toString()
 			 +"Next instruction is: "+nextInstruction+", Symbol table is "+symTable.toString()+", Out table is"+out.toString()+", Heap is"+heap.toString();}
 	 public PrgState(MyIStack<IStmt> stk,MyIStack<IStmt> _exeStack_executed,MyIDictionary<Integer,IStmt> _exeDictionary, MyIDictionary<String,Value> symtbl,MyIDictionary<String,Pair<Value,Value>> _dynaimcSymTable,MyIList<Value> ot,MyIDictionary<StringValue, BufferedReader >fTbl, MyIHeap heap1,IStmt prg){
 		 exeStack=stk;
 		 exeStack_executed = _exeStack_executed;
+		 exeDictionary = _exeDictionary;
 		 symTable=symtbl;
 		 dynaimcSymTable=_dynaimcSymTable;
 		 out = ot;
-		 originalProgram=prg;
 		 FileTable=fTbl;
 		 heap=heap1;
-		 exeDictionary=_exeDictionary;
+		 originalProgram=prg;
 		 //IStmt originalProgram=(IStmt)Object.clone(prg);
 		 //IStmt originalProgram=(IStmt)deepCopy(prg);//recreate the entire original prg
 		 stk.push(prg);

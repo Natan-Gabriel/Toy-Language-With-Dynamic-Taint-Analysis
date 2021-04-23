@@ -771,3 +771,57 @@ v=10
 Out:
 FileTable:
 
+ExeStack:
+(v is of IntType;((v=model.exp.GetInput@135fbaa4;(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of IntType
+((v=model.exp.GetInput@135fbaa4;(goto v;v=3));print(v))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+((v=model.exp.GetInput@135fbaa4;(goto v;v=3));print(v))
+SymTable:
+v=0
+Out:
+FileTable:
+
+ExeStack:
+(v=model.exp.GetInput@135fbaa4;(goto v;v=3))
+print(v)
+SymTable:
+v=0
+Out:
+FileTable:
+
+ExeStack:
+v=model.exp.GetInput@135fbaa4
+(goto v;v=3)
+print(v)
+SymTable:
+v=0
+Out:
+FileTable:
+
+ExeStack:
+(goto v;v=3)
+print(v)
+SymTable:
+v=10
+Out:
+FileTable:
+
+ExeStack:
+goto v
+v=3
+print(v)
+SymTable:
+v=10
+Out:
+FileTable:
+
