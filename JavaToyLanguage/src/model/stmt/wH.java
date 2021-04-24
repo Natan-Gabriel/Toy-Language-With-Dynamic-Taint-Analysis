@@ -10,8 +10,9 @@ import model.values.*;
 public class wH implements IStmt{
 	String var_name;
 	 Exp exp;
+	int lineNumber;
 
-	 public wH(String v,Exp e) {var_name=v;exp=e;}
+	 public wH(String v,Exp e,int _lineNumber) {var_name=v;exp=e;lineNumber=_lineNumber;}
 	 public String toString() { return var_name+","+exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -38,4 +39,5 @@ public class wH implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public int  getLineNumber(){return lineNumber;}
 }

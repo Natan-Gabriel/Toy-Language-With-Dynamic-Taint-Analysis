@@ -16,8 +16,9 @@ public class readFile implements IStmt{
 	 BufferedReader file;
 	 String var_name;
 	 String line="";
+	 int lineNumber;
 	 
-	 public readFile(Exp e,String v) {exp=e;var_name=v;}
+	 public readFile(Exp e,String v,int _lineNumber) {exp=e;var_name=v;lineNumber=_lineNumber;}
 	 public String toString() { return exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -56,4 +57,5 @@ public class readFile implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public int  getLineNumber(){return lineNumber;}
 }

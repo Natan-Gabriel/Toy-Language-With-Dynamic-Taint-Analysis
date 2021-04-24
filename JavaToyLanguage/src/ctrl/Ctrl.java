@@ -37,30 +37,59 @@ public class Ctrl implements iCtrl{
 		}
 
 	
-	public void parseTree() throws DivByZero, VarIsDefined, VarNotDefined, TaintedAddress, CustomException {
-		PrgState prg = repo.getCrtPrg();
-		MyIStack<IStmt> stk=prg.getStk();
-		boolean bool=false;
-		while(bool==false) {
-			bool=true;
-			for (int i = 0; i < stk.getSize(); i++) {
-				IStmt crtStmt = stk.get(i);
-					if(crtStmt instanceof  CompStmt){
-						bool=false;
-						stk.remove(i);
-						crtStmt.execute(prg);
-					}
+//	public void parseTree() throws DivByZero, VarIsDefined, VarNotDefined, TaintedAddress, CustomException {
+//		PrgState prg = repo.getCrtPrg();
+//		MyIStack<IStmt> stk=prg.getStk();
+//		boolean bool=false;
+//		while(bool==false) {
+//			bool=true;
+//			for (int i = 0; i < stk.getSize(); i++) {
+//				IStmt crtStmt = stk.get(i);
+//					if(crtStmt instanceof  CompStmt){
+//						bool=false;
+//						stk.remove(i);
+//						crtStmt.execute(prg);
+//					}
+//			}
+//
+//		}
+//
+//		MyIDictionary<Integer,IStmt> exeDictionary=prg.getExeDictionary();
+//		for (int i = 0; i < stk.getSize(); i++) {
+//			IStmt crtStmt = stk.get(i);
+//			exeDictionary.add(crtStmt.getStatementNumber(),crtStmt);
+//
+//		}
+//
+//	}
+
+
+	public void executeGoto(PrgState state, int jumpLine) throws Exception {
+
+		PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyRepoInterface
+		//System.out.println(prg);//here you can display the prg state
+		repo.logPrgStateExec();
+		MyIStack<IStmt> stk = new MyStack<IStmt>();
+		state.setStk(stk);
+		stk.push(state.getOriginalProgram());
+
+		while (!stk.isEmpty()){
+			IStmt crtStmt = stk.pop();
+			if(crtStmt instanceof CompStmt){
+				crtStmt.execute(state);
+				System.out.println("I reached here. stk is: "+stk);
+			}
+			else if((crtStmt instanceof AssignStmt) && ((AssignStmt)crtStmt).getLineNumber()==jumpLine ){
+				stk.push(crtStmt);
+				break;
+			}
+			else if ((crtStmt instanceof WhileStmt) && ((WhileStmt)crtStmt).getLineNumber()<=jumpLine && jumpLine<=((WhileStmt)crtStmt).getEndingLine()  ){ //(crtStmt instanceof IfStmt) ||
+				crtStmt.execute(state);
+				System.out.println("crtStmt instanceof WhileStmt. stk is: "+stk);
+
 			}
 
 		}
-
-		MyIDictionary<Integer,IStmt> exeDictionary=prg.getExeDictionary();
-		for (int i = 0; i < stk.getSize(); i++) {
-			IStmt crtStmt = stk.get(i);
-			exeDictionary.add(crtStmt.getStatementNumber(),crtStmt);
-
-		}
-
 	}
 
 
@@ -78,6 +107,7 @@ public class Ctrl implements iCtrl{
 		 //displayPrgState(state);
 		 return crtStmt.execute(state);
 		 }
+
 
 	public PrgState oneStepUsingDictionary(PrgState state) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined, TaintedAddress, CustomException {
 		if(flag==true)
@@ -126,20 +156,24 @@ public class Ctrl implements iCtrl{
 //		}
 		 while (!prg.getStk().isEmpty()){
 
+//		 	 if(prg.getStk().lastElement() instanceof GotoStmt){
+//				 executeGoto(prg,20);
+//			 }
+//		 	 else {
 			 oneStep(prg);
 
 			 //repo.logPrgStateExec();
 
-				repo.logPrgStateExec();
+			 repo.logPrgStateExec();
 
-				prg.getHeap().setContent(unsafeGarbageCollector(
-						 getAddrFromSymTable(prg.getSymTable().getContent().values()),
-						 prg.getHeap().getContent()));
-				//prg.getHeap().setContent(unsafeGarbageCollector(
-				//		 getAddrFromSymTable(prg.getSymTable().values()),
-				//		 prg.getHeap()));
+			 prg.getHeap().setContent(unsafeGarbageCollector(
+					 getAddrFromSymTable(prg.getSymTable().getContent().values()),
+					 prg.getHeap().getContent()));
+			 //prg.getHeap().setContent(unsafeGarbageCollector(
+			 //		 getAddrFromSymTable(prg.getSymTable().values()),
+			 //		 prg.getHeap()));
 
-
+//			 }
 		 }
 		 if(flag==true)
 			 displayPrgState(prg);

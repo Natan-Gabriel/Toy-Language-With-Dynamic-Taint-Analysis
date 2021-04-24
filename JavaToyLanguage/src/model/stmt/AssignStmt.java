@@ -9,12 +9,12 @@ import MyException.*;
 public class AssignStmt implements IStmt{
 	 String id;
 	 Exp exp;
-	 int instructionNumber;
+	 int lineNumber;
 	 
-	 public AssignStmt(String i,Exp e,int _instructionNumber) {id=i;exp=e;instructionNumber=_instructionNumber;}
+	 public AssignStmt(String i,Exp e,int _lineNumber) {id=i;exp=e;lineNumber=_lineNumber;}
 	 public String toString() { return id+"="+ exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
-		 state.setNextInstruction(getStatementNumber()+1);
+		 //state.setNextInstruction(getStatementNumber()+1);
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
@@ -27,7 +27,8 @@ public class AssignStmt implements IStmt{
 		 else throw new VarNotDefined("the used variable" +id + " was not declared before");
 		 return state;
 	 }
-	public int getStatementNumber(){return instructionNumber;}
+	//public int getStatementNumber(){return instructionNumber;}
+	public int getLineNumber() {return lineNumber;}
 }
 
 

@@ -1,13 +1,14 @@
 int i,j,k,sum;
-i=0;
-j=0;
-
+i=1;
+j=1;
+k=1;
+print("before while");
 while(i<5)
 {
-    j=0;
+    j=1;
     while(j<5){
         sum=0;
-        k=0;
+        k=1;
         while(k<=i+j){
             sum=sum+k;
             k=k+1;
@@ -18,4 +19,5 @@ while(i<5)
     }
     print("\n");
     i=i+1;
+    goto 4;
 }

@@ -10,8 +10,9 @@ public class VarDeclStmt implements IStmt{
 	 String name;
 	 Type typ;
 	 int instructionNumber;
+	 int lineNumber;
 
-	 public VarDeclStmt(String n,Type v,int _instructionNumber){name=n;typ=v;instructionNumber=_instructionNumber;}
+	 public VarDeclStmt(String n,Type v,int _lineNumber){name=n;typ=v;lineNumber=_lineNumber;}
 	 public String toString() {
 		 if(typ.defaultValue().equals(new IntValue(0)))
 			 return name+" is of "+"IntType";
@@ -64,4 +65,5 @@ public class VarDeclStmt implements IStmt{
 	 }
 
 	public int getStatementNumber(){return instructionNumber;}
+	public int  getLineNumber(){return lineNumber;}
 }

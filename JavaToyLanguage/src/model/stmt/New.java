@@ -11,7 +11,8 @@ import model.types.*;
 public class New implements IStmt{
 	String var_name;
 	Exp exp;
-	public New(String s,Exp e) {var_name=s;exp=e;}
+	int lineNumber;
+	public New(String s,Exp e,int _lineNumber) {var_name=s;exp=e;lineNumber=_lineNumber;}
 	public String toString() { return var_name+"="+exp.toString();}
 	@Override
 	public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
@@ -43,5 +44,6 @@ public class New implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public int  getLineNumber(){return lineNumber;}
 
 }

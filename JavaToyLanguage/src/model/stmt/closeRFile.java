@@ -21,10 +21,11 @@ import model.values.Value;
 public class closeRFile implements IStmt{
 	 Exp exp;
 	 BufferedReader file;
+	 int lineNumber;
 	 String var_name;
 	 String line="";
 	 
-	 public closeRFile(Exp e) {exp=e;}
+	 public closeRFile(Exp e,int _lineNumber) {exp=e;lineNumber=_lineNumber;}
 	 public String toString() { return exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -55,4 +56,5 @@ public class closeRFile implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public int  getLineNumber(){return lineNumber;}
 }

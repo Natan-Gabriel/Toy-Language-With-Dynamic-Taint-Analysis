@@ -9,6 +9,7 @@ import java_cup.runtime.Symbol;
 import java_cup.runtime.ComplexSymbolFactory.ComplexSymbol;
 import java_cup.runtime.ComplexSymbolFactory;
 import java_cup.runtime.ScannerBuffer;
+import javafx.util.Pair;
 parser code {:
 
   public boolean syntaxErrors;
@@ -63,8 +64,9 @@ terminal Boolean BOOLCONST;
 
 non terminal IStmt program;
 non terminal IStmt decllist,stmtlist;
+non terminal Pair<String,Exp> assignment;
+non terminal List<Pair<String,Exp>> identlist;
 non terminal IStmt decl,stmt;
-non terminal List<String> identlist;
 non terminal Exp expr,logicexpr,stringexp;
 
 precedence left COMP;
@@ -72,8 +74,8 @@ precedence left BINOPPRIORITY2;
 precedence left BINOPPRIORITY1;
 precedence left ELSE, UNOP, BINOP, BUNOP, BBINOP;
 
-program   ::=  decllist:d stmtlist:s
-    {: RESULT = new CompStmt(d,s); :}
+program   ::=  stmtlist:s
+    {: RESULT = s; :}
     ;
 decllist  ::=  decl:d decllist:dl
     {:
@@ -83,39 +85,68 @@ decllist  ::=  decl:d decllist:dl
     {: RESULT = new NopStmt(); :}
     ;
 
-decl ::= TYPE IDENT:i identlist:il  SEMICOLON
+decl ::= TYPE assignment:i identlist:il SEMICOLON
     {: System.out.println(i) ;
     IStmt res=new NopStmt();
-    for(String elem : il){
-        res=new CompStmt(new VarDeclStmt(elem,new IntType(),ixleft.getLine()),res);
+    for(Pair<String,Exp> elem : il){
+        res=new CompStmt(new VarDeclStmt(elem.getKey(),new IntType(),ixleft.getLine()),res);
+        if(elem.getValue()!=null){
+            res=new CompStmt(new AssignStmt(elem.getKey(),elem.getValue(),ixleft.getLine()),res);
+        }
     }
-    res=new CompStmt(new VarDeclStmt(i,new IntType(),ixleft.getLine()), res);
+    res=new CompStmt(new VarDeclStmt(i.getKey(),new IntType(),ixleft.getLine()),res);
+    if(i.getValue()!=null){
+        res=new CompStmt(new AssignStmt(i.getKey(),i.getValue(),ixleft.getLine()),res);
+    }
     RESULT = res; :}
     ;
-identlist  ::= COMMA IDENT:i identlist:il
+
+assignment ::= IDENT:i ASSIGN expr:e
+     {:
+     RESULT = new Pair<String,Exp>(i,e);
+     :}
+     | IDENT:i
+     {:
+        RESULT = new Pair<String,Exp>(i,null);
+     :}
+    ;
+
+identlist  ::= COMMA assignment:i identlist:il
     {: il.add(i); RESULT = il; :}
      | /* empty identlist*/
-     {: RESULT = new ArrayList<String>(); :}
+     {: RESULT = new ArrayList<Pair<String,Exp>>(); :}
     ;
 
 stmtlist  ::= stmt:s stmtlist:sl
-    {: sl=new CompStmt(sl,s); RESULT = sl; :}
+    {: sl=new CompStmt(s,sl); RESULT = sl; :}
     | /* empty stmtlist */
     {: RESULT = new NopStmt(); :}
     ;
 
 stmt ::= SEMICOLON
     {: :}
+    | decl:d
+    {:
+      RESULT=d;
+    :}
     | IDENT:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+ixleft.getLine()+")");
      RESULT = new AssignStmt(i,e,ixleft.getLine()); :}
     | WHILE LPAR expr:e RPAR BEGIN stmtlist:sl END
     {:
-        RESULT = new WhileStmt(e,sl);
+        System.out.println("exleft.getLine()"+exleft.getLine());
+        System.out.println("exright.getLine()"+exright.getLine());
+        System.out.println("slxleft.getLine()"+slxleft.getLine());
+        System.out.println("slxright.getLine()"+slxright.getLine());
+        RESULT = new WhileStmt(e,sl,slxleft.getLine(),slxright.getLine());
     :}
-    | PRINT LPAR expr:e RPAR SEMICOLON
+    | GOTO:s expr:e SEMICOLON
+      {:
+          RESULT = new GotoStmt((Exp)e,sxleft.getLine());
+      :}
+    | PRINT:s LPAR expr:e RPAR SEMICOLON
     {:
-       RESULT = new PrintStmt((Exp)e,new Integer(1));
+       RESULT = new PrintStmt((Exp)e,sxleft.getLine());
     :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}

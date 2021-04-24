@@ -16,8 +16,9 @@ import java.io.*;
 public class OpenRFile implements IStmt{
 	 Exp exp;
 	 BufferedReader file;
+	 int lineNumber;
 	 
-	 public OpenRFile(Exp e) {exp=e;}
+	 public OpenRFile(Exp e,int _lineNumber) {exp=e; lineNumber= _lineNumber;}
 	 public String toString() { return exp.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -43,4 +44,5 @@ public class OpenRFile implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public int  getLineNumber(){return lineNumber;}
 }

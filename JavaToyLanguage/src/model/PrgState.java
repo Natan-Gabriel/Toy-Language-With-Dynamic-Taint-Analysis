@@ -20,7 +20,7 @@ public class PrgState{
 
 	@Override
 	 public String toString() {return "Execution stack is "+exeStack.toString()+" exeStack_executed is "+exeStack_executed.toString()+ "Execution dictionary is "+exeDictionary.toString()
-			 +"Next instruction is: "+nextInstruction+", Symbol table is "+symTable.toString()+", Out table is"+out.toString()+", Heap is"+heap.toString();}
+			 +"Next instruction is: "+nextInstruction+", Symbol table is "+symTable.toString()+", Out table is"+out.toString()+", Heap is"+heap.toString() + "\n" ;}
 	 public PrgState(MyIStack<IStmt> stk,MyIStack<IStmt> _exeStack_executed,MyIDictionary<Integer,IStmt> _exeDictionary, MyIDictionary<String,Value> symtbl,MyIDictionary<String,Pair<Value,Value>> _dynaimcSymTable,MyIList<Value> ot,MyIDictionary<StringValue, BufferedReader >fTbl, MyIHeap heap1,IStmt prg){
 		 exeStack=stk;
 		 exeStack_executed = _exeStack_executed;
@@ -45,6 +45,7 @@ public class PrgState{
 	 public MyIList<Value> getOut() {return out;}
 	 public MyIDictionary<StringValue, BufferedReader > getFileTable() {return FileTable;}
 	 public MyIHeap getHeap() {return heap;}
+	 public IStmt getOriginalProgram() {return originalProgram;}
 	 
 	 public void setStk(MyIStack<IStmt> e) {exeStack=e;}
 	 public void setStkExecuted(MyIStack<IStmt> e) {exeStack_executed=e;}

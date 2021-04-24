@@ -1,0 +1,2 @@
+((i is of IntType;(j is of IntType;(k is of IntType;(sum is of IntType;nop))));(i=0;(j=0;(WHILE(i<5) (j=0;(WHILE(j<5) (sum=0;(k=0;(WHILE(k<=i+j) (sum=sum+k;(k=k+1;nop));(print(sum);(print( );(j=j+1;nop))))));(print(
+);(i=i+1;nop))));nop))))

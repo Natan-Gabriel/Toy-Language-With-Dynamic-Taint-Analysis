@@ -1,14 +1,8 @@
 package model.stmt;
 
-import MyException.CustomException;
-import MyException.DivByZero;
-import MyException.TaintedAddress;
-import MyException.VarNotDefined;
+import MyException.*;
 import model.PrgState;
-import model.adt.MyIDictionary;
-import model.adt.MyIHeap;
-import model.adt.MyIList;
-import model.adt.MyIStack;
+import model.adt.*;
 import model.exp.Exp;
 import model.types.IntType;
 import model.types.Type;
@@ -17,12 +11,12 @@ import model.values.Value;
 
 public class GotoStmt implements IStmt{
     Exp exp;
-    int instructionNumber;
+    int lineNumber;
 
-    public GotoStmt(Exp e,int _instructionNumber) {exp=e;instructionNumber=_instructionNumber;}
+    public GotoStmt(Exp e,int _lineNumber) {exp=e;lineNumber=_lineNumber;}
     public String toString() { return "goto "+ exp.toString();}
-    public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, TaintedAddress, CustomException {
-        MyIStack<IStmt> stk=state.getStk();
+    public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, TaintedAddress, CustomException, VarIsDefined {
+        //MyIStack<IStmt> stk=state.getStk();
         MyIDictionary<Integer,IStmt> exeDictionary=state.getExeDictionary();
 
         MyIDictionary<String, Value> symTbl= state.getSymTable();
@@ -32,8 +26,30 @@ public class GotoStmt implements IStmt{
             IntValue i1 = (IntValue)val;
             int n1;
             n1= i1.getVal();
-            if(i1.getTaint()==false)
-                state.setNextInstruction(n1);
+            if(!i1.getTaint()) {
+                //state.setNextInstruction(n1);
+                MyIStack<IStmt> stk = new MyStack<IStmt>();
+                state.setStk(stk);
+                stk.push(state.getOriginalProgram());
+
+                while (!stk.isEmpty()){
+                    IStmt crtStmt = stk.pop();
+                    if(crtStmt instanceof CompStmt){
+                        crtStmt.execute(state);
+                        System.out.println("I reached here. stk is: "+stk);
+                    }
+                    else if(crtStmt.getLineNumber()==n1 ){
+                        stk.push(crtStmt);
+                        break;
+                    }
+                    else if ((crtStmt instanceof WhileStmt) && (crtStmt.getLineNumber()<=n1 && n1<=((WhileStmt)crtStmt).getEndingLine()  )){ //(crtStmt instanceof IfStmt) ||
+                        crtStmt.execute(state);
+                        System.out.println("crtStmt instanceof WhileStmt. stk is: "+stk);
+
+                    }
+
+                }
+            }
             else
                 throw new TaintedAddress("goto's argument is an tainted address!");
         }else
@@ -42,5 +58,5 @@ public class GotoStmt implements IStmt{
 
         return state;
     }
-    public int getStatementNumber(){return instructionNumber;}
+    public int  getLineNumber(){return lineNumber;}
 }

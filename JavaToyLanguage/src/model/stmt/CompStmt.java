@@ -20,4 +20,5 @@ public class CompStmt implements IStmt{
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}
+	public int  getLineNumber(){return -1;}
 }
