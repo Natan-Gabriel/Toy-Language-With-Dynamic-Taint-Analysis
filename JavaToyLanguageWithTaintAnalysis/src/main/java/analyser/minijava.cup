@@ -56,10 +56,11 @@ parser code {:
 :};
 
 terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO;
-terminal Integer TYPE, UNOP, INTCONST;
+terminal Integer UNOP, INTCONST;
 terminal String  IDENT,STRINGCONST,COMP,BBINOP;
 terminal char BINOPPRIORITY1,BINOPPRIORITY2;
 terminal Boolean BOOLCONST;
+terminal Type TYPE;
 
 
 non terminal IStmt program;
@@ -85,18 +86,18 @@ decllist  ::=  decl:d decllist:dl
     {: RESULT = new NopStmt(); :}
     ;
 
-decl ::= TYPE assignment:i identlist:il SEMICOLON
+decl ::= TYPE:type assignment:i identlist:il SEMICOLON
     {: System.out.println(i) ;
     IStmt res=new NopStmt();
     for(Pair<String,Exp> elem : il){
-        res=new CompStmt(new VarDeclStmt(elem.getKey(),new IntType(),ixleft.getLine()),res);
+        res=new CompStmt(new VarDeclStmt(elem.getKey(),type,typexleft.getLine()),res);
         if(elem.getValue()!=null){
-            res=new CompStmt(new AssignStmt(elem.getKey(),elem.getValue(),ixleft.getLine()),res);
+            res=new CompStmt(new AssignStmt(elem.getKey(),elem.getValue(),typexleft.getLine()),res);
         }
     }
-    res=new CompStmt(new VarDeclStmt(i.getKey(),new IntType(),ixleft.getLine()),res);
+    res=new CompStmt(new VarDeclStmt(i.getKey(),type,typexleft.getLine()),res);
     if(i.getValue()!=null){
-        res=new CompStmt(new AssignStmt(i.getKey(),i.getValue(),ixleft.getLine()),res);
+        res=new CompStmt(new AssignStmt(i.getKey(),i.getValue(),typexleft.getLine()),res);
     }
     RESULT = res; :}
     ;
@@ -123,8 +124,8 @@ stmtlist  ::= stmt:s stmtlist:sl
     {: RESULT = new NopStmt(); :}
     ;
 
-stmt ::= SEMICOLON
-    {: :}
+stmt ::= SEMICOLON:s
+    {: RESULT = new NopStmt(sxleft.getLine()); :}
     | decl:d
     {:
       RESULT=d;
@@ -132,25 +133,25 @@ stmt ::= SEMICOLON
     | IDENT:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+ixleft.getLine()+")");
      RESULT = new AssignStmt(i,e,ixleft.getLine()); :}
-     | IF LPAR expr:e RPAR BEGIN stmtlist:sl1 END
+     | IF:s LPAR expr:e RPAR BEGIN stmtlist:sl1 END:end
         {:
-          RESULT = new IfStmt((Exp)e,sl1,new NopStmt(),sl1xleft.getLine());
+          RESULT = new IfStmt((Exp)e,sl1,new NopStmt(),sxleft.getLine(),endxright.getLine());
          :}
-     | IF LPAR expr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END
+     | IF:s LPAR expr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END:end
      {:
-        RESULT = new IfStmt((Exp)e,sl1,sl2,sl1xleft.getLine());
+        RESULT = new IfStmt((Exp)e,sl1,sl2,sxleft.getLine(),endxright.getLine());
      :}
-    | WHILE LPAR expr:e RPAR BEGIN stmtlist:sl END
+    | WHILE:s LPAR expr:e RPAR BEGIN stmtlist:sl END:end
     {:
         System.out.println("exleft.getLine()"+exleft.getLine());
         System.out.println("exright.getLine()"+exright.getLine());
         System.out.println("slxleft.getLine()"+slxleft.getLine());
         System.out.println("slxright.getLine()"+slxright.getLine());
-        RESULT = new WhileStmt(e,sl,slxleft.getLine(),slxright.getLine());
+        RESULT = new WhileStmt(e,sl,sxleft.getLine(),endxright.getLine());
     :}
-    | FOR LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END
+    | FOR:s LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END:end
      {:
-     RESULT = new CompStmt(s1,new WhileStmt((Exp)e,new CompStmt(sl,s3),slxleft.getLine(),slxright.getLine()));
+     RESULT = new CompStmt(s1,new WhileStmt((Exp)e,new CompStmt(sl,s3),sxleft.getLine(),endxright.getLine()));
      :}
     | GOTO:s expr:e SEMICOLON
       {:

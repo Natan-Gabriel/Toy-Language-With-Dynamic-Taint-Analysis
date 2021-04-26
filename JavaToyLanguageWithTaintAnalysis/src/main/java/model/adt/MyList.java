@@ -23,5 +23,6 @@ public class MyList<T> implements MyIList<T>{
 	public String toString() {return list.toString();}
 	public void add(T x) {list.add(x);}
 	public T  get(int x) {return list.get(x);}
+	public boolean  contains(T x) {return list.contains(x);}
 	public int  getSize() {return list.size();}
 }

@@ -121,7 +121,7 @@ public class main {
 		ArrayList<PrgState> list = new ArrayList<PrgState>();
 		list.add(prg);
 		iRepo repo=new Repo(list,"log.txt");
-		iCtrl ctrl=new Ctrl(repo);
+		iCtrl ctrl=new Ctrl(repo,true);
 		ctrl.allStep();
 //		System.out.println("IStmt ex:"+ex);
 	} catch ( Exception e) {

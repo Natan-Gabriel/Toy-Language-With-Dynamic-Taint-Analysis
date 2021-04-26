@@ -33,6 +33,14 @@ public class WhileStmt implements IStmt{
 		
 		 return state;
 	 }
+	public PrgState simulateExecution(PrgState state) throws VarNotDefined, DivByZero, CustomException {
+		MyIStack<IStmt> stk=state.getStk();
+		stk.push(new WhileStmt(exp,s,startingLine,endingLine));
+		stk.push(s);
+
+		return state;
+	}
+
 	public int getStatementNumber(){return 1;}
 	public int  getLineNumber(){return startingLine;}
 	public int getEndingLine() {return endingLine;}

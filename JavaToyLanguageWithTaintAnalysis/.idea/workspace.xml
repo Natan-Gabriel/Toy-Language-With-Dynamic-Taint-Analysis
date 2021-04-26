@@ -5,31 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad2f867-6df6-4d3f-b133-2b66a0bc0ac0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaToyLanguageWithTaintAnalysis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Lexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/sym.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/sym.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/model/PrgState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Lexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/sym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/model/PrgState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaToyLanguageWithTaintAnalysis.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/goto_inside_while.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/goto_inside_while.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/goto_outside_while.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/goto_outside_while.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/simple.minijava" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/sym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ctrl/Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ctrl/Ctrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/adt/MyIList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/adt/MyIList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/adt/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/adt/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/GotoStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/GotoStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/IfStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/NopStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/WhileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/WhileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ctrl/Ctrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ctrl/Ctrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,12 +58,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cup/lib/JFlex.jar" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.main" />
       <module name="JavaToyLanguageWithTaintAnalysis" />
@@ -79,9 +88,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Big_Bang_Integration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaToyLanguageWithTaintAnalysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.Big_Bang_Integration" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.Big_Bang_Integration" />
       </list>
     </recent_temporary>
   </component>
@@ -93,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619431790533</updated>
-      <workItem from="1619431793600" duration="452000" />
+      <workItem from="1619431793600" duration="10237000" />
     </task>
     <servers />
   </component>

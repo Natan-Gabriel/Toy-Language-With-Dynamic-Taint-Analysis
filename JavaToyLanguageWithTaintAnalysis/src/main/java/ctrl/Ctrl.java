@@ -13,8 +13,9 @@ import repo.*;
 
 public class Ctrl implements iCtrl{
 	iRepo repo; 
-	boolean flag=true;
+	boolean flag=false;
 	public Ctrl(iRepo r) {repo=r;}
+	public Ctrl(iRepo r, boolean _flag) {repo=r;flag=_flag;}
 //	int nextInstruction=1;
 	
 	Map<Integer,Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer,Value> heap){

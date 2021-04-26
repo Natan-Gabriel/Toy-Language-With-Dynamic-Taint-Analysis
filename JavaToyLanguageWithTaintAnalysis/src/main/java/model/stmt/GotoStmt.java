@@ -31,20 +31,31 @@ public class GotoStmt implements IStmt{
                 MyIStack<IStmt> stk = new MyStack<IStmt>();
                 state.setStk(stk);
                 stk.push(state.getOriginalProgram());
-
+                MyIList<IStmt> visited = new MyList<IStmt>();
                 while (!stk.isEmpty()){
                     IStmt crtStmt = stk.pop();
                     if(crtStmt instanceof CompStmt){
                         crtStmt.execute(state);
                         System.out.println("I reached here. stk is: "+stk);
                     }
-                    else if(crtStmt.getLineNumber()==n1 ){
+                    else if(crtStmt.getLineNumber()>=n1 ){
                         stk.push(crtStmt);
                         break;
                     }
                     else if ((crtStmt instanceof WhileStmt) && (crtStmt.getLineNumber()<=n1 && n1<=((WhileStmt)crtStmt).getEndingLine()  )){ //(crtStmt instanceof IfStmt) ||
-                        crtStmt.execute(state);
-                        System.out.println("crtStmt instanceof WhileStmt. stk is: "+stk);
+                        if(!visited.contains(crtStmt)) {
+                            visited.add(crtStmt); // in order to avoid running the loop forever, when the goto's argument satisfies the above condition, but there are no statements after this line
+                            ((WhileStmt) crtStmt).simulateExecution(state);
+                            System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
+                        }
+                    }
+                    else if ((crtStmt instanceof IfStmt) && (crtStmt.getLineNumber()<=n1 && n1<=((IfStmt)crtStmt).getEndingLine()  )){ //(crtStmt instanceof IfStmt) ||
+                        if(!visited.contains(crtStmt)){
+                            visited.add(crtStmt);
+                            crtStmt.execute(state);
+                            System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
+
+                        }
 
                     }
 

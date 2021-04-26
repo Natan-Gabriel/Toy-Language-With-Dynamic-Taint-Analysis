@@ -7,5 +7,6 @@ public interface MyIList<T> {
 	public String toString();
 	public ArrayList<T> getList();
 	public T  get(int x);
+	public boolean  contains(T x);
 	public int  getSize();
 }

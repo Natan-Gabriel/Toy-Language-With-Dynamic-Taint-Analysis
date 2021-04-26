@@ -12,9 +12,9 @@ public class IfStmt implements IStmt{
 	 Exp exp;
 	 IStmt thenS;
 	 IStmt elseS;
-	 int lineNumber;
+	 int lineNumber, endingLine;
 	 
-	 public IfStmt(Exp e, IStmt t, IStmt el,int _lineNumber) {exp=e; thenS=t;elseS=el;lineNumber=_lineNumber;}
+	 public IfStmt(Exp e, IStmt t, IStmt el,int _lineNumber, int _endingLine) {exp=e; thenS=t;elseS=el;lineNumber=_lineNumber;endingLine=_endingLine;}
 	 public String toString(){ return "IF("+ exp.toString()+") THEN(" +thenS.toString()+")ELSE("+elseS.toString()+")";}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -39,5 +39,6 @@ public class IfStmt implements IStmt{
 	 //...
 	 public int getStatementNumber(){return 1;}
 	public int  getLineNumber(){return lineNumber;}
+	public int getEndingLine() {return endingLine;}
 }
 
