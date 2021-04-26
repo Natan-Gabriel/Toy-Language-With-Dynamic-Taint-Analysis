@@ -56,8 +56,8 @@ parser code {:
 :};
 
 terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO;
-terminal Integer TYPE, BINOP, UNOP, BBINOP, INTCONST;
-terminal String  IDENT,STRINGCONST,COMP;
+terminal Integer TYPE, UNOP, INTCONST;
+terminal String  IDENT,STRINGCONST,COMP,BBINOP;
 terminal char BINOPPRIORITY1,BINOPPRIORITY2;
 terminal Boolean BOOLCONST;
 
@@ -72,7 +72,7 @@ non terminal Exp expr,logicexpr,stringexp;
 precedence left COMP;
 precedence left BINOPPRIORITY2;
 precedence left BINOPPRIORITY1;
-precedence left ELSE, UNOP, BINOP, BUNOP, BBINOP;
+precedence left ELSE, UNOP, BUNOP, BBINOP;
 
 program   ::=  stmtlist:s
     {: RESULT = s; :}
@@ -132,6 +132,14 @@ stmt ::= SEMICOLON
     | IDENT:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+ixleft.getLine()+")");
      RESULT = new AssignStmt(i,e,ixleft.getLine()); :}
+     | IF LPAR expr:e RPAR BEGIN stmtlist:sl1 END
+        {:
+          RESULT = new IfStmt((Exp)e,sl1,new NopStmt(),sl1xleft.getLine());
+         :}
+     | IF LPAR expr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END
+     {:
+        RESULT = new IfStmt((Exp)e,sl1,sl2,sl1xleft.getLine());
+     :}
     | WHILE LPAR expr:e RPAR BEGIN stmtlist:sl END
     {:
         System.out.println("exleft.getLine()"+exleft.getLine());
@@ -140,6 +148,10 @@ stmt ::= SEMICOLON
         System.out.println("slxright.getLine()"+slxright.getLine());
         RESULT = new WhileStmt(e,sl,slxleft.getLine(),slxright.getLine());
     :}
+    | FOR LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END
+     {:
+     RESULT = new CompStmt(s1,new WhileStmt((Exp)e,new CompStmt(sl,s3),slxleft.getLine(),slxright.getLine()));
+     :}
     | GOTO:s expr:e SEMICOLON
       {:
           RESULT = new GotoStmt((Exp)e,sxleft.getLine());
@@ -152,11 +164,13 @@ stmt ::= SEMICOLON
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;
 
-logicexpr ::= expr:e1 COMP:op expr:e2
+logicexpr ::= BOOLCONST:c
+      {: System.out.println("BOOLCONST");
+         RESULT = new ValueExp(new BoolValue(c));  :}
+    | expr:e1 COMP:op expr:e2
     {: System.out.println("COMP");
         RESULT = new RelationalExp(op,e1,e2); //RelationalExp
     :}
-
     ;
 
 stringexp ::= STRINGCONST:sc
@@ -169,6 +183,9 @@ expr ::= INTCONST:c
       RESULT = new ValueExp(new IntValue(c)); :}
     | IDENT: i
         {: RESULT = new VarExp(i); :}
+    | LPAR expr:e RPAR
+    {: RESULT = e;
+     :}
     | expr:e1 BINOPPRIORITY1:op expr:e2
     {:  System.out.println("BINOP:op"+op);
         RESULT = new ArithExp(op,e1, e2);
@@ -177,10 +194,28 @@ expr ::= INTCONST:c
     {:  System.out.println("new ArithExp("+op+","+e1+","+ e2+")");
         RESULT = new ArithExp(op,e1, e2);
     :}
+    | BINOPPRIORITY2:op expr:e
+    {:  System.out.println("BINOP:op"+op);
+    if(op=='+')
+        RESULT = e;
+    else if(op=='-')
+        RESULT = new ArithExp('*',e, new ValueExp(new IntValue(-1)));
+    :}
+    | expr:e1 BBINOP:op expr:e2
+     {: RESULT = new LogicExp(op,e1,e2); //LogicExp
+      :}
     | logicexpr : l
        {:      //System.out.println("BOOLCONST");
          RESULT = l;
        :}
+    | READ_INTEGER
+     {:
+      RESULT = new GetInput();
+     :}
+     | READ_HEAP LPAR expr:e RPAR
+     {:
+      RESULT = new rH(e);
+     :}
     | stringexp:s
      {: //System.out.println("stringexp");
         RESULT = s;

@@ -106,15 +106,15 @@ white_space = {new_line} | [ \t\f]
 "-"               { return symbol("minus",BINOPPRIORITY2, '-'  ); }
 "*"               { return symbol("mul",BINOPPRIORITY1, '*'  ); }
 "/"               { return symbol("div",BINOPPRIORITY1, '/'  ); }
-"%"               { return symbol("mod",BINOP, "MOD"  ); }
+
 "<="              { return symbol("leq",COMP,  "<="  ); }
 ">="              { return symbol("geq",COMP,  ">="  ); }
 "=="              { return symbol("eq",COMP,  "=="   ); }
 "!="              { return symbol("neq",COMP,  "!="  ); }
 "<"               { return symbol("less",COMP,  "<"   ); }
 ">"               { return symbol("gt",COMP,  ">"   ); }
-"&&"              { return symbol("and",BBINOP,"AND"  ); }
-"||"              { return symbol("or",BBINOP,"OR"   ); }
+"&&"              { return symbol("and",BBINOP,"and"  ); }
+"||"              { return symbol("or",BBINOP,"or"   ); }
 "!"               { return symbol("not",BUNOP,"NOT"); }
 
 

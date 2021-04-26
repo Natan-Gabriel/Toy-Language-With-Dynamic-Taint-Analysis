@@ -4,36 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c1ef04-7c48-41da-8214-20f74696eb60" name="Default Changelist" comment="" />
+    <list default="true" id="4ad2f867-6df6-4d3f-b133-2b66a0bc0ac0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JavaToyLanguageWithTaintAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Lexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser$CUP$Parser$actions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/minijava.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/sym.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/analyser/sym.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/out/production/JavaToyLanguage/model/PrgState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/minijava.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/analyser/sym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/src/model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/src/model/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaToyLanguageWithTaintAnalysis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="ProjectId" id="1rINMeiOjo8Y2MK4CtnBdHG4uSJ" />
+  <component name="ProjectId" id="1rhcVuQp4ah78HReq5tMSF49g2l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="1" />
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -41,119 +44,56 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaToyLanguage" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cup/lib/JFlex.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.Big_Bang_One">
-    <configuration name="Big_Bang_Integration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.main" />
       <module name="JavaToyLanguageWithTaintAnalysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.integration.*" />
+          <option name="PATTERN" value="view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model.integration" />
-      <option name="MAIN_CLASS_NAME" value="model.integration.Big_Bang_Integration" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Big_Bang_One" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaToyLanguageWithTaintAnalysis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.integration" />
-      <option name="MAIN_CLASS_NAME" value="model.integration.Big_Bang_One" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValueExp_WBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaToyLanguageWithTaintAnalysis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.exp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.exp" />
-      <option name="MAIN_CLASS_NAME" value="model.exp.ValueExp_WBT" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VarExp_WBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaToyLanguageWithTaintAnalysis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.exp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.exp" />
-      <option name="MAIN_CLASS_NAME" value="model.exp.VarExp_WBT" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="model in JavaToyLanguageWithTaintAnalysis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaToyLanguageWithTaintAnalysis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Big_Bang_One" />
-        <item itemvalue="JUnit.Big_Bang_Integration" />
-        <item itemvalue="JUnit.model in JavaToyLanguageWithTaintAnalysis" />
-        <item itemvalue="JUnit.VarExp_WBT" />
-        <item itemvalue="JUnit.ValueExp_WBT" />
+        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80c1ef04-7c48-41da-8214-20f74696eb60" name="Default Changelist" comment="" />
-      <created>1618659599385</created>
+      <changelist id="4ad2f867-6df6-4d3f-b133-2b66a0bc0ac0" name="Default Changelist" comment="" />
+      <created>1619431790533</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618659599385</updated>
-      <workItem from="1618659601020" duration="35371000" />
-      <workItem from="1618744393112" duration="14485000" />
-      <workItem from="1618819547747" duration="3007000" />
-      <workItem from="1618831459897" duration="11000" />
-      <workItem from="1619003360279" duration="408000" />
-      <workItem from="1619003791580" duration="13586000" />
-      <workItem from="1619075484692" duration="30788000" />
-      <workItem from="1619165095433" duration="1144000" />
-      <workItem from="1619166348416" duration="6000" />
-      <workItem from="1619166365422" duration="29000" />
+      <updated>1619431790533</updated>
+      <workItem from="1619431793600" duration="452000" />
     </task>
     <servers />
   </component>
