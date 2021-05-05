@@ -49,10 +49,16 @@ public class GotoStmt implements IStmt{
                             System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
                         }
                     }
-                    else if ((crtStmt instanceof IfStmt) && (crtStmt.getLineNumber()<=n1 && n1<=((IfStmt)crtStmt).getEndingLine()  )){ //(crtStmt instanceof IfStmt) ||
-                        if(!visited.contains(crtStmt)){
-                            visited.add(crtStmt);
-                            crtStmt.execute(state);
+                    else if ((crtStmt instanceof IfStmt) && (crtStmt.getLineNumber()<=n1 && n1<=crtStmt.getEndingLine()  )){ //(crtStmt instanceof IfStmt) ||
+                        IfStmt s = (IfStmt)crtStmt;
+                        System.out.println("s.getEndingLineThen()"+s.getEndingLineThen());
+                        if(n1<=s.getEndingLineThen()){
+                            s.simulateExecutionThen(state);
+                            System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
+
+                        }
+                        else {
+                            s.simulateExecutionElse(state);
                             System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
 
                         }
@@ -62,7 +68,7 @@ public class GotoStmt implements IStmt{
                 }
             }
             else
-                throw new TaintedAddress("goto's argument is an tainted address!");
+                throw new TaintedAddress("goto's argument is a tainted address!");
         }else
             throw new VarNotDefined("goto's argument is not an integer");
 
@@ -70,4 +76,5 @@ public class GotoStmt implements IStmt{
         return state;
     }
     public int  getLineNumber(){return lineNumber;}
+    public int getEndingLine() {return lineNumber;}
 }

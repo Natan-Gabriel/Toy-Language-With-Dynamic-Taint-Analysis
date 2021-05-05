@@ -7,26 +7,36 @@
     <list default="true" id="4ad2f867-6df6-4d3f-b133-2b66a0bc0ac0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../JavaToyLanguage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaToyLanguage/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/goto_inside_while.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/goto_inside_while.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/goto_outside_while.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/goto_outside_while.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/goto_inside_for.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/goto_inside_for.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/goto_outside_for.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/goto_outside_for.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple.minijava" beforeDir="false" afterPath="$PROJECT_DIR$/simple.minijava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/sym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ctrl/Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ctrl/Ctrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/adt/MyIList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/adt/MyIList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/adt/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/adt/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/AssignStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/CompStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/CompStmt1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/CompStmt1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/ForStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/ForStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/GotoStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/GotoStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/IStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/IStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/IfStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/New.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/NopStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/OpenRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/OpenRFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/PrintStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/VarDeclStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/WhileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/WhileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/closeRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/closeRFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/readFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/wH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/wH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/values/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/values/BoolValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/values/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/values/IntValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/values/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/values/StringValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ctrl/Ctrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ctrl/Ctrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/Big_Bang_Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integration/Big_Bang_Integration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +73,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="JUnit.Big_Bang_Integration">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.main" />
       <module name="JavaToyLanguageWithTaintAnalysis" />
@@ -105,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
         <item itemvalue="JUnit.Big_Bang_Integration" />
+        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +128,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619431790533</updated>
-      <workItem from="1619431793600" duration="10237000" />
+      <workItem from="1619431793600" duration="11756000" />
+      <workItem from="1619681146350" duration="5499000" />
+      <workItem from="1619700402012" duration="155000" />
+      <workItem from="1620210115215" duration="12114000" />
     </task>
     <servers />
   </component>

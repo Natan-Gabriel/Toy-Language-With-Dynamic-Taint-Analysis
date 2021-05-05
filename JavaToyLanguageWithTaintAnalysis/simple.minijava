@@ -2,7 +2,7 @@ int i,j,k,sum;
 i=1;
 j=1;
 k=1;
-goto 22;
+goto 21;
 while(i<5)
 {
     j=1;

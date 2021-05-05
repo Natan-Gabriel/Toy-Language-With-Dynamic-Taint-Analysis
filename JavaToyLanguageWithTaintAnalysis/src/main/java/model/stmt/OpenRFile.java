@@ -45,4 +45,5 @@ public class OpenRFile implements IStmt{
 	 }
 	public int getStatementNumber(){return 1;}
 	public int  getLineNumber(){return lineNumber;}
+	public int getEndingLine() {return lineNumber;}
 }

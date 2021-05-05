@@ -8,7 +8,7 @@ public class StringValue implements Value{
 	public StringValue(String s) {str=s;}
 	public StringValue() {str="";}
 	public boolean equals(Object another){
-		 if (another instanceof StringValue)
+		 if ((another instanceof StringValue) && ((StringValue) another).getVal().equals(str) )
 			 return true;
 		 else
 			 return false;

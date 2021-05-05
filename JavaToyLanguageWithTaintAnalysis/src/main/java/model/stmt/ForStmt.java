@@ -17,7 +17,7 @@ public class ForStmt {
     IStmt s1,s3,s;
     int startingLine, endingLine;
 
-    public ForStmt(Exp e,IStmt s1,int _startingLine,int _endingLine) {exp=e;s=s1;startingLine = _startingLine; endingLine = _endingLine;}
+    public ForStmt(Exp e,IStmt s1,int _startingLine,int _endingLine) {exp=e;s=s1;startingLine = _startingLine; endingLine = s1.getEndingLine();}
     public String toString() { return "FOR("+s1.toString()+";"+exp.toString()+";"+s3.toString()+") "+s.toString();}
     public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
         MyIStack<IStmt> stk=state.getStk();

@@ -81,6 +81,9 @@ white_space = {new_line} | [ \t\f]
 "print"           { return symbol("print",PRINT); }
 
 
+/* bool literal */
+{BoolLiteral} { return symbol("Boolconst",BOOLCONST, new Boolean(yytext())); }
+
 /* names */
 {Ident}           { return symbol("Identifier",IDENT, yytext()); }
   
@@ -88,8 +91,6 @@ white_space = {new_line} | [ \t\f]
 
 /* char literal */
 
-/* bool literal */
-{BoolLiteral} { return symbol("Boolconst",BOOLCONST, new Boolean(Boolean.parseBool(yytext()))); }
 
 /* literals */
 {IntLiteral} { return symbol("Intconst",INTCONST, new Integer(Integer.parseInt(yytext()))); }

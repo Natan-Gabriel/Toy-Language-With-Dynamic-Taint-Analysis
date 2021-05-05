@@ -7,7 +7,8 @@ import MyException.*;
 public class CompStmt implements IStmt{
 	 IStmt first;
 	 IStmt snd;
-	 public CompStmt(IStmt f,IStmt s) {first=f;snd=s;}
+	 int endingLine;
+	 public CompStmt(IStmt f,IStmt s) {first=f;snd=s; endingLine = Math.max(f.getEndingLine(),s.getEndingLine());  }
 	 public String toString() { return "("+first.toString() + ";" + snd.toString()+")";}
 	 public PrgState execute(PrgState state) {
 	 
@@ -21,4 +22,5 @@ public class CompStmt implements IStmt{
 	 }
 	public int getStatementNumber(){return 1;}
 	public int  getLineNumber(){return -1;}
+	public int getEndingLine() {return endingLine;}
 }

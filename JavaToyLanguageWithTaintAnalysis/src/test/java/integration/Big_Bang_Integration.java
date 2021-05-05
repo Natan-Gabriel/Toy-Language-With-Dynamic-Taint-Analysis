@@ -87,4 +87,148 @@ public class Big_Bang_Integration {
 
         assertEquals(expected, out.getList());
     }
+
+
+    @Test
+    public void tc_goto_inside_if() throws Exception {
+
+        IStmt ex = (IStmt) Parser.parse("files/goto_inside_if.txt");
+        MyIStack<IStmt> exeStack=new MyStack<IStmt>();
+        MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();
+        MyIDictionary<Integer,IStmt> exeDictionary=new MyDictionary<Integer,IStmt>(); //((HashMap<Integer, IStmt>) map);
+        MyIDictionary<String, Value> symTable=new MyDictionary<String, Value>();
+        MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable=new MyDictionary<String,Pair<Value,Value>>();
+        MyIList<Value> out=new MyList<Value>();
+        MyIDictionary<StringValue,BufferedReader> fTbl=new MyDictionary<StringValue,BufferedReader>();
+        MyIHeap heap=new MyHeap();
+
+        PrgState prg=new PrgState(exeStack,exeStack_executed,exeDictionary,symTable,dynaimcSymTable,out,fTbl,heap,ex);
+
+        ArrayList<PrgState> list = new ArrayList<PrgState>();
+        list.add(prg);
+        iRepo repo=new Repo(list,"log3.txt");
+        iCtrl ctrl=new Ctrl(repo);
+        ctrl.allStep();
+
+//        MyIList<Value> expected = new MyList<Value>(new ArrayList(Arrays.asList("before while", 3, " " , 6, " " , 10, " " , 15, " " ,"\n",
+//                                                                                "before while", 6, " " , 10, " " , 15, " " , 21, " " , "\n",
+//                                                                                "before while", 10, " " , 15, " " , 21, " " , 28, " " , "\n",
+//                                                                                "before while", 15, " " , 21, " " , 28, " " , 36, " " , "\n",
+//                                                                                "before while")));
+        ArrayList<Value> expected = new ArrayList<Value>(Arrays.asList(new StringValue("3rd if"),new StringValue("2nd if"),new StringValue("1st if"),new IntValue(1),new IntValue(0) ));
+//        System.out.println("expected"+expected);
+//        System.out.println("out.getList()"+out.getList());
+
+        assertEquals(expected, out.getList());
+
+    }
+
+
+    @Test
+    public void tc_goto_outside_if() throws Exception {
+
+        IStmt ex = (IStmt) Parser.parse("files/goto_outside_if.txt");
+        MyIStack<IStmt> exeStack=new MyStack<IStmt>();
+        MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();
+        MyIDictionary<Integer,IStmt> exeDictionary=new MyDictionary<Integer,IStmt>(); //((HashMap<Integer, IStmt>) map);
+        MyIDictionary<String, Value> symTable=new MyDictionary<String, Value>();
+        MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable=new MyDictionary<String,Pair<Value,Value>>();
+        MyIList<Value> out=new MyList<Value>();
+        MyIDictionary<StringValue,BufferedReader> fTbl=new MyDictionary<StringValue,BufferedReader>();
+        MyIHeap heap=new MyHeap();
+
+        PrgState prg=new PrgState(exeStack,exeStack_executed,exeDictionary,symTable,dynaimcSymTable,out,fTbl,heap,ex);
+
+        ArrayList<PrgState> list = new ArrayList<PrgState>();
+        list.add(prg);
+        iRepo repo=new Repo(list,"log4.txt");
+        iCtrl ctrl=new Ctrl(repo);
+        ctrl.allStep();
+
+//        MyIList<Value> expected = new MyList<Value>(new ArrayList(Arrays.asList("before while", 3, " " , 6, " " , 10, " " , 15, " " ,"\n",
+//                                                                                "before while", 6, " " , 10, " " , 15, " " , 21, " " , "\n",
+//                                                                                "before while", 10, " " , 15, " " , 21, " " , 28, " " , "\n",
+//                                                                                "before while", 15, " " , 21, " " , 28, " " , 36, " " , "\n",
+//                                                                                "before while")));
+        ArrayList<Value> expected = new ArrayList<Value>(Arrays.asList(new IntValue(3), new IntValue(1) ));
+        System.out.println("expected"+expected);
+        System.out.println("out.getList()"+out.getList());
+
+        assertEquals(expected, out.getList());
+
+    }
+
+    @Test
+    public void tc_goto_inside_for() throws Exception {
+
+        IStmt ex = (IStmt) Parser.parse("files/goto_inside_for.txt");
+        MyIStack<IStmt> exeStack=new MyStack<IStmt>();
+        MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();
+        MyIDictionary<Integer,IStmt> exeDictionary=new MyDictionary<Integer,IStmt>(); //((HashMap<Integer, IStmt>) map);
+        MyIDictionary<String, Value> symTable=new MyDictionary<String, Value>();
+        MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable=new MyDictionary<String,Pair<Value,Value>>();
+        MyIList<Value> out=new MyList<Value>();
+        MyIDictionary<StringValue,BufferedReader> fTbl=new MyDictionary<StringValue,BufferedReader>();
+        MyIHeap heap=new MyHeap();
+
+        PrgState prg=new PrgState(exeStack,exeStack_executed,exeDictionary,symTable,dynaimcSymTable,out,fTbl,heap,ex);
+
+        ArrayList<PrgState> list = new ArrayList<PrgState>();
+        list.add(prg);
+        iRepo repo=new Repo(list,"log5.txt");
+        iCtrl ctrl=new Ctrl(repo);
+        ctrl.allStep();
+
+//        MyIList<Value> expected = new MyList<Value>(new ArrayList(Arrays.asList("before while", 3, " " , 6, " " , 10, " " , 15, " " ,"\n",
+//                                                                                "before while", 6, " " , 10, " " , 15, " " , 21, " " , "\n",
+//                                                                                "before while", 10, " " , 15, " " , 21, " " , 28, " " , "\n",
+//                                                                                "before while", 15, " " , 21, " " , 28, " " , 36, " " , "\n",
+//                                                                                "before while")));
+        ArrayList<Value> expected = new ArrayList<Value>(Arrays.asList(new StringValue("\n"),new IntValue(6), new StringValue(" ") , new IntValue(24), new StringValue(" "), new IntValue(120), new StringValue(" ") , new StringValue("\n"),
+                new IntValue(24), new StringValue(" "), new IntValue(120), new StringValue(" ") , new IntValue(720), new StringValue(" ") ,new StringValue("\n"),
+                new IntValue(120), new StringValue(" ") , new IntValue(720), new StringValue(" ") ,new IntValue(5040), new StringValue(" " ), new StringValue("\n"),
+                new IntValue(720), new StringValue(" ") ,new IntValue(5040), new StringValue(" " ), new IntValue(40320), new StringValue(" ") ,new StringValue("\n")
+                ));
+
+        assertEquals(expected, out.getList());
+
+    }
+
+
+    @Test
+    public void tc_goto_outside_for() throws Exception {
+
+        IStmt ex = (IStmt) Parser.parse("files/goto_outside_for.txt");
+        MyIStack<IStmt> exeStack=new MyStack<IStmt>();
+        MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();
+        MyIDictionary<Integer,IStmt> exeDictionary=new MyDictionary<Integer,IStmt>(); //((HashMap<Integer, IStmt>) map);
+        MyIDictionary<String, Value> symTable=new MyDictionary<String, Value>();
+        MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable=new MyDictionary<String,Pair<Value,Value>>();
+        MyIList<Value> out=new MyList<Value>();
+        MyIDictionary<StringValue,BufferedReader> fTbl=new MyDictionary<StringValue,BufferedReader>();
+        MyIHeap heap=new MyHeap();
+
+        PrgState prg=new PrgState(exeStack,exeStack_executed,exeDictionary,symTable,dynaimcSymTable,out,fTbl,heap,ex);
+
+        ArrayList<PrgState> list = new ArrayList<PrgState>();
+        list.add(prg);
+        iRepo repo=new Repo(list,"log6.txt");
+        iCtrl ctrl=new Ctrl(repo);
+        ctrl.allStep();
+
+//        MyIList<Value> expected = new MyList<Value>(new ArrayList(Arrays.asList("before while", 3, " " , 6, " " , 10, " " , 15, " " ,"\n",
+//                                                                                "before while", 6, " " , 10, " " , 15, " " , 21, " " , "\n",
+//                                                                                "before while", 10, " " , 15, " " , 21, " " , 28, " " , "\n",
+//                                                                                "before while", 15, " " , 21, " " , 28, " " , 36, " " , "\n",
+//                                                                                "before while")));
+        ArrayList<Value> expected = new ArrayList<Value>(Arrays.asList(new StringValue("before for") , new IntValue(1), new StringValue(" ") ,new IntValue(1), new StringValue(" ") , new IntValue(2), new StringValue(" " ), new IntValue(6), new StringValue(" ") , new IntValue(24), new StringValue(" "), new StringValue("\n")
+                ));
+        System.out.println("expected"+expected);
+        System.out.println("out.getList()"+out.getList());
+
+        assertEquals(expected, out.getList());
+
+    }
+
+
 }

@@ -7,7 +7,7 @@ public class BoolValue implements Value{
 	public BoolValue(boolean v){val=v;}
 	public BoolValue() {val=false;}
 	public boolean equals(Object another){
-		 if (another instanceof BoolValue)
+		 if ((another instanceof BoolValue) && ((BoolValue) another).getVal()==val)
 			 return true;
 		 else
 			 return false;

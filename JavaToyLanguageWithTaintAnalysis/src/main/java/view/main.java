@@ -107,6 +107,8 @@ public class main {
 //		}
 
 		IStmt ex = (IStmt) Parser.parse("simple.minijava");
+//		IStmt ex = (IStmt) Parser.parse("files/goto_inside_if.txt");
+
 		MyIStack<IStmt> exeStack=new MyStack<IStmt>();
 		MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();
 		MyIDictionary<Integer,IStmt> exeDictionary=new MyDictionary<Integer,IStmt>(); //((HashMap<Integer, IStmt>) map);

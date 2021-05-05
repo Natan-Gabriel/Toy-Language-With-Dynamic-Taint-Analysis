@@ -8,7 +8,7 @@ public class IntValue implements Value{
 	public IntValue(int v) {val=v;taint=false;}
 	public IntValue() {val=0;taint=false;}
 	public boolean equals(Object another){
-		 if (another instanceof IntValue)
+		 if ((another instanceof IntValue) && ((IntValue) another).getVal()==val)
 			 return true;
 		 else
 			 return false;

@@ -66,4 +66,5 @@ public class VarDeclStmt implements IStmt{
 
 	public int getStatementNumber(){return instructionNumber;}
 	public int  getLineNumber(){return lineNumber;}
+	public int getEndingLine() {return lineNumber;}
 }
