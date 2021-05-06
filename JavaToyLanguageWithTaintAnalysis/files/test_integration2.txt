@@ -1,0 +1,29 @@
+int a,i,aux;
+aux=0;
+a=323;
+
+aux=0;
+
+if(a<=1){
+    aux=1;
+}
+else{
+    i=2;
+    while(i<=a/2){
+        if((a/i)*i==a){
+            print("nu e prim");
+            print(a);
+            aux=1;
+
+        }
+
+        i=i+1;
+    }
+}
+
+if(aux==1){
+    print("a is not prime");
+}
+else{
+    print("a is prime");
+}

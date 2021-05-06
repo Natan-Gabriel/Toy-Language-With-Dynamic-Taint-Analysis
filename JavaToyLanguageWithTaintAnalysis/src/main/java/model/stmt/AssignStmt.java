@@ -21,6 +21,9 @@ public class AssignStmt implements IStmt{
 		 if(symTbl.isDefined(id)){
 			 Value val = exp.eval(symTbl,hp);
 			 Type typId= (symTbl.lookup(id)).getType();
+			 System.out.println("val"+val);
+			 System.out.println("typId"+typId);
+			 System.out.println("(val.getType()).equals(typId)"+(val.getType()).equals(typId));
 			 if( (val.getType()).equals(typId) )
 		 	 	symTbl.update(id, val);
 		 	 else throw new VarNotDefined("declared type of variable"+id+" and type of the assigned expression do not match");}

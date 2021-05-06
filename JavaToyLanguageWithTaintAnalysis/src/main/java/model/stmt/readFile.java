@@ -49,8 +49,14 @@ public class readFile implements IStmt{
 		 int comp;
 		 if(line==null)
 			 comp=0;
-		 else
-			 comp=Integer.parseInt(line);
+		 else {
+			 try{
+				 comp = Integer.parseInt(line);
+			 }
+			 catch(NumberFormatException e){
+				 throw new CustomException("the content from the current line in the file is not an integer");
+			 }
+		 }
 		 symTbl.update(var_name,new IntValue(comp));
 
 		 

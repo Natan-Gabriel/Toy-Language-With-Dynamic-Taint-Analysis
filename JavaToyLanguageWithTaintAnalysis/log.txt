@@ -192982,3 +192982,321 @@ Out:
 
 FileTable:
 
+ExeStack:
+(x is of IntType;IF(5) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(true) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(5) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(true) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(5) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(true) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(5) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(true) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(5) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(true) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(5) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(5) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+(x is of IntType;IF(true) THEN(x=2)ELSE(x=3))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+x is of IntType
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(x=2)ELSE(x=3)
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+x=2
+SymTable:
+x=0
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+x=2
+Out:
+FileTable:
+

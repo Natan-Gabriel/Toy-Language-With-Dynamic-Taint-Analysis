@@ -1,5 +1,6 @@
 package model.exp;
 
+import MyException.CustomException;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.types.IntType;
@@ -10,15 +11,19 @@ import model.values.Value;
 import java.util.Scanner;
 
 public class GetInput implements Exp{
-    Value val;
-    //....
+
     public GetInput() {}
-//    public  String toString() {return val.toString();}
-    public Value eval(MyIDictionary<String,Value> tbl, MyIHeap hp) {
+    public  String toString() {return "get_input()";}
+    public Value eval(MyIDictionary<String,Value> tbl, MyIHeap hp) throws CustomException {
         Scanner console = new Scanner(System.in);
 
-        int val = console.nextInt();
-        return new IntValue(val,true);
+        try {
+            int val = console.nextInt();
+            return new IntValue(val,true);
+        }
+        catch(Exception e) {
+            throw new CustomException("You did not provide an integer");
+        }
     }
     public Type getType(MyIDictionary<String,Value> tbl, MyIHeap hp) {
         return new IntType();

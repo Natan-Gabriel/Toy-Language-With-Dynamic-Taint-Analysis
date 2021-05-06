@@ -2,6 +2,8 @@ package model.values;
 
 import model.types.*;
 
+import java.util.Objects;
+
 public class StringValue implements Value{
 	String str;
 	boolean taint;
@@ -13,6 +15,11 @@ public class StringValue implements Value{
 		 else
 			 return false;
 	 }
+	@Override
+	public int hashCode() {
+		return Objects.hash(str);
+	}
+
 	public Type getType() {return new StringType();}
 	public String getVal() {return str;}
 	public String toString() {return str;}
