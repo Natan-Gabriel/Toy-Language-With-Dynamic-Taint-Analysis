@@ -1,0 +1,7 @@
+int a;
+if(a==1){
+    print("da");
+}
+else{
+    print("nu");
+}

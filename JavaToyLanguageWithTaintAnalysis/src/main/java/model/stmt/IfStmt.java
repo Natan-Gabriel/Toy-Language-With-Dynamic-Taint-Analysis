@@ -15,9 +15,10 @@ public class IfStmt implements IStmt{
 	 List<IStmt> thenS;
 	 List<IStmt> elseS;
 	 int instructionNumber;
+	 int lineNumber, endingLineThen;
 	 int totalLength;
 	 
-	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _instructionNumber, int _totalLength) {exp=e; thenS=t;elseS=el;instructionNumber=_instructionNumber;totalLength = _totalLength;}
+	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _lineNumber, int _endingLineThen) {exp=e; thenS=t;elseS=el;lineNumber=_lineNumber;endingLineThen=_endingLineThen;totalLength = t.size()+el.size();}
 	 public String toString(){ return "IF("+ exp.toString()+") THEN(" +thenS.toString()+")ELSE("+elseS.toString()+") instructionNumber"+instructionNumber;}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -60,6 +61,7 @@ public class IfStmt implements IStmt{
 		 return state;
 	 }
 	 //...
+	public int getTotalLength(){return totalLength;}
 	 public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){instructionNumber=number;}
 	//public void  setNextInstruction(int number){nextInstruction=number;}

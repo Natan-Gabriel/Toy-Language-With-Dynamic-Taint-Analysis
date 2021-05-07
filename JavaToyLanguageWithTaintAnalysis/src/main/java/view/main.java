@@ -107,7 +107,7 @@ public class main {
 		Map<Integer, IStmt> map3=null;
 
 		Object res=null;
-//		try {
+		try {
 //			if(arg.length==0){
 //				System.out.println("Please input a file name");
 //				return;
@@ -116,8 +116,9 @@ public class main {
 //			if(arg.length>=2){
 //				flag= Boolean.parseBoolean(arg[1]);
 //			}
+			Parser.parse("files/ex1.txt");
 //			map3=(Map<Integer, IStmt>)Parser.parse(arg[0]);
-////			map3=map;
+//			map3=map;
 //			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
 //			MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
 //			MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();
@@ -134,10 +135,10 @@ public class main {
 //			iCtrl ctrl3=new Ctrl(repo3,flag);
 //			Command cmd=new RunExample("3",ex1.toString(),ctrl3);
 //			cmd.execute();
-//		} catch ( Exception e) {
-//			System.out.println("Error: "+e);
-//			e.printStackTrace();
-//		}
+		} catch ( Exception e) {
+			System.out.println("Error: "+e);
+			e.printStackTrace();
+		}
 
 
 

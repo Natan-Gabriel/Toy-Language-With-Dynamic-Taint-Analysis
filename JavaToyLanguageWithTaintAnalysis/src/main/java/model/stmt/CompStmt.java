@@ -19,6 +19,10 @@ public class CompStmt implements IStmt{
 //		 exeDictionary.add(snd.getStatementNumber(),snd);
 		 return state;
 	 }
+
+	public IStmt getFirstStatement() {return first;}
+	public IStmt getSecondStatement() {return snd;}
+
 	public int getStatementNumber(){return 1;}
 	public void setStatementNumber(int number){;}
 }
