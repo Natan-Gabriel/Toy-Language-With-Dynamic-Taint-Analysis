@@ -11,13 +11,11 @@ import model.types.*;
 import model.values.*;
 import java.util.*;
 import java.io.*;
-import java_cup.runtime.Symbol;
-import java_cup.runtime.ComplexSymbolFactory.ComplexSymbol;
+
 import java_cup.runtime.ComplexSymbolFactory;
 import java_cup.runtime.ScannerBuffer;
 import javafx.util.Pair;
 import java_cup.runtime.ComplexSymbolFactory.Location;
-import java_cup.runtime.XMLElement;
 
 /** CUP v0.11b 20160615 (GIT 4ac7450) generated parser.
   */
@@ -825,7 +823,7 @@ class CUP$Parser$actions {
             {
               Exp RESULT =null;
 		
-      RESULT = new GetInput();
+      RESULT = new readInteger();
      
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("expr",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }

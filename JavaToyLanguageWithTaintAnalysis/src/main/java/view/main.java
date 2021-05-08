@@ -8,10 +8,6 @@ import model.values.*;
 import model.exp.*;
 import java.util.*;
 import java.io.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import MyException.*;
 
 import ctrl.*;
 import repo.*;
@@ -21,14 +17,14 @@ public class main {
 
 	// int v; v=get_input(); goto v ; v=3;Print(v)
 	IStmt ex1=   new CompStmt(new VarDeclStmt("v",new IntType(),1,1),
-			 new CompStmt( new CompStmt( new AssignStmt("v",new GetInput(),2,1),new CompStmt(new GotoStmt(new VarExp("v"),3),
+			 new CompStmt( new CompStmt( new AssignStmt("v",new readInteger(),2,1),new CompStmt(new GotoStmt(new VarExp("v"),3),
 					 new AssignStmt("v",new ValueExp(new IntValue(3)),4,1)) ), new PrintStmt(new
 					 VarExp("v"),5)));
 //
 //
 //	Map<Integer, IStmt> map1 = Stream.of(new Object[][] {
 //			{ 1,new VarDeclStmt("v",new IntType(),1)},
-//			{ 2, new AssignStmt("v",new GetInput(),2) },
+//			{ 2, new AssignStmt("v",new readInteger(),2) },
 //			{ 3, new GotoStmt(new VarExp("v"),3)},
 //			{ 4, new AssignStmt("v",new ValueExp(new IntValue(3)),4)  },
 //			{ 5, new PrintStmt(new
@@ -145,7 +141,7 @@ public class main {
 		// int x; x=2*get_input(); int y ; y=5+x ; goto y
 //		Map<Integer, IStmt> map4 = Stream.of(new Object[][] {
 //				{ 1,new VarDeclStmt("x",new IntType(),1)},
-//				{ 2,  new AssignStmt("x",new ArithExp('*',new GetInput(), new
+//				{ 2,  new AssignStmt("x",new ArithExp('*',new readInteger(), new
 //						ValueExp(new IntValue(2))),2) },
 //				{ 3,new VarDeclStmt("y",new IntType(),3)},
 //				{ 4, new AssignStmt("y",new ArithExp('+',new VarExp("x"), new
@@ -158,9 +154,9 @@ public class main {
 //		Map<Integer, IStmt> map5 = Stream.of(new Object[][] {
 //				{ 1,new VarDeclStmt("x",new IntType(),1,1)},
 //				{2, new IfStmt(new RelationalExp("==",new ValueExp(new IntValue(0)),new ValueExp(new IntValue(0))),
-//						new AssignStmt("x",new ArithExp('*',new GetInput(), new
+//						new AssignStmt("x",new ArithExp('*',new readInteger(), new
 //								ValueExp(new IntValue(2))),3,3),
-//						new AssignStmt("x",new ArithExp('*',new GetInput(), new
+//						new AssignStmt("x",new ArithExp('*',new readInteger(), new
 //								ValueExp(new IntValue(2))),4,3),2) },
 //				{ 5, new PrintStmt(new
 //						VarExp("v"),5) }

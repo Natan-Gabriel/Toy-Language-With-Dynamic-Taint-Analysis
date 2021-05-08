@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-public class GetInput_WBT {
+public class readInteger_WBT {
     static MyIStack<IStmt> exeStack;
     static MyIDictionary<Integer,IStmt> exeDictionary;
     static MyIDictionary<String, Value> symTable;
@@ -51,7 +51,7 @@ public class GetInput_WBT {
     @Test
     public void tc_AllValid() throws CustomException, VarNotDefined, DivByZero {
 
-        GetInput exp = new GetInput();
+        readInteger exp = new readInteger();
 
         InputStream original = System.in; // backup System.in to restore it later
         ByteArrayInputStream in = new ByteArrayInputStream("44".getBytes());
@@ -68,7 +68,7 @@ public class GetInput_WBT {
     @Test
     public void tc_AllInvalid() throws CustomException, VarNotDefined, DivByZero {
 
-        GetInput exp = new GetInput();
+        readInteger exp = new readInteger();
 
         InputStream original = System.in; // backup System.in to restore it later
         ByteArrayInputStream in = new ByteArrayInputStream("string".getBytes());

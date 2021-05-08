@@ -294,7 +294,7 @@ expr ::= INTCONST:c
      :}
      | READ_INTEGER
      {:
-      RESULT = new GetInput();
+      RESULT = new readInteger();
      :}
      | READ_HEAP LPAR expr:e RPAR
      {:

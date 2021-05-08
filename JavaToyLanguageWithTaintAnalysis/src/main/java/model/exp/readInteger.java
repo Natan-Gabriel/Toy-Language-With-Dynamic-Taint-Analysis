@@ -10,11 +10,11 @@ import model.values.Value;
 
 import java.util.Scanner;
 
-public class GetInput implements Exp{
+public class readInteger implements Exp{
 
 
-    public GetInput() {}
-    public  String toString() {return "get_input()";}
+    public readInteger() {}
+    public  String toString() {return "readInteger()";}
     public Value eval(MyIDictionary<String,Value> tbl, MyIHeap hp) throws CustomException {
         Scanner console = new Scanner(System.in);
 
