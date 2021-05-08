@@ -19,7 +19,7 @@ public class main {
 		IStmt ex1= new NopStmt();
 				// int v; v=2;v=3;Print(v)
 //	IStmt ex1=   new CompStmt(new VarDeclStmt("v",new IntType(),1),
-//			 new CompStmt( new CompStmt( new AssignStmt("v",new GetInput(),2),new CompStmt(new GotoStmt(new VarExp("v"),3),
+//			 new CompStmt( new CompStmt( new AssignStmt("v",new readInteger(),2),new CompStmt(new GotoStmt(new VarExp("v"),3),
 //					 new AssignStmt("v",new ValueExp(new IntValue(3)),4)) ), new PrintStmt(new
 //					 VarExp("v"),5)));
 //
@@ -97,16 +97,16 @@ public class main {
 
 	//Map<Integer, IStmt> map=null;
 	try {
-//		if(arg.length==0){
-//			System.out.println("Please input a file name");
-//			return;
-//		}
-//		boolean flag=false;
-//		if(arg.length>=2){
-//			flag= Boolean.parseBoolean(arg[1]);
-//		}
+		if(arg.length==0){
+			System.out.println("Please input a file name");
+			return;
+		}
+		boolean flag=false;
+		if(arg.length>=2){
+			flag= Boolean.parseBoolean(arg[1]);
+		}
 
-		IStmt ex = (IStmt) Parser.parse("simple.minijava");
+		IStmt ex = (IStmt) Parser.parse(arg[0]);
 //		IStmt ex = (IStmt) Parser.parse("files/goto_inside_if.txt");
 
 		MyIStack<IStmt> exeStack=new MyStack<IStmt>();
@@ -123,12 +123,12 @@ public class main {
 		ArrayList<PrgState> list = new ArrayList<PrgState>();
 		list.add(prg);
 		iRepo repo=new Repo(list,"log.txt");
-		iCtrl ctrl=new Ctrl(repo,true);
+		iCtrl ctrl=new Ctrl(repo,false);
 		ctrl.allStep();
 //		System.out.println("IStmt ex:"+ex);
 	} catch ( Exception e) {
 		System.out.println("Error: "+e);
-		e.printStackTrace();
+		//e.printStackTrace();
 	}
 
 

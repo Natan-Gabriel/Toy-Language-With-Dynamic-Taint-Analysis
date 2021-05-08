@@ -36,7 +36,7 @@ public class GotoStmt implements IStmt{
                     IStmt crtStmt = stk.pop();
                     if(crtStmt instanceof CompStmt){
                         crtStmt.execute(state);
-                        System.out.println("I reached here. stk is: "+stk);
+                        //System.out.println("I reached here. stk is: "+stk);
                     }
                     else if(crtStmt.getLineNumber()>=n1 ){
                         stk.push(crtStmt);
@@ -46,20 +46,20 @@ public class GotoStmt implements IStmt{
                         if(!visited.contains(crtStmt)) {
                             visited.add(crtStmt); // in order to avoid running the loop forever, when the goto's argument satisfies the above condition, but there are no statements after this line
                             ((WhileStmt) crtStmt).simulateExecution(state);
-                            System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
+                            //System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
                         }
                     }
                     else if ((crtStmt instanceof IfStmt) && (crtStmt.getLineNumber()<=n1 && n1<=crtStmt.getEndingLine()  )){ //(crtStmt instanceof IfStmt) ||
                         IfStmt s = (IfStmt)crtStmt;
-                        System.out.println("s.getEndingLineThen()"+s.getEndingLineThen());
+                        //System.out.println("s.getEndingLineThen()"+s.getEndingLineThen());
                         if(n1<=s.getEndingLineThen()){
                             s.simulateExecutionThen(state);
-                            System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
+                            //System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
 
                         }
                         else {
                             s.simulateExecutionElse(state);
-                            System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
+                            //System.out.println("crtStmt instanceof WhileStmt. stk is: " + stk);
 
                         }
 

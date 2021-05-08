@@ -29,13 +29,13 @@ public class ArithExp implements Exp{
 				 int n1,n2;
 				 n1= i1.getVal();
 				 n2 = i2.getVal();
-				 if (op==1) return new IntValue(n1+n2);
-				 if (op ==2) return new IntValue(n1-n2);
-				 if(op==3) return new IntValue(n1*n2);
+				 if (op==1) return new IntValue(n1+n2,i1.getTaint() || i2.getTaint());
+				 if (op ==2) return new IntValue(n1-n2,i1.getTaint() || i2.getTaint());
+				 if(op==3) return new IntValue(n1*n2,i1.getTaint() || i2.getTaint());
 				 if(op==4)
 					 if(n2==0) 
 						 throw new DivByZero("division by zero");
-					 else return new IntValue(n1/n2);
+					 else return new IntValue(n1/n2,i1.getTaint() || i2.getTaint());
 				 throw new CustomException("invalid operator");
 			 }else
 				 throw new VarNotDefined("second operand is not an integer");

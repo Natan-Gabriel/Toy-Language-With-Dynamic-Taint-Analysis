@@ -7,12 +7,50 @@
     <list default="true" id="4ad2f867-6df6-4d3f-b133-2b66a0bc0ac0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/GetInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/GetInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/VarExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/ArithExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/GetInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/readInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/LogicExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/AssignStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/GotoStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/GotoStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/readFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/values/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/values/StringValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/values/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/values/BoolValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/exp/ArithExp_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/exp/ArithExp_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/exp/GetInput_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/exp/readInteger_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/exp/LogicExp_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/exp/LogicExp_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/exp/RelationalExp_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/exp/RelationalExp_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/exp/ValueExp_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/exp/ValueExp_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/exp/VarExp_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/exp/VarExp_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/AssignStmt_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/AssignStmt_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/IfStmt_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/IfStmt_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/OpenRFile_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/OpenRFile_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/PrintStmt_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/PrintStmt_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/VarDeclStmt_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/VarDeclStmt_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/WhileStmt_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/WhileStmt_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/closeRFile_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/closeRFile_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/readFile_WBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/readFile_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/analyser/Parser$CUP$Parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/analyser/Parser$CUP$Parser$actions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/analyser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/analyser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/exp/ArithExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/exp/ArithExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/exp/GetInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/exp/LogicExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/exp/LogicExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/stmt/AssignStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/stmt/AssignStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/stmt/GotoStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/stmt/GotoStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/stmt/readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/stmt/readFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/values/BoolValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/values/BoolValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/exp/GetInput_WBT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/stmt/PrintStmt_WBT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/stmt/PrintStmt_WBT.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +75,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -44,12 +86,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ThesisProject_exeDictionary_1_2/JavaToyLanguageWithTaintAnalysis" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.All in JavaToyLanguageWithTaintAnalysis">
+  <component name="RunManager" selected="JUnit.Big_Bang_Integration">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -71,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssignStmt_WBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AssignStmt_BBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaToyLanguageWithTaintAnalysis" />
       <extension name="coverage">
         <pattern>
@@ -80,13 +122,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model.stmt" />
-      <option name="MAIN_CLASS_NAME" value="model.stmt.AssignStmt_WBT" />
+      <option name="MAIN_CLASS_NAME" value="model.stmt.AssignStmt_BBT" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenRFile_WBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Big_Bang_Integration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaToyLanguageWithTaintAnalysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.Big_Bang_Integration" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenRFile_BBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaToyLanguageWithTaintAnalysis" />
       <extension name="coverage">
         <pattern>
@@ -95,22 +152,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model.stmt" />
-      <option name="MAIN_CLASS_NAME" value="model.stmt.OpenRFile_WBT" />
+      <option name="MAIN_CLASS_NAME" value="model.stmt.OpenRFile_BBT" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="model.exp in JavaToyLanguageWithTaintAnalysis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaToyLanguageWithTaintAnalysis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.exp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.exp" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Big_Bang_Integration" />
         <item itemvalue="JUnit.All in JavaToyLanguageWithTaintAnalysis" />
         <item itemvalue="JUnit.model.stmt in JavaToyLanguageWithTaintAnalysis" />
-        <item itemvalue="JUnit.OpenRFile_WBT" />
-        <item itemvalue="JUnit.AssignStmt_WBT" />
-        <item itemvalue="JUnit.model.exp in JavaToyLanguageWithTaintAnalysis" />
+        <item itemvalue="JUnit.OpenRFile_BBT" />
+        <item itemvalue="JUnit.AssignStmt_BBT" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +195,7 @@
       <workItem from="1619700402012" duration="155000" />
       <workItem from="1620210115215" duration="12926000" />
       <workItem from="1620300038380" duration="6842000" />
+      <workItem from="1620472848982" duration="9475000" />
     </task>
     <servers />
   </component>

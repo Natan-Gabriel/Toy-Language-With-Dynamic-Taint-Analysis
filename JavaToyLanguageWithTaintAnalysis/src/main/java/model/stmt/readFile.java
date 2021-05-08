@@ -57,7 +57,7 @@ public class readFile implements IStmt{
 				 throw new CustomException("the content from the current line in the file is not an integer");
 			 }
 		 }
-		 symTbl.update(var_name,new IntValue(comp));
+		 symTbl.update(var_name,new IntValue(comp,true));
 
 		 
 		 return state;

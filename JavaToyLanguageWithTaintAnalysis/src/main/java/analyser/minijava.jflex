@@ -48,9 +48,9 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
     return symbolFactory.newSymbol("EOF", EOF, new Location(yyline+1,yycolumn+1,(int)yychar), new Location(yyline+1,yycolumn+1,(int)(yychar+1)));
 %eofval}
 
-BoolLiteral = true | false
-
 Ident = [a-zA-Z$_] [a-zA-Z0-9$_]*
+
+BoolLiteral = true | false
 
 IntLiteral = 0 | [1-9][0-9]*
 

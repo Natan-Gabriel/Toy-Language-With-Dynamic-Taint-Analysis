@@ -1018,7 +1018,7 @@ public class Lexer implements java_cup.runtime.Scanner, sym {
             // fall through
           case 85: break;
           case 38:
-            { return symbol("Boolconst",BOOLCONST, new Boolean(Boolean(yytext())));
+            { return symbol("Boolconst",BOOLCONST, new Boolean(yytext()));
             }
             // fall through
           case 86: break;
