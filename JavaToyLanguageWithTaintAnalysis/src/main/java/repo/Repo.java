@@ -63,7 +63,7 @@ public class Repo implements iRepo{
 				 try {
 					 logFile.close();
 				 } catch (Exception e) {
-					 System.err.println("Eroare inchidere fisier "+e);
+					 System.err.println("Error while closing the file "+e);
 				 }
 		 }
 	}

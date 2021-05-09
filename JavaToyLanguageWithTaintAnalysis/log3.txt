@@ -5609,3 +5609,257 @@ Out:
 0
 FileTable:
 
+ExeStack:
+((a is of IntType;(b is of IntType;nop));(goto 7;(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop)))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;nop))
+(goto 7;(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+(b is of IntType;nop)
+(goto 7;(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(b is of IntType;nop)
+(goto 7;(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop))))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+(goto 7;(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop))))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+(goto 7;(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop))))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(goto 7;(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop))))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+goto 7
+(IF(true) THEN((IF(true) THEN((IF(true) THEN((b=4;nop))ELSE((a=1;(print(3rd if);nop)));(print(2nd if);nop)))ELSE((a=2;(print(nothing);nop)));(print(1st if);nop)))ELSE((a=3;nop));(print(a);(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+(print(3rd if);nop)
+(print(2nd if);nop)
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(print(3rd if);nop)
+(print(2nd if);nop)
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+print(3rd if)
+nop
+(print(2nd if);nop)
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(2nd if);nop)
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+FileTable:
+
+ExeStack:
+(print(2nd if);nop)
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+FileTable:
+
+ExeStack:
+print(2nd if)
+nop
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+FileTable:
+
+ExeStack:
+nop
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+FileTable:
+
+ExeStack:
+(print(1st if);nop)
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+FileTable:
+
+ExeStack:
+print(1st if)
+nop
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+FileTable:
+
+ExeStack:
+nop
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+1st if
+FileTable:
+
+ExeStack:
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+1st if
+FileTable:
+
+ExeStack:
+print(a)
+(print(b);nop)
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+1st if
+FileTable:
+
+ExeStack:
+(print(b);nop)
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+1st if
+1
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+1st if
+1
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+1st if
+1
+0
+FileTable:
+
+ExeStack:
+SymTable:
+a=1
+b=0
+Out:
+3rd if
+2nd if
+1st if
+1
+0
+FileTable:
+

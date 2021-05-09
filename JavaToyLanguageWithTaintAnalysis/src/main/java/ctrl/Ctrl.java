@@ -180,7 +180,7 @@ public class Ctrl implements iCtrl{
 			 displayPrgState(prg);
 		 }
 	public void allStep(int b) throws ExeStackEmpty, VarNotDefined, DivByZero, VarIsDefined,Exception{
-		 PrgState prg = repo.getCrtPrg(b); // repo is the controller field of type MyRepoInterface
+		 PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyRepoInterface
 		 //System.out.println(prg);//here you can display the prg state
 		 try {
 				repo.logPrgStateExec();
@@ -188,10 +188,14 @@ public class Ctrl implements iCtrl{
 			catch(Exception e) {
 				System.out.println(e);
 			}
-		 while (!prg.getStk().isEmpty()){
+		 while (!prg.getStk().isEmpty() && b>0){
 			 oneStep(prg);
+			 b--;
 			 try {
 					repo.logPrgStateExec();
+				 	prg.getHeap().setContent(unsafeGarbageCollector(
+				 	getAddrFromSymTable(prg.getSymTable().getContent().values()),
+					prg.getHeap().getContent()));
 			 }
 			 catch(Exception e) {
 					System.out.println(e);
