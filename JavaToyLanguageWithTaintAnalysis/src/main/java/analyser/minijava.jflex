@@ -1,6 +1,7 @@
 // Technische Universitaet Muenchen 
 // Fakultaet fuer Informatik 
 package analyser;
+import model.types.*;
 import java_cup.runtime.Symbol;
 import java_cup.runtime.ComplexSymbolFactory;
 import java_cup.runtime.ComplexSymbolFactory.Location;
@@ -62,7 +63,9 @@ white_space = {new_line} | [ \t\f]
 
 <YYINITIAL>{
 /* keywords */
-"int"             { return symbol("int",TYPE, "INT" ); }
+"int"             { return symbol("int",TYPE,  new IntType() ); }
+"string"             { return symbol("string",TYPE, new StringType() ); }
+"boolean"             { return symbol("boolean",TYPE, new BoolType() ); }
 "if"              { return symbol("if",IF); }
 "else"            { return symbol("else",ELSE); }
 "while"           { return symbol("while",WHILE); }

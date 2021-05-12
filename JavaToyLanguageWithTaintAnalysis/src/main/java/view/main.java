@@ -112,23 +112,24 @@ public class main {
 //			if(arg.length>=2){
 //				flag= Boolean.parseBoolean(arg[1]);
 //			}
-			Parser.parse("files/ex2.txt");
+//			Parser.parse("files/ex2.txt");
 //			map3=(Map<Integer, IStmt>)Parser.parse(arg[0]);
-//			map3=map;
-//			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
-//			MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
-//			MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();
-//			MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable3=new MyDictionary<String,Pair<Value,Value>>();
-//			MyIList<Value> out3=new MyList<Value>();
-//			MyIDictionary<StringValue,BufferedReader> fTbl3=new MyDictionary<StringValue,BufferedReader>();
-//			MyIHeap heap3=new MyHeap();
-//
-//			PrgState prg3=new PrgState(exeStack3,exeDictionary3,symTable3,dynaimcSymTable3,out3,fTbl3,heap3,ex1);
-//
-//			ArrayList<PrgState> list3 = new ArrayList<PrgState>();
-//			list3.add(prg3);
-//			iRepo repo3=new Repo(list3,"log3.txt");
-//			iCtrl ctrl3=new Ctrl(repo3,flag);
+			map3=(Map<Integer, IStmt>)Parser.parse("files/dumb01.txt");
+			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
+			MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
+			MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();
+			MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable3=new MyDictionary<String,Pair<Value,Value>>();
+			MyIList<Value> out3=new MyList<Value>();
+			MyIDictionary<StringValue,BufferedReader> fTbl3=new MyDictionary<StringValue,BufferedReader>();
+			MyIHeap heap3=new MyHeap();
+
+			PrgState prg3=new PrgState(exeStack3,exeDictionary3,symTable3,dynaimcSymTable3,out3,fTbl3,heap3,ex1);
+
+			ArrayList<PrgState> list3 = new ArrayList<PrgState>();
+			list3.add(prg3);
+			iRepo repo3=new Repo(list3,"log3.txt");
+			iCtrl ctrl3=new Ctrl(repo3,true);
+			ctrl3.allStep();
 //			Command cmd=new RunExample("3",ex1.toString(),ctrl3);
 //			cmd.execute();
 		} catch ( Exception e) {

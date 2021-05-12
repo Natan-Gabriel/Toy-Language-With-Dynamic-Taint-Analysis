@@ -19,17 +19,24 @@ public class IfStmt implements IStmt{
 	 int totalLength;
 	 int numberOfNestedStatements=0;
 	 
-	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _lineNumber, int _endingLineThen) {
-	 	exp=e; thenS=t;elseS=el;lineNumber=_lineNumber;endingLineThen=_endingLineThen;totalLength = t.size()+el.size();
+	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _lineNumber, int _endingLineThen,int _instructionNumber) {
+		 init( e, t, el, _lineNumber, _endingLineThen,_instructionNumber);
+	 }
+	public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _lineNumber, int _endingLineThen) {
+		init( e, t, el, _lineNumber, _endingLineThen,0);
+	 }
+
+	 public void init(Exp e, List<IStmt> t, List<IStmt> el, int _lineNumber, int _endingLineThen,int _instructionNumber){
+		 exp=e; thenS=t;elseS=el;lineNumber=_lineNumber;endingLineThen=_endingLineThen;totalLength = t.size()+el.size();instructionNumber=_instructionNumber;
 		 for(IStmt istmt:thenS){
 			 numberOfNestedStatements = numberOfNestedStatements+istmt.getNumberOfNestedStatements()+1;
-			 System.out.println("entered");
+			 //System.out.println("entered");
 		 }
 		 for(IStmt istmt:elseS){
 			 numberOfNestedStatements = numberOfNestedStatements+istmt.getNumberOfNestedStatements()+1;
 		 }
-		 System.out.println("numberOfNestedStatements in IFSTMT "+numberOfNestedStatements);
 	 }
+
 	 public String toString(){ return "IF("+ exp.toString()+") THEN(" +thenS.toString()+")ELSE("+elseS.toString()+") instructionNumber "+instructionNumber;}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
@@ -42,6 +49,7 @@ public class IfStmt implements IStmt{
 		 if (val.getType().equals(new BoolType())) {
 			 BoolValue v = (BoolValue) val;
 			 System.out.println("instructionNumber+thenS.size()+elseS.size()+1:"+(instructionNumber+thenS.size()+elseS.size()+1));
+			 System.out.println("instructionNumber "+instructionNumber+" thenS.size() "+thenS.size()+" elseS.size() "+elseS.size());
 			 if (nextInstructions.getSize()==0 || nextInstructions.lastElement()!=instructionNumber+totalLength+1) // to avoid adding of same if ending instruction (in case of nested if's)
 			 	nextInstructions.push(instructionNumber+totalLength+1);
 			 if (v.getVal()) {

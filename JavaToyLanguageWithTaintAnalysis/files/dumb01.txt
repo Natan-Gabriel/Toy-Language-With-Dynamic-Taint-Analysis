@@ -1,0 +1,14 @@
+int i=1,j=2,k=3,factorial=4;
+goto 4;
+i=5;
+int dada=6;
+for(j=0;j<5;j=j+1;)
+{
+    print("a");
+
+    for(i=0;i<5;i=i+1;)
+    {
+        print("b");
+        print("c");
+    }
+}

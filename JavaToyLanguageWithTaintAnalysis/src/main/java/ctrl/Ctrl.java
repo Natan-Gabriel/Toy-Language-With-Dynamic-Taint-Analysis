@@ -92,6 +92,7 @@ public class Ctrl implements iCtrl{
 //		}
 
 		MyIDictionary<Integer,IStmt> exeDictionary=state.getExeDictionary();
+
 		IStmt crtStmt = exeDictionary.getValue(nextInstruction);
 
 		return crtStmt.execute(state);
@@ -110,11 +111,12 @@ public class Ctrl implements iCtrl{
 		}
 
 		while(end==false){
-			oneStepUsingDictionary(prg);
 
 //			nextInstruction+=1;
 //			prg.setNextInstruction(nextInstruction);
 //			System.out.println("prg.getNextInstructions(): "+prg.getNextInstructions());
+
+			oneStepUsingDictionary(prg);
 			if (prg.getNextInstructions().lastElement()==1+prg.getExeDictionary().getSize()){
 				end=true;
 				prg.setNextInstruction(1);

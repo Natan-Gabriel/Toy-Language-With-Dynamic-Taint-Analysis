@@ -83,9 +83,9 @@ parser code {:
         }
     }*/
     public static void constructMap(){
-        int count = 10;
+        int count = list.size();
         int depth = 0;
-        Stack<Integer> nestedStatementsStack = new Stack<>();;
+        Stack<Integer> nestedStatementsStack = new Stack<>();
 
         System.out.println("LIST before"+list);
         Collections.reverse(list);
@@ -149,10 +149,11 @@ parser code {:
 :};
 
 terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO;
-terminal Integer TYPE, UNOP, INTCONST;
+terminal Integer UNOP, INTCONST;
 terminal String  IDENT,STRINGCONST, COMP, BBINOP;
 terminal char BINOPPRIORITY1, BINOPPRIORITY2;
 terminal Boolean BOOLCONST;
+terminal Type TYPE;
 
 
 non terminal String program;
@@ -182,35 +183,35 @@ decllist  ::= decl:d decllist:dl
     {: RESULT = ""; :}
     ;
 
-decl ::= TYPE assignment:i identlist:il SEMICOLON
+decl ::= TYPE:type assignment:i identlist:il SEMICOLON
     {:
     IStmt decl_stmt,assign_stmt ;
     List<IStmt> res = new ArrayList<IStmt>();
-    decl_stmt = new VarDeclStmt(i.getKey(),new IntType(),count,ixleft.getLine());
+    decl_stmt = new VarDeclStmt(i.getKey(),type,count,typexleft.getLine());
     res.add(decl_stmt);
     list.add(decl_stmt);
     count++;
 
+    if(i.getValue()!=null){
+        assign_stmt = new AssignStmt(i.getKey(),(Exp)i.getValue(),count,typexleft.getLine());
+        res.add(assign_stmt);
+        list.add(assign_stmt);
+        count++;
+    }
 
     for(Pair<String,Exp> elem : il){
-        decl_stmt = new VarDeclStmt(elem.getKey(),new IntType(),count,ixleft.getLine());
+        decl_stmt = new VarDeclStmt(elem.getKey(),type,count,typexleft.getLine());
         res.add(decl_stmt);
         list.add(decl_stmt);
         count++;
         if(elem.getValue()!=null){
-            assign_stmt = new AssignStmt(elem.getKey(),(Exp)elem.getValue(),count,ixleft.getLine());
+            assign_stmt = new AssignStmt(elem.getKey(),(Exp)elem.getValue(),count,typexleft.getLine());
             res.add(assign_stmt);
             list.add(assign_stmt);
             count++;
         }
     }
 
-    if(i.getValue()!=null){
-            assign_stmt = new AssignStmt(i.getKey(),(Exp)i.getValue(),count,ixleft.getLine());
-            res.add(assign_stmt);
-            list.add(assign_stmt);
-            count++;
-    }
 
     RESULT = res; :}
     ;
@@ -235,8 +236,13 @@ stmtlist  ::= stmtlist:sl stmt:s
     {: RESULT = new ArrayList<IStmt>(); :}
     ;
 
-stmt ::= SEMICOLON
-    {: :}
+stmt ::= SEMICOLON:s
+    {:
+          IStmt stmt = new NopStmt(sxleft.getLine());
+          list.add(stmt);
+          count++;
+          RESULT = Arrays.asList(stmt);
+    :}
     | decl:d
     {:
         RESULT = d;
@@ -265,19 +271,57 @@ stmt ::= SEMICOLON
            count++;
            RESULT = Arrays.asList(stmt);
      :}
+    | WHILE:s LPAR expr:e RPAR BEGIN stmtlist:sl END:end
+    {:
+        /*System.out.println("exleft.getLine()"+exleft.getLine());
+        System.out.println("exright.getLine()"+exright.getLine());
+        System.out.println("slxleft.getLine()"+slxleft.getLine());
+        System.out.println("slxright.getLine()"+slxright.getLine());*/
+        IStmt stmt = new WhileStmt(e,sl,sxleft.getLine(),endxright.getLine());
+        list.add(stmt);
+        count++;
+        RESULT = Arrays.asList(stmt);
+    :}
     | FOR:s LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END:end
     {:
-            List<IStmt> res = new ArrayList<IStmt>(s1);
+            // we will statement_s3 at the end
+            //System.out.println("list is "+list);
+
+            int numberOfNestedStatements = 0;
+            for(IStmt istmt:sl){
+                numberOfNestedStatements = numberOfNestedStatements + istmt.getNumberOfNestedStatements() + 1 ;
+            }
+            //System.out.println("sl is "+sl);
+            //System.out.println("numberOfNestedStatements is "+numberOfNestedStatements);
+
+            IStmt statement_s3 = list.remove(list.size() - 1 - numberOfNestedStatements);
+            //System.out.println("statement_s3 is "+statement_s3);
+
+            List<IStmt> res = new ArrayList<IStmt>();
             sl.addAll(s3);
 
-            res.add( new WhileStmt((Exp)e,sl,sxleft.getLine(),endxright.getLine()) );
+            res.addAll(s1);
+            IStmt while_stmt = new WhileStmt((Exp)e,sl,sxleft.getLine(),endxright.getLine());
+            res.add( while_stmt );
 
-            list.addAll(res);
-            count+=3;
+            list.addAll(s3);
+            list.add(while_stmt);
+
+            count++;
+            //System.out.println("res in FOR is "+res);
             RESULT = res;
+
+
+
             //RESULT = new CompStmt(s1,new WhileStmt((Exp)e,new CompStmt(sl,s3),sxleft.getLine(),endxright.getLine()));
     :}
-
+    | GOTO:s expr:e SEMICOLON
+      {:
+           IStmt stmt = new GotoStmt((Exp)e,sxleft.getLine());
+           list.add(stmt);
+           count++;
+           RESULT = Arrays.asList(stmt);
+      :}
     | PRINT:s LPAR expr:e RPAR SEMICOLON
     {:
        IStmt stmt = new PrintStmt((Exp)e,sxleft.getLine());

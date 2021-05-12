@@ -4,10 +4,12 @@ import model.PrgState;
 import model.adt.MyIStack;
 
 public class NopStmt implements IStmt{
+	int lineNumber=-1;
+	public NopStmt(){}
+	public NopStmt(int _lineNumber) {lineNumber=_lineNumber;}
+
 	public String toString() {return "nop";}
 	public PrgState execute(PrgState state) {
-//		MyIStack<IStmt> stk=state.getStk();
-//		stk.pop();
 		return state;
 		}
 	 //..........................

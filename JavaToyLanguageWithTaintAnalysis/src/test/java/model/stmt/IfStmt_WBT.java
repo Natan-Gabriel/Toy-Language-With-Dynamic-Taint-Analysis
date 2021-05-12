@@ -78,7 +78,7 @@ public class IfStmt_WBT {
                 {1, new VarDeclStmt("x", new IntType(), 1, 1)},
                 {2, new IfStmt((Exp) (new ValueExp(new BoolValue(new Boolean("true")))),
                         new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x", new ValueExp(new IntValue(2)), 3, 1))),
-                        new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x", new ValueExp(new IntValue(3)), 4, 1))), 2,2)},
+                        new ArrayList<IStmt>(Arrays.asList(new AssignStmt("x", new ValueExp(new IntValue(3)), 4, 1))), 2,2,2)},
                 {3, new AssignStmt("x", new ValueExp(new IntValue(2)), 3, 1)},
                 {4, new AssignStmt("x", new ValueExp(new IntValue(3)), 4, 1)}
 
@@ -97,7 +97,7 @@ public class IfStmt_WBT {
         ArrayList<PrgState> list = new ArrayList<PrgState>();
         list.add(prg);
         iRepo repo=new Repo(list,"log.txt");
-        iCtrl ctrl=new Ctrl(repo,false);
+        iCtrl ctrl=new Ctrl(repo,true);
         ctrl.allStep();
 
 

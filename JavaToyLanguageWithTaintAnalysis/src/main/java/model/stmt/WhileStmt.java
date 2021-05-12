@@ -19,8 +19,9 @@ public class WhileStmt implements IStmt{
 	 public WhileStmt(Exp e, List<IStmt> s1,int _instructionNumber,int _totalLength ) {
 	 	 exp=e;s=s1;instructionNumber=_instructionNumber; totalLength=_totalLength;
 		 for(IStmt istmt:s){
-			 numberOfNestedStatements+=istmt.getNumberOfNestedStatements();
+			 numberOfNestedStatements = numberOfNestedStatements + istmt.getNumberOfNestedStatements() + 1 ;
 		 }
+		 System.out.println("numberOfNestedStatements in "+ this + " is"+numberOfNestedStatements);
 	 }
 	 public String toString() { return "WHILE("+exp.toString()+") "+s.toString();}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
@@ -50,8 +51,10 @@ public class WhileStmt implements IStmt{
 
 			 }
 			 else{
-				 if (nextInstructions.getSize()==0 || nextInstructions.lastElement()!=instructionNumber+totalLength+1) // to avoid adding of same if ending instruction (in case of nested if's)
-				 	 nextInstructions.push(instructionNumber+totalLength+1);
+				 if (nextInstructions.getSize()==0 || nextInstructions.lastElement()!=instructionNumber+totalLength+1) {// to avoid adding of same if ending instruction (in case of nested if's)
+					System.out.println("instructionNumber "+instructionNumber+" totalLength "+totalLength+" numberOfNestedStatements "+numberOfNestedStatements);
+				 	nextInstructions.push(instructionNumber + numberOfNestedStatements + 1);
+				 }
 				 //System.out.println("nextInstructions:"+nextInstructions);
 			 }
 
