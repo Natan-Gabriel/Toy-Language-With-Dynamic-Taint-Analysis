@@ -375,6 +375,7 @@ public class Parser extends java_cup.runtime.lr_parser {
             //XMLElement e = (XMLElement)p.parse().value;
             System.out.println("aici");
             map = new HashMap<Integer, IStmt>();
+            list= new ArrayList<IStmt>();
             Object res=p.parse().value;
             System.out.println("res:"+res+"res_printed");
             constructMap();
