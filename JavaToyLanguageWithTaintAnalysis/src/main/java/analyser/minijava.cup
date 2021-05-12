@@ -62,7 +62,7 @@ parser code {:
         transformer.transform(text, new StreamResult(new File("ast.html"))); */
     }
 
-    public static void constructMap(){
+    /*public static void constructMap(){
         int aux = count;
         while (aux>=1){
             if(list.get(aux-1) instanceof IfStmt){
@@ -81,6 +81,36 @@ parser code {:
             }
 
         }
+    }*/
+    public static void constructMap(){
+        int count = 10;
+        int depth = 0;
+        Stack<Integer> nestedStatementsStack = new Stack<>();;
+
+        System.out.println("LIST before"+list);
+        Collections.reverse(list);
+        System.out.println("LIST after"+list);
+
+        for(IStmt stmt : list) {
+            int statementNumber = count - stmt.getNumberOfNestedStatements() + depth;
+            System.out.println(stmt+" has count "+count+" number of nested statements "+stmt.getNumberOfNestedStatements() +" and depth "+depth+". So statement number is "+statementNumber);
+            stmt.setStatementNumber(statementNumber);
+            map.put(statementNumber,stmt);
+            count--;
+            System.out.println(stmt+" is at position "+statementNumber);
+            //System.out.println("verif "+new Integer(statementNumber).equals(nestedStatementsStack.peek())+" "+new Integer(statementNumber)+" "+nestedStatementsStack.peek());
+            while (!nestedStatementsStack.empty() && nestedStatementsStack.peek().equals(statementNumber)){
+                depth--;
+                nestedStatementsStack.pop();
+            }
+
+            if ((stmt instanceof IfStmt) ||  (stmt instanceof WhileStmt)){
+                depth++;
+                nestedStatementsStack.push(statementNumber+1);
+            }
+        }
+
+
     }
 
     public synchronized static Object parse(String arg) throws Exception {
@@ -221,6 +251,7 @@ stmt ::= SEMICOLON
 
     | IF:s LPAR expr:e RPAR BEGIN stmtlist:sl1 END:end
         {:
+
           IStmt stmt = new IfStmt((Exp)e,sl1,new ArrayList<IStmt>(),sxleft.getLine(),endxright.getLine());
           list.add(stmt);
           count++;
@@ -228,11 +259,24 @@ stmt ::= SEMICOLON
          :}
     | IF:s LPAR expr:e RPAR BEGIN stmtlist:sl1 END ELSE BEGIN stmtlist:sl2 END:end
     {:
+
            IStmt stmt = new IfStmt((Exp)e,sl1,sl2,sxleft.getLine(),endxright.getLine());
            list.add(stmt);
            count++;
            RESULT = Arrays.asList(stmt);
      :}
+    | FOR:s LPAR stmt:s1 expr:e SEMICOLON stmt:s3 RPAR BEGIN stmtlist:sl END:end
+    {:
+            List<IStmt> res = new ArrayList<IStmt>(s1);
+            sl.addAll(s3);
+
+            res.add( new WhileStmt((Exp)e,sl,sxleft.getLine(),endxright.getLine()) );
+
+            list.addAll(res);
+            count+=3;
+            RESULT = res;
+            //RESULT = new CompStmt(s1,new WhileStmt((Exp)e,new CompStmt(sl,s3),sxleft.getLine(),endxright.getLine()));
+    :}
 
     | PRINT:s LPAR expr:e RPAR SEMICOLON
     {:

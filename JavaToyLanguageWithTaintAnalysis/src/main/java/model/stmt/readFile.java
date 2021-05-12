@@ -75,4 +75,5 @@ public class readFile implements IStmt{
 	 }
 	public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){;}
+	public int getNumberOfNestedStatements(){return 0;}
 }

@@ -25,4 +25,5 @@ public class CompStmt implements IStmt{
 
 	public int getStatementNumber(){return 1;}
 	public void setStatementNumber(int number){;}
+	public int getNumberOfNestedStatements(){return 0;}
 }

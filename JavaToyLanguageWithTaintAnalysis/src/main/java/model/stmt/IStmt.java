@@ -7,4 +7,5 @@ public interface IStmt {
 	public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, VarIsDefined, TaintedAddress, CustomException;
 	public int getStatementNumber();
 	public void setStatementNumber(int number);
+	public int getNumberOfNestedStatements();
 }

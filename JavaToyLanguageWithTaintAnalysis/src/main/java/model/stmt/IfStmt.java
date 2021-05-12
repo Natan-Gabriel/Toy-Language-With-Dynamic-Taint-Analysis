@@ -17,9 +17,20 @@ public class IfStmt implements IStmt{
 	 int instructionNumber;
 	 int lineNumber, endingLineThen;
 	 int totalLength;
+	 int numberOfNestedStatements=0;
 	 
-	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _lineNumber, int _endingLineThen) {exp=e; thenS=t;elseS=el;lineNumber=_lineNumber;endingLineThen=_endingLineThen;totalLength = t.size()+el.size();}
-	 public String toString(){ return "IF("+ exp.toString()+") THEN(" +thenS.toString()+")ELSE("+elseS.toString()+") instructionNumber"+instructionNumber;}
+	 public IfStmt(Exp e, List<IStmt> t, List<IStmt> el, int _lineNumber, int _endingLineThen) {
+	 	exp=e; thenS=t;elseS=el;lineNumber=_lineNumber;endingLineThen=_endingLineThen;totalLength = t.size()+el.size();
+		 for(IStmt istmt:thenS){
+			 numberOfNestedStatements = numberOfNestedStatements+istmt.getNumberOfNestedStatements()+1;
+			 System.out.println("entered");
+		 }
+		 for(IStmt istmt:elseS){
+			 numberOfNestedStatements = numberOfNestedStatements+istmt.getNumberOfNestedStatements()+1;
+		 }
+		 System.out.println("numberOfNestedStatements in IFSTMT "+numberOfNestedStatements);
+	 }
+	 public String toString(){ return "IF("+ exp.toString()+") THEN(" +thenS.toString()+")ELSE("+elseS.toString()+") instructionNumber "+instructionNumber;}
 	 public PrgState execute(PrgState state) throws VarNotDefined, DivByZero, CustomException {
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
@@ -64,6 +75,7 @@ public class IfStmt implements IStmt{
 	public int getTotalLength(){return totalLength;}
 	 public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){instructionNumber=number;}
+	public int getNumberOfNestedStatements(){return numberOfNestedStatements;}
 	//public void  setNextInstruction(int number){nextInstruction=number;}
 
 }

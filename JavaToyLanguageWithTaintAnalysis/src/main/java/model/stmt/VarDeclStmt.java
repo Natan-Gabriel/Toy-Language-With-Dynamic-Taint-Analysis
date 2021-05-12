@@ -72,4 +72,5 @@ public class VarDeclStmt implements IStmt{
 	public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){instructionNumber=number;}
 	public int getLineNumber(){return lineNumber;}
+	public int getNumberOfNestedStatements(){return 0;}
 }

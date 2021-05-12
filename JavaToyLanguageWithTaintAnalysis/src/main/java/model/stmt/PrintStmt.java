@@ -41,5 +41,6 @@ public class PrintStmt implements IStmt{
 	 }
 	public int getStatementNumber(){return instructionNumber;}
 	public void setStatementNumber(int number){instructionNumber=number;}
+	public int getNumberOfNestedStatements(){return 0;}
 	
 }

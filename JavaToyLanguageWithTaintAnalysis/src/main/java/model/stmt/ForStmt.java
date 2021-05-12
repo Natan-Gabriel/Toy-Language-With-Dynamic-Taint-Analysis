@@ -71,5 +71,7 @@ public class ForStmt  implements IStmt{
 
     public int getStatementNumber(){return instructionNumber;}
     public void setStatementNumber(int number){instructionNumber=number;}
+    // I DON"T USE FOR
+    public int getNumberOfNestedStatements(){return 0;}
 
 }

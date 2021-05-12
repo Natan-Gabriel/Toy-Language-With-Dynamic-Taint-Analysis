@@ -112,7 +112,7 @@ public class main {
 //			if(arg.length>=2){
 //				flag= Boolean.parseBoolean(arg[1]);
 //			}
-			Parser.parse("files/ex1.txt");
+			Parser.parse("files/ex2.txt");
 //			map3=(Map<Integer, IStmt>)Parser.parse(arg[0]);
 //			map3=map;
 //			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();

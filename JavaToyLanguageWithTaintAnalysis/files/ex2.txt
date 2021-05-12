@@ -1,0 +1,16 @@
+int a;
+if(a==0){
+    print("3");
+    print("4");
+    if(a==0){
+        print("6");
+        if(a==0){
+                print("8");
+            }
+            else{
+                print("9");
+            }
+    }
+    print("10");
+
+}
