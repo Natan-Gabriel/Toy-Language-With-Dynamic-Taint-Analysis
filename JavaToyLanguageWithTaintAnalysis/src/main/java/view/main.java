@@ -97,17 +97,17 @@ public class main {
 
 	//Map<Integer, IStmt> map=null;
 	try {
-		if(arg.length==0){
-			System.out.println("Please input a file name");
-			return;
-		}
-		boolean flag=false;
-		if(arg.length>=2){
-			flag= Boolean.parseBoolean(arg[1]);
-		}
+//		if(arg.length==0){
+//			System.out.println("Please input a file name");
+//			return;
+//		}
+//		boolean flag=false;
+//		if(arg.length>=2){
+//			flag= Boolean.parseBoolean(arg[1]);
+//		}
 
-		IStmt ex = (IStmt) Parser.parse(arg[0]);
-//		IStmt ex = (IStmt) Parser.parse("files/goto_inside_if.txt");
+//		IStmt ex = (IStmt) Parser.parse(arg[0]);
+		IStmt ex = (IStmt) Parser.parse("files/goto_inside_while.txt");
 
 		MyIStack<IStmt> exeStack=new MyStack<IStmt>();
 		MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();

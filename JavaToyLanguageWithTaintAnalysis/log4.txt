@@ -3629,3 +3629,783 @@ Out:
 1
 FileTable:
 
+ExeStack:
+((a is of IntType;(b is of IntType;nop));(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;nop))
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+(b is of IntType;nop)
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(b is of IntType;nop)
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop)
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop))))
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop)
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop))))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=3;(b=1;(goto 15;nop)))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+(b=1;(goto 15;nop))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(b=1;(goto 15;nop))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+(goto 15;nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(goto 15;nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+((a is of IntType;(b is of IntType;nop));(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;nop))
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+(b is of IntType;nop)
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(b is of IntType;nop)
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop)
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop))))
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop)
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop))))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=3;(b=1;(goto 15;nop)))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+(b=1;(goto 15;nop))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(b=1;(goto 15;nop))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+(goto 15;nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(goto 15;nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+((a is of IntType;(b is of IntType;nop));(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(a is of IntType;(b is of IntType;nop))
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+(b is of IntType;nop)
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(b is of IntType;nop)
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop);(print(a);(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))))ELSE(nop)
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=1;(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop))))
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))
+(print(a);(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop);(a=5;(b=3;nop)))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))))ELSE(nop)
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=2;(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop))))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop);(a=4;(b=2;nop)))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN((a=3;(b=1;(goto 15;nop))))ELSE(nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(a=3;(b=1;(goto 15;nop)))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+(b=1;(goto 15;nop))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(b=1;(goto 15;nop))
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+(goto 15;nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+(goto 15;nop)
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+(a=4;(b=2;nop))
+(a=5;(b=3;nop))
+(print(a);(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
