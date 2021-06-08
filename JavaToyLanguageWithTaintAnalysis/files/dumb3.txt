@@ -1,0 +1,15 @@
+int* v;
+
+int** a;
+int*** b;
+
+
+write_heap(v,30);
+write_heap(a,v);
+write_heap(b,a);
+
+int* da;
+
+print(*v);
+print("\n**a + 5\n");
+print(**a + 5);

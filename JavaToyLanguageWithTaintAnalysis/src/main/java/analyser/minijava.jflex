@@ -50,6 +50,8 @@ import java_cup.runtime.ComplexSymbolFactory.Location;
 
 Ident = [a-zA-Z$_] [a-zA-Z0-9$_]*
 
+int_type = int[\*]*
+
 BoolLiteral = true | false
 
 IntLiteral = 0 | [1-9][0-9]*
@@ -64,7 +66,13 @@ white_space = {new_line} | [ \t\f]
 
 <YYINITIAL>{
 /* keywords */
-"int"             { return symbol("int",TYPE, new IntType() ); }
+{int_type}           {  System.out.println("yytext().length()"+yytext().length());
+                        Type type = new IntType();
+
+                        for(int i=0; i<yytext().length()-3;i++){
+                            type = new RefType(type);
+                        }
+                        return symbol("int",TYPE, type ); }
 "string"             { return symbol("string",TYPE, new StringType() ); }
 "boolean"             { return symbol("boolean",TYPE, new BoolType() ); }
 "if"              { return symbol("if",IF); }
@@ -79,14 +87,15 @@ white_space = {new_line} | [ \t\f]
 "close_file"            { return symbol("read_file",CLOSE_FILE); }
 "write"           { return symbol("write",WRITE); }
 "print"           { return symbol("print",PRINT); }
-
+"allocate_at"           { return symbol("allocate_at",ALLOCATE_AT); }
+"write_heap"            { return symbol("write_heap",WRITE_HEAP); }
 
 /* bool literal */
 {BoolLiteral} { return symbol("Boolconst",BOOLCONST, new Boolean(yytext())); }
 
 /* names */
 {Ident}           { return symbol("Identifier",IDENT, yytext()); }
-  
+
 /* string literals */
 
 /* char literal */

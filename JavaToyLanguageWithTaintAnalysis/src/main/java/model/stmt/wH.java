@@ -23,18 +23,29 @@ public class wH implements IStmt{
 		 	 	throw new VarNotDefined("The var is not defined");
 		 if(! (symTbl.lookup(var_name).getType() instanceof RefType) )
 		 	 	throw new VarNotDefined("The var does not have RefType");
-		 int key=((RefValue)symTbl.lookup(var_name)).getAddr();
 
-		 if(! hp.isDefined(key))
-			 throw new VarNotDefined("Given key is not defined in Heap");
 
 		 Value val = exp.eval(symTbl,hp);
 		 Type typId= val.getType();
 		 Type locationType=((RefValue)symTbl.lookup(var_name)).getLocationType();
 		 if(!typId.equals(locationType))
 			 throw new VarNotDefined("Types don't match");
-		 
-		 hp.update(key,val);
+
+		 System.out.println("symTbl:"+symTbl);
+		 System.out.println("heap:"+hp);
+		 int key = ((RefValue) symTbl.lookup(var_name)).getAddr();
+		 System.out.println("key:"+key);
+		 System.out.println("hp.isDefined(val):"+hp.isDefined(key));
+		 if(!hp.isDefined(key)){
+			 Value newVal=hp.add(val);
+			 symTbl.update(var_name,newVal);
+		 }
+		 else {
+		 	 key = ((RefValue) symTbl.lookup(var_name)).getAddr();
+			 if (!hp.isDefined(key))
+				 throw new VarNotDefined("Given key is not defined in Heap");
+			 hp.update(key, val);
+		 }
 		 
 		 return state;
 	 }

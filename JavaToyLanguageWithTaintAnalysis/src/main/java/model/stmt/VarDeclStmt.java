@@ -39,6 +39,7 @@ public class VarDeclStmt implements IStmt{
 	 public PrgState execute(PrgState state) throws VarIsDefined{
 		 state.setNextInstruction(getStatementNumber()+1);
 		 MyIDictionary<String,Value> sym=state.getSymTable();
+		 MyIHeap heap= state.getHeap();
 		 Value val;
 		 if (sym.isDefined(name))
 			 throw new VarIsDefined("variable is already declared");
@@ -48,9 +49,23 @@ public class VarDeclStmt implements IStmt{
 			 val=new BoolValue();
 		 else if (typ.equals(new RefType(new IntType())) )
 			 val=new RefValue();
-		 else if (typ instanceof RefType )
+		 else if (typ instanceof RefType ){
 			 val=new RefValue(1,((RefType)typ).getInner());
-		// else if (typ.equals(new RefType(new BoolType())) )
+//			 Type type = ((RefType)typ).getInner();
+//			 int aux=0;
+//			 while(type instanceof RefType){
+//			 	aux++;
+//			 	type = ((RefType)type).getInner();
+//			 }
+//			 val = new IntValue();
+//			 while(aux>0){
+//			 	aux--;
+//			 	val =
+//			 }
+
+		 }
+
+		 // else if (typ.equals(new RefType(new BoolType())) )
 		//	 val=new RefValue(11,new BoolType());
 		// else if ( typ.equals(new RefType(new StringType())))
 		//	 val=new RefValue(12,new StringType());
@@ -58,7 +73,12 @@ public class VarDeclStmt implements IStmt{
 		//	 val=new RefValue(1,new RefType(new IntType()));
 		 else 
 			 val=new StringValue();
+
+//		 Value newVal=heap.add(val);
+//		 sym.add(name,newVal);
 		 sym.add(name,val);
+
+		 System.out.println("sym:"+sym);
 		 state.setSymTable(sym);
 		 
 		 return state;

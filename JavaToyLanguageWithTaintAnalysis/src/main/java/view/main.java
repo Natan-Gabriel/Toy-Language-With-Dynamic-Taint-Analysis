@@ -105,9 +105,16 @@ public class main {
 //		if(arg.length>=2){
 //			flag= Boolean.parseBoolean(arg[1]);
 //		}
-
+//
 //		IStmt ex = (IStmt) Parser.parse(arg[0]);
-		IStmt ex = (IStmt) Parser.parse("files/goto_inside_while.txt");
+//		IStmt ex = (IStmt) Parser.parse("files/goto_inside_while.txt");
+		IStmt ex = (IStmt) Parser.parse("files/dumb3.txt");
+		System.out.println(ex);
+//		ex = new CompStmt(new CompStmt(new CompStmt(new CompStmt(new VarDeclStmt("v",new RefType(new IntType()),1),
+//				new New("v",new ValueExp(new IntValue(20)),1)),
+//				new CompStmt(new VarDeclStmt("a",new RefType(new RefType(new IntType())),1),
+//						new New("a",new VarExp("v"),1))),new PrintStmt(new rH(new VarExp("v")),1)),
+//				new PrintStmt(new ArithExp('+',new rH(new rH(new VarExp("a"))),new ValueExp(new IntValue(5))),1));
 
 		MyIStack<IStmt> exeStack=new MyStack<IStmt>();
 		MyIStack<IStmt> exeStack_executed=new MyStack<IStmt>();
