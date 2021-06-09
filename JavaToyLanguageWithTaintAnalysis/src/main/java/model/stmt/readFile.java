@@ -57,7 +57,9 @@ public class readFile implements IStmt{
 				 throw new CustomException("the content from the current line in the file is not an integer");
 			 }
 		 }
-		 symTbl.update(var_name,new IntValue(comp,true));
+		 MyIDictionary<StringValue, Boolean> sTbl=state.getFileSecurity();
+
+		 symTbl.update(var_name,new IntValue(comp,true,sTbl.lookup(val1)));
 
 		 
 		 return state;

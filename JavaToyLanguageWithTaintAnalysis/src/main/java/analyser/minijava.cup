@@ -55,7 +55,7 @@ parser code {:
 
 :};
 
-terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO, ALLOCATE_AT, REF, WRITE_HEAP;
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO, ALLOCATE_AT, REF, WRITE_HEAP, CHANGE_STATUS;
 terminal Integer UNOP, INTCONST;
 terminal String  IDENT,STRINGCONST,COMP,BBINOP,REFERENCE;
 terminal char BINOPPRIORITY1,BINOPPRIORITY2;
@@ -67,6 +67,7 @@ non terminal IStmt program;
 non terminal IStmt decllist,stmtlist;
 non terminal Pair<String,Exp> assignment;
 non terminal List<Pair<String,Exp>> identlist;
+non terminal Pair<Integer,String> write_heap;
 non terminal IStmt decl,stmt;
 non terminal Exp expr,logicexpr,stringexp,identifier;
 
@@ -125,10 +126,10 @@ stmtlist  ::= stmt:s stmtlist:sl
     ;
 
 write_heap ::= IDENT: i
-        {: RESULT = new VarExp(i); :}
-        | BINOPPRIORITY1:op identifier:i
+        {: int count = 0; RESULT = new Pair<Integer,String>(0,i); :}
+        | BINOPPRIORITY1:op write_heap:i
         {: if(op=='*')
-                RESULT = new rH(i);
+                RESULT = new Pair<Integer,String>(i.getKey()+1,i.getValue());
         :}
          ;
 
@@ -139,12 +140,19 @@ stmt ::= SEMICOLON:s
     {:
       RESULT=d;
     :}
-    | IDENT:i ASSIGN expr:e SEMICOLON
+    | write_heap:i ASSIGN expr:e SEMICOLON
     {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+ixleft.getLine()+")");
-     RESULT = new AssignStmt(i,e,ixleft.getLine()); :}
+     int references = i.getKey();
+     String identifier = i.getValue();
+     if(references==0)
+        RESULT = new AssignStmt(identifier,e,ixleft.getLine());
+     else
+        RESULT = new wH(identifier,e,references,ixleft.getLine());
+     :}
     | WRITE_HEAP:w LPAR IDENT:i COMMA expr:e  RPAR SEMICOLON
         {: //System.out.println("new AssignStmt(\""+i+"\","+ e +","+ixleft.getLine()+")");
-         RESULT = new wH(i,e,wxleft.getLine()); :}
+         RESULT = new wH(i,e,1,wxleft.getLine()); :}
+
      | IF:s LPAR expr:e RPAR BEGIN stmtlist:sl1 END:end
         {:
           RESULT = new IfStmt((Exp)e,sl1,new NopStmt(),sxleft.getLine(),endxright.getLine());
@@ -169,9 +177,25 @@ stmt ::= SEMICOLON:s
       {:
           RESULT = new GotoStmt((Exp)e,sxleft.getLine());
       :}
+    | OPEN_FILE:o LPAR expr:e RPAR SEMICOLON
+      {:
+      RESULT = new OpenRFile((Exp)e,oxleft.getLine());
+      :}
+    | READ_FILE:r LPAR expr:e COMMA IDENT:i RPAR SEMICOLON
+      {:
+      RESULT = new readFile((Exp)e,i,rxleft.getLine());
+      :}
+    | CLOSE_FILE:c LPAR expr:e RPAR SEMICOLON
+      {:
+       RESULT = new closeRFile((Exp)e,cxleft.getLine());
+      :}
     | PRINT:s LPAR expr:e RPAR SEMICOLON
     {:
        RESULT = new PrintStmt((Exp)e,sxleft.getLine());
+    :}
+    | CHANGE_STATUS:c LPAR expr:e1 COMMA expr:e2 RPAR SEMICOLON
+    {:
+       RESULT = new changeStatus((Exp)e1,(Exp)e2,cxleft.getLine());
     :}
     | ALLOCATE_AT:s LPAR IDENT:i COMMA expr:e RPAR SEMICOLON
     {:

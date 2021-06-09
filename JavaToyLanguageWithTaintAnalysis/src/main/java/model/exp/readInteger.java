@@ -19,7 +19,7 @@ public class readInteger implements Exp{
 
         try {
             int val = console.nextInt();
-            return new IntValue(val,true);
+            return new IntValue(val,true,false);
         }
         catch(Exception e) {
             throw new CustomException("You did not provide an integer");

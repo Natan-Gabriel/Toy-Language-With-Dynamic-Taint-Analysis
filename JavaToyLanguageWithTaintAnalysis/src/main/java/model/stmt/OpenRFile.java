@@ -30,6 +30,7 @@ public class OpenRFile implements IStmt{
 		 	 	throw new VarNotDefined("The var is not a string");
 		 StringValue val1=(StringValue)val;
 		 MyIDictionary<StringValue, BufferedReader> fTbl=state.getFileTable();
+		 MyIDictionary<StringValue, Boolean> sTbl=state.getFileSecurity();
 		 if(fTbl.isDefined(val1))
 			 throw new VarIsDefined("File is opened");
 		 String s=val1.getVal();
@@ -40,6 +41,8 @@ public class OpenRFile implements IStmt{
 			 throw new VarNotDefined("File does not exist");
 		 }
 		 fTbl.add(val1,file);
+		 if(!sTbl.isDefined(val1))
+		 	sTbl.add(val1,true);
 		 
 		 return state;
 	 }

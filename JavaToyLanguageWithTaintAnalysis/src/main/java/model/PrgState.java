@@ -14,6 +14,7 @@ public class PrgState{
 	 MyIDictionary<String, Value> symTable; //miu
 	 MyIDictionary<String,Pair<Value,Value>> dynaimcSymTable; //miu
 	 MyIDictionary<StringValue,BufferedReader> FileTable;
+	 MyIDictionary<StringValue,Boolean> FileSecurity;
 	 MyIList<Value> out;
 	 MyIHeap heap; //delta
 	 IStmt originalProgram; //optional field, but good to have
@@ -31,6 +32,7 @@ public class PrgState{
 		 FileTable=fTbl;
 		 heap=heap1;
 		 originalProgram=prg;
+		 FileSecurity=new MyDictionary<StringValue,Boolean>();
 		 //IStmt originalProgram=(IStmt)Object.clone(prg);
 		 //IStmt originalProgram=(IStmt)deepCopy(prg);//recreate the entire original prg
 		 stk.push(prg);
@@ -44,6 +46,8 @@ public class PrgState{
 
 	 public MyIList<Value> getOut() {return out;}
 	 public MyIDictionary<StringValue, BufferedReader > getFileTable() {return FileTable;}
+	 public MyIDictionary<StringValue, Boolean> getFileSecurity() {return FileSecurity;}
+
 	 public MyIHeap getHeap() {return heap;}
 	 public IStmt getOriginalProgram() {return originalProgram;}
 	 
@@ -54,6 +58,7 @@ public class PrgState{
 	 public void setSymTable(MyIDictionary<String,Value> e){symTable=e;}
 	 public void setOut(MyIList<Value> e) {out=e;}
 	 public void setFileTable(MyIDictionary<StringValue,BufferedReader> e) {FileTable=e;}
+	 public void setFileSecurity(MyIDictionary<StringValue,Boolean> e) { FileSecurity=e;}
 	 public void setHeap(MyIHeap heap1) {heap=heap1;}
 	 //.....
 	 }

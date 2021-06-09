@@ -12,35 +12,36 @@ public interface sym {
   public static final int CLOSE_FILE = 16;
   public static final int READ_HEAP = 13;
   public static final int OPEN_FILE = 14;
-  public static final int BINOPPRIORITY2 = 33;
-  public static final int BINOPPRIORITY1 = 32;
+  public static final int BINOPPRIORITY2 = 34;
+  public static final int BINOPPRIORITY1 = 33;
   public static final int BUNOP = 19;
-  public static final int UNOP = 25;
+  public static final int UNOP = 26;
   public static final int FOR = 11;
   public static final int REF = 23;
   public static final int WRITE = 17;
-  public static final int STRINGCONST = 28;
-  public static final int BBINOP = 30;
+  public static final int STRINGCONST = 29;
+  public static final int BBINOP = 31;
   public static final int SEMICOLON = 2;
   public static final int RPAR = 5;
   public static final int READ_FILE = 15;
-  public static final int TYPE = 35;
-  public static final int INTCONST = 26;
+  public static final int TYPE = 36;
+  public static final int INTCONST = 27;
   public static final int COMMA = 3;
-  public static final int REFERENCE = 31;
+  public static final int REFERENCE = 32;
   public static final int READ_INTEGER = 12;
-  public static final int COMP = 29;
+  public static final int COMP = 30;
   public static final int BEGIN = 6;
+  public static final int CHANGE_STATUS = 25;
   public static final int ASSIGN = 20;
   public static final int IF = 8;
   public static final int EOF = 0;
   public static final int error = 1;
-  public static final int IDENT = 27;
+  public static final int IDENT = 28;
   public static final int ALLOCATE_AT = 22;
   public static final int ELSE = 9;
   public static final int GOTO = 21;
   public static final int WHILE = 10;
-  public static final int BOOLCONST = 34;
+  public static final int BOOLCONST = 35;
   public static final int END = 7;
   public static final int LPAR = 4;
   public static final int PRINT = 18;
@@ -70,6 +71,7 @@ public interface sym {
   "ALLOCATE_AT",
   "REF",
   "WRITE_HEAP",
+  "CHANGE_STATUS",
   "UNOP",
   "INTCONST",
   "IDENT",

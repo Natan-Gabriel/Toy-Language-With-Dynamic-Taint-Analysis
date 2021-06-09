@@ -87,6 +87,7 @@ white_space = {new_line} | [ \t\f]
 "close_file"            { return symbol("read_file",CLOSE_FILE); }
 "write"           { return symbol("write",WRITE); }
 "print"           { return symbol("print",PRINT); }
+"change_status"           { return symbol("change_status",CHANGE_STATUS); }
 "allocate_at"           { return symbol("allocate_at",ALLOCATE_AT); }
 "write_heap"            { return symbol("write_heap",WRITE_HEAP); }
 

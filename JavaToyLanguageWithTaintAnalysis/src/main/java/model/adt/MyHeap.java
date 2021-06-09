@@ -7,8 +7,8 @@ import model.values.*;
 public class MyHeap implements MyIHeap{
 	HashMap<Integer,Value> heap;
 	int firstFree;
-	public MyHeap(HashMap<Integer,Value> d){heap=d;firstFree=0;}
-	public MyHeap(){heap=new HashMap<Integer,Value>();firstFree=0;}
+	public MyHeap(HashMap<Integer,Value> d){heap=d;firstFree=1;}
+	public MyHeap(){heap=new HashMap<Integer,Value>();firstFree=1;}
 	public String toString() {return heap.toString();}
 	public int getFirstFree() {return firstFree;}
 	public Value add(Value y) {firstFree=firstFree+1;heap.put(firstFree,y);

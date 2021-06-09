@@ -289597,3 +289597,9542 @@ Out:
 
 FileTable:
 
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+da=(1,int)
+Out:
+(1,Ref(int))
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+da=(1,int)
+Out:
+(1,Ref(int))
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+da=(1,int)
+Out:
+(1,Ref(int))
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+da=(1,int)
+Out:
+(1,Ref(int))
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+30
+
+**a + 5
+
+35
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + 5
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + 5
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + 5
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + 5
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + 5
+
+49
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+5);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + *v
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + *v
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + *v
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + *v
+);(print(a+5);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + *v
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + *v
+);(print(a+5);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + *v
+)
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+(print(a+5);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+FileTable:
+
+ExeStack:
+print(a+5)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+49
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+49
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + *v
+);(print(a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + *v
+);(print(a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + *v
+);(print(a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + *v
+);(print(a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + *v
+);(print(a+v);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + *v
+);(print(a+v);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + *v
+)
+(print(a+v);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+(print(a+v);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+FileTable:
+
+ExeStack:
+print(a+v)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+88
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+88
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + *v
+);(print(b+a+v);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + *v
+);(print(b+a+v);nop))
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + *v
+)
+(print(b+a+v);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+(print(b+a+v);nop)
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+FileTable:
+
+ExeStack:
+print(b+a+v)
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+132
+FileTable:
+
+ExeStack:
+SymTable:
+a=(3,Ref(int))
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+
+**a + *v
+
+132
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(read_file.txt;(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+read_file.txt
+(read_file.txt;(read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + *v
+);(print(b+a+v);nop))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + *v
+);(print(b+a+v);nop))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + *v
+)
+(print(b+a+v);nop)
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(v)
+(print(
+**a + *v
+);(print(b+a+v);nop))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(
+**a + *v
+);(print(b+a+v);nop))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+print(
+**a + *v
+)
+(print(b+a+v);nop)
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+44
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+print(res)
+(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+changeStatus(res)
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+changeStatus(res)
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+changeStatus(res)
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((v is of RefType;nop);((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of RefType;nop)
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+v is of RefType
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+nop
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((a is of RefType;nop);((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a is of RefType;nop)
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+a is of RefType
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((b is of RefType;nop);((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(b is of RefType;nop)
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+b is of RefType
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+((res is of IntType;nop);(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(res is of IntType;nop)
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+res is of IntType
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(files/read_file.txt;(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=0
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(files/read_file.txt;(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+files/read_file.txt
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+files/read_file.txt=java.io.BufferedReader@79fc0f2f
+
+ExeStack:
+(v,30;(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+v,30
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,v;(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,v
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(1,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(b,a;(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+b,a
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(1,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(a,44;((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+a,44
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+((da is of RefType;nop);(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+(da is of RefType;nop)
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+da is of RefType
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+Out:
+FileTable:
+
+ExeStack:
+nop
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+(changeStatus(res);(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop)))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+
+ExeStack:
+changeStatus(res)
+(print(res);(print(v);(print(
+**a + *v
+);(print(b+a+v);nop))))
+SymTable:
+a=(3,Ref(int))
+res=21
+b=(4,Ref(Ref(int)))
+v=(2,int)
+da=(1,int)
+Out:
+FileTable:
+

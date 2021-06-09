@@ -25,8 +25,12 @@ public class PrintStmt implements IStmt{
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
 		 Value val = exp.eval(symTbl,hp);
-		 lst.add(val);
-		 System.out.print(val);
+		 if(!val.getSecret()){
+			 lst.add(val);
+			 System.out.print(val);
+		 }
+		 else
+		 	throw new CustomException("you cannot print a secret value");
 		 //state.setNextInstruction(getStatementNumber()+1);
 //		 if(state.getNextInstructions().isEmpty())
 //			 state.getNextInstructions().push(getStatementNumber()+1);
