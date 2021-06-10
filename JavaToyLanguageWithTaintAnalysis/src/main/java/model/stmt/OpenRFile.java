@@ -10,6 +10,9 @@ import model.adt.*;
 import model.exp.*;
 import model.types.*;
 import model.values.*;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 import java.io.*;
 
@@ -43,7 +46,15 @@ public class OpenRFile implements IStmt{
 		 fTbl.add(val1,file);
 		 if(!sTbl.isDefined(val1))
 		 	sTbl.add(val1,true);
-		 
+
+		 byte[] data = new byte[0];
+		 try {
+			 data = Files.readAllBytes(Paths.get("files/dumb1.txt"));
+		 } catch (IOException e) {
+			 e.printStackTrace();
+		 }
+		 System.out.println("new String(data): "+new String(data));
+
 		 return state;
 	 }
 	public int getStatementNumber(){return 1;}

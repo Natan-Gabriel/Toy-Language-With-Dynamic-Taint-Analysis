@@ -195,6 +195,8 @@ stmt ::= SEMICOLON:s
     :}
     | CHANGE_STATUS:c LPAR expr:e1 COMMA expr:e2 RPAR SEMICOLON
     {:
+        System.out.println("e1: "+e1);
+        System.out.println("e2: "+e2);
        RESULT = new changeStatus((Exp)e1,(Exp)e2,cxleft.getLine());
     :}
     | ALLOCATE_AT:s LPAR IDENT:i COMMA expr:e RPAR SEMICOLON

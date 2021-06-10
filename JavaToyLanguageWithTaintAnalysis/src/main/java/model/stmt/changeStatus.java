@@ -9,6 +9,7 @@ import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.adt.MyIStack;
 import model.exp.Exp;
+import model.exp.VarExp;
 import model.types.BoolType;
 import model.types.StringType;
 import model.types.Type;
@@ -37,22 +38,35 @@ public class changeStatus implements IStmt{
             throw new CustomException("status has to be a boolean");
         boolean bool = ((BoolValue)status_evaluated).getVal();
 
+        // when exp is an identifier
+        if(exp instanceof VarExp){
+            String identifier = exp.toString();
+            if(symTbl.isDefined(identifier)) {
+                Value v = symTbl.lookup(identifier);
+                v.setSecret(bool);
+                symTbl.update(identifier, v);
+                return state;
+            }
+        }
+
+        // we will assume now that exp is a file name
         Value val = exp.eval(symTbl,hp);
         Type typId= val.getType();
 
+//        System.out.println("typId: "+typId);
+//        System.out.println("val: "+val);
+//        System.out.println("exp: "+exp);
         if( !(typId.equals(new StringType())) )
-            throw new CustomException("exp is not an identifier or file name");
+            throw new CustomException("exp is not a file name");
 
-        StringValue str_val = (StringValue)val;
-        if(symTbl.isDefined(str_val.getVal())){
-            String identifier = str_val.getVal();
-            Value v = symTbl.lookup(identifier);
-            v.setSecret(bool);
-            symTbl.update(identifier,v);
-        }
-
-        // we will assume now that the given expression is a file name
-        sTbl.add(str_val,bool);
+//        StringValue str_val = (StringValue)val;
+//        if(symTbl.isDefined(str_val.getVal())){
+//            String identifier = str_val.getVal();
+//            Value v = symTbl.lookup(identifier);
+//            v.setSecret(bool);
+//            symTbl.update(identifier,v);
+//        }
+        sTbl.add((StringValue)val,bool);
 
         return state;
     }

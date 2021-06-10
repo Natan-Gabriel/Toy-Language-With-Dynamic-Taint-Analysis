@@ -13,7 +13,7 @@ public class RefValue implements Value{
 	 public Type getType() { return new RefType(locationType);}
 	 public Type getLocationType() { return locationType;}
 	 public boolean getTaint(){return  taint;}
-	 public boolean getSecret(){return true;}
+	 public boolean getSecret(){return secret;}
 	 public void setSecret(boolean s) { secret=s;}
 	}
 

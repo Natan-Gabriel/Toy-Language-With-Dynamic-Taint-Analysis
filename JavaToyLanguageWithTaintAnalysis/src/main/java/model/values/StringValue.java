@@ -25,6 +25,6 @@ public class StringValue implements Value{
 	public String getVal() {return str;}
 	public String toString() {return str;}
 	public boolean getTaint(){return  taint;}
-	public boolean getSecret(){return true;}
+	public boolean getSecret(){return secret;}
 	public void setSecret(boolean s) { secret=s;}
 }

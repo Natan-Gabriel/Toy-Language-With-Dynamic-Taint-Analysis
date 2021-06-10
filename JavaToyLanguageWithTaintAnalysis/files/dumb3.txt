@@ -4,6 +4,8 @@ int** a;
 int*** b;
 int res;
 
+
+
 open_file("files/read_file.txt");
 read_file("files/read_file.txt",res);
 close_file("files/read_file.txt");
@@ -17,6 +19,11 @@ close_file("files/read_file.txt");
 int* da;
 
 change_status(res,false);
+
+print(res);
+
+change_status(res,true);
+
 print(res);
 
 print(*v);
