@@ -55,7 +55,7 @@ parser code {:
 
 :};
 
-terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO, ALLOCATE_AT, REF, WRITE_HEAP, CHANGE_STATUS;
+terminal         SEMICOLON, COMMA, LPAR, RPAR, BEGIN, END,IF, ELSE, WHILE, FOR, READ_INTEGER, READ_HEAP, OPEN_FILE, READ_FILE, CLOSE_FILE, WRITE_FILE, WRITE, PRINT, BUNOP, ASSIGN, GOTO, ALLOCATE_AT, REF, WRITE_HEAP, CHANGE_STATUS, GENERATE_RSA_KEY_PAIR, ENCRYPT_RSA, DECRYPT_RSA;
 terminal Integer UNOP, INTCONST;
 terminal String  IDENT,STRINGCONST,COMP,BBINOP,REFERENCE;
 terminal char BINOPPRIORITY1,BINOPPRIORITY2;
@@ -189,6 +189,10 @@ stmt ::= SEMICOLON:s
       {:
        RESULT = new closeRFile((Exp)e,cxleft.getLine());
       :}
+    | WRITE_FILE:r LPAR expr:e1 COMMA expr:e2 RPAR SEMICOLON
+      {:
+      RESULT = new writeFile((Exp)e1,(Exp)e2,rxleft.getLine());
+      :}
     | PRINT:s LPAR expr:e RPAR SEMICOLON
     {:
        RESULT = new PrintStmt((Exp)e,sxleft.getLine());
@@ -203,6 +207,10 @@ stmt ::= SEMICOLON:s
     {:
        RESULT = new New(i,(Exp)e,sxleft.getLine());
     :}
+    | GENERATE_RSA_KEY_PAIR:s LPAR expr:e COMMA IDENT:i1 COMMA IDENT:i2 RPAR SEMICOLON
+     {:
+        RESULT = new GenerateRSAKey((Exp)e,i1,i2,sxleft.getLine());
+     :}
     | error:e
     {: parser.report_error("Syntax error, skipped nonsense",e); :}
     ;
@@ -268,6 +276,14 @@ expr ::= INTCONST:c
      {:
       RESULT = new rH(e);
      :}
+     | ENCRYPT_RSA:s LPAR expr:e1 COMMA expr:e2 RPAR
+      {:
+         RESULT = new EncryptRSA((Exp)e1,(Exp)e2,sxleft.getLine());
+      :}
+     | DECRYPT_RSA:s LPAR expr:e1 COMMA expr:e2 RPAR
+       {:
+          RESULT = new DecryptRSA((Exp)e1,(Exp)e2,sxleft.getLine());
+       :}
     | stringexp:s
      {: //System.out.println("stringexp");
         RESULT = s;

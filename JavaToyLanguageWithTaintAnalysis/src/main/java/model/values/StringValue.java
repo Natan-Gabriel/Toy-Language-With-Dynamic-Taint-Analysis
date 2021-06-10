@@ -8,6 +8,7 @@ public class StringValue implements Value{
 	String str;
 	boolean taint;
 	boolean secret;
+	public StringValue(String s,boolean _taint,boolean _secret) {str=s;taint=_taint;secret=_secret;}
 	public StringValue(String s) {str=s;}
 	public StringValue() {str="";}
 	public boolean equals(Object another){

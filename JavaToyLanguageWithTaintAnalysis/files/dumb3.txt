@@ -1,14 +1,22 @@
+string res;
+
 int* v;
 
 int** a;
 int*** b;
-int res;
 
 
+read_file("files/adumb1.txt",res);
+change_status(res,false);
+print(res);
 
-open_file("files/read_file.txt");
-read_file("files/read_file.txt",res);
-close_file("files/read_file.txt");
+string private_key, public_key;
+int encrypted_data, decrypted_data;
+generate_rsa_key_pair(512,private_key,public_key);
+encrypted_data = encrypt_rsa("first encryption",public_key);
+decrypted_data = decrypt_rsa("first decryption",private_key);
+
+
 
 *v = 30;
 *a = v;
@@ -18,14 +26,14 @@ close_file("files/read_file.txt");
 
 int* da;
 
-change_status(res,false);
 
 print(res);
 
 change_status(res,true);
 
-print(res);
+write_file("files/adumb1.txt","first line \n second line");
+
 
 print(*v);
-print("\n**a + *v\n");
+print("\n**a + *v\n\n");
 print(***b+**a + *v);

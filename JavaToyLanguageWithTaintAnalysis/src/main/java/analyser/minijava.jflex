@@ -82,14 +82,18 @@ white_space = {new_line} | [ \t\f]
 "goto"            { return symbol("goto",GOTO); }
 "read_integer()"            { return symbol("read_integer",READ_INTEGER); }
 "read_heap()"            { return symbol("read_heap",READ_HEAP); }
-"open_file"            { return symbol("read_file",OPEN_FILE); }
+"open_file"            { return symbol("open_file",OPEN_FILE); }
 "read_file"            { return symbol("read_file",READ_FILE); }
-"close_file"            { return symbol("read_file",CLOSE_FILE); }
+"close_file"            { return symbol("close_file",CLOSE_FILE); }
+"write_file"            { return symbol("write_file",WRITE_FILE); }
 "write"           { return symbol("write",WRITE); }
 "print"           { return symbol("print",PRINT); }
 "change_status"           { return symbol("change_status",CHANGE_STATUS); }
 "allocate_at"           { return symbol("allocate_at",ALLOCATE_AT); }
 "write_heap"            { return symbol("write_heap",WRITE_HEAP); }
+"generate_rsa_key_pair"            { return symbol("generate_rsa_key_pair",GENERATE_RSA_KEY_PAIR); }
+"encrypt_rsa"            { return symbol("encrypt_rsa",ENCRYPT_RSA); }
+"decrypt_rsa"            { return symbol("decrypt_rsa",DECRYPT_RSA); }
 
 /* bool literal */
 {BoolLiteral} { return symbol("Boolconst",BOOLCONST, new Boolean(yytext())); }

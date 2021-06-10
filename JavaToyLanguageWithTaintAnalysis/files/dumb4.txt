@@ -1,0 +1,20 @@
+
+string private_key, public_key;
+string encrypted_data, decrypted_data;
+private_key = "MIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEBl3T8VtNSsLYHQhamzmyZ4a7sMmHg4RN+gjzDh23t7SflUs8XOsNiwI8PukW0QVZhqIVywymH99wCES4OIfvuiQIDAQABAkEAwgUzz4hrPLhA9ohgv7TZBa1MzaTr92FYAV474TZIcH8er8pVJ+7UwBdfwsfB9O7yT/IqNBSNk/zCFM9LRBHAAQIhAdzD0eBxU8xlhtvvJhJR+SNLi2oBCOYE+8vpc2dFC2gBAiEA2sjx974O21RYaDYQyWlp3c+2UJnHCgLeljPsoChxRokCIQDvJIYcx5uZ9f8cSKvXGqkWLCmFBXnaLvvCP5o0XayoAQIgFgh2lcSGKoBsBtKrDh2Xk8b/TU6vRMrVL7s68UYhYkECIEoKYmJz72mlUc9jOOvox9l9atTEjiaN2SbJ4gA77y+u";
+public_key = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAZd0/FbTUrC2B0IWps5smeGu7DJh4OETfoI8w4dt7e0n5VLPFzrDYsCPD7pFtEFWYaiFcsMph/fcAhEuDiH77okCAwEAAQ==";
+
+string message;
+print("before");
+message="Baeldung secret message";
+print(message);
+print("\n");
+
+encrypted_data = encrypt_rsa(message,public_key);
+change_status(encrypted_data,false);
+print(encrypted_data);
+
+decrypted_data = decrypt_rsa(encrypted_data,private_key);
+change_status(decrypted_data,false);
+print("da\n");
+print(decrypted_data);
