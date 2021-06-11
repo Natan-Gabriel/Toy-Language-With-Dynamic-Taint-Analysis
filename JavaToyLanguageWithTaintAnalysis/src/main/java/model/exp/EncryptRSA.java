@@ -37,6 +37,8 @@ public class EncryptRSA implements Exp {
             throw new VarNotDefined("The public key must be a string");
 
         String publicKey_as_string = ((StringValue)public_key_value).getVal();
+
+        // I used https://stackoverflow.com/questions/22900570/key-from-string-in-java-rsa
         PublicKey key;
         try {
             byte[] keyBytes = decodeBase64(publicKey_as_string);
@@ -50,6 +52,7 @@ public class EncryptRSA implements Exp {
 
 
 
+        //I used https://www.baeldung.com/java-rsa
         Cipher encryptCipher = null;
         String encrypted_message="";
         System.out.println("message_as_string:"+message_as_string);

@@ -31,7 +31,6 @@ public interface sym {
   public static final int INTCONST = 31;
   public static final int REFERENCE = 36;
   public static final int COMMA = 3;
-  public static final int READ_INTEGER = 12;
   public static final int COMP = 34;
   public static final int BEGIN = 6;
   public static final int CHANGE_STATUS = 26;
@@ -43,6 +42,7 @@ public interface sym {
   public static final int IDENT = 32;
   public static final int ALLOCATE_AT = 23;
   public static final int ELSE = 9;
+  public static final int READ = 12;
   public static final int GOTO = 22;
   public static final int WHILE = 10;
   public static final int BOOLCONST = 39;
@@ -62,7 +62,7 @@ public interface sym {
   "ELSE",
   "WHILE",
   "FOR",
-  "READ_INTEGER",
+  "READ",
   "READ_HEAP",
   "OPEN_FILE",
   "READ_FILE",

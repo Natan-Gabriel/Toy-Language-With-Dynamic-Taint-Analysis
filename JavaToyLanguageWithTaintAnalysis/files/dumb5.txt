@@ -1,0 +1,12 @@
+int i,integer_casted;
+string b,r;
+i=5;
+print(b);
+b=i;
+i=b;
+print(b);
+
+r=read();
+integer_casted = r;
+print(r);
+print(integer_casted);

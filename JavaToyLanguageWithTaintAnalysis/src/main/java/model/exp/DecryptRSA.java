@@ -41,6 +41,7 @@ public class DecryptRSA implements Exp {
 
         String private_key_as_string = ((StringValue)private_key_value).getVal();
 
+        // I used https://stackoverflow.com/questions/22900570/key-from-string-in-java-rsa
         PrivateKey key;
         try {
             byte[] keyBytes = decodeBase64(private_key_as_string);
@@ -55,6 +56,7 @@ public class DecryptRSA implements Exp {
 
 
 
+        //I used https://www.baeldung.com/java-rsa
         Cipher decryptCipher = null;
         String decrypted_message="";
         try {

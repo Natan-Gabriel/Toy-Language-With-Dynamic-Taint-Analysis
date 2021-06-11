@@ -80,7 +80,7 @@ white_space = {new_line} | [ \t\f]
 "while"           { return symbol("while",WHILE); }
 "for"           { return symbol("for",FOR); }
 "goto"            { return symbol("goto",GOTO); }
-"read_integer()"            { return symbol("read_integer",READ_INTEGER); }
+"read()"            { return symbol("read",READ); }
 "read_heap()"            { return symbol("read_heap",READ_HEAP); }
 "open_file"            { return symbol("open_file",OPEN_FILE); }
 "read_file"            { return symbol("read_file",READ_FILE); }

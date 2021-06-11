@@ -18,16 +18,39 @@ public class AssignStmt implements IStmt{
 		 MyIStack<IStmt> stk=state.getStk();
 		 MyIDictionary<String,Value> symTbl= state.getSymTable();
 		 MyIHeap hp= state.getHeap();
+
+
 		 if(symTbl.isDefined(id)){
 			 Value val = exp.eval(symTbl,hp);
 			 Type typId= (symTbl.lookup(id)).getType();
-			 //System.out.println("val"+val);
-			 //System.out.println("typId"+typId);
-			 //System.out.println("(val.getType()).equals(typId)"+(val.getType()).equals(typId));
-			 if( (val.getType()).equals(typId) )
-		 	 	symTbl.update(id, val);
-		 	 else throw new VarNotDefined("declared type of variable"+id+" and type of the assigned expression do not match");}
+
+			 if( typId.equals(new IntType()) && (val.getType()).equals(new StringType()) ) {
+			 	 String str = ((StringValue)val).getVal();
+				 int new_integer=0;
+			 	 try {
+					 new_integer = Integer.parseInt(str);
+				 }
+				 catch(Exception e)
+				 {
+					 throw new CustomException("the given string cannot be converted to an integer");
+				 }
+				 symTbl.update(id, new IntValue(new_integer));
+			 }
+
+			 else if( typId.equals(new StringType()) && (val.getType()).equals(new IntType()) ) {
+				 int integer = ((IntValue)val).getVal();
+				 String new_string="";
+				 new_string = String.valueOf(integer);
+				 symTbl.update(id, new StringValue(new_string));
+			 }
+			 else if( (val.getType()).equals(typId) )
+				 symTbl.update(id, val);
+			 else
+			 	throw new VarNotDefined("declared type of variable"+id+" and type of the assigned expression do not match");
+		 }
 		 else throw new VarNotDefined("the used variable" +id + " was not declared before");
+
+
 		 return state;
 	 }
 	//public int getStatementNumber(){return instructionNumber;}

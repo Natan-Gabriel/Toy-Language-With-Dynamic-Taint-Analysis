@@ -35,6 +35,7 @@ public class GenerateRSAKey implements IStmt {
         if( !(val.getType()).equals(new IntType()) )
             throw new VarNotDefined("The key size must be an integer");
 
+        //I used https://www.baeldung.com/java-rsa
         KeyPairGenerator generator = null;
         try {
             generator = KeyPairGenerator.getInstance("RSA");

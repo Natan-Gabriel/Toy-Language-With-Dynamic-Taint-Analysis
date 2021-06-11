@@ -1,0 +1,16 @@
+
+string encrypted_data, decrypted_data;
+
+string message;
+message="RSA encryption with key size=512";
+
+string private_key, public_key;
+generate_rsa_key_pair(512,private_key,public_key);
+
+encrypted_data = encrypt_rsa(message,public_key);
+print("encryption:");
+print(encrypted_data);
+
+decrypted_data = decrypt_rsa(encrypted_data,private_key);
+
+print(decrypted_data);

@@ -51,7 +51,7 @@ public class readInteger_BBT {
     @Test
     public void tc_AllValid() throws CustomException, VarNotDefined, DivByZero {
 
-        readInteger exp = new readInteger();
+        readFromConsole exp = new readFromConsole();
 
         InputStream original = System.in; // backup System.in to restore it later
         ByteArrayInputStream in = new ByteArrayInputStream("44".getBytes());
@@ -68,7 +68,7 @@ public class readInteger_BBT {
     @Test
     public void tc_AllInvalid() throws CustomException, VarNotDefined, DivByZero {
 
-        readInteger exp = new readInteger();
+        readFromConsole exp = new readFromConsole();
 
         InputStream original = System.in; // backup System.in to restore it later
         ByteArrayInputStream in = new ByteArrayInputStream("string".getBytes());
