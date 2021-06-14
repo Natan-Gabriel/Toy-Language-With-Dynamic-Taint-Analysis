@@ -114,7 +114,9 @@ public class main {
 //			}
 //			Parser.parse("files/ex2.txt");
 //			map3=(Map<Integer, IStmt>)Parser.parse(arg[0]);
-			map3=(Map<Integer, IStmt>)Parser.parse("files/dumb01.txt");
+			map3=(Map<Integer, IStmt>)Parser.parse("files/intermediate_representation.txt");
+//			map3=(Map<Integer, IStmt>)Parser.parse("files/example_conversion.txt");
+
 			MyIStack<IStmt> exeStack3=new MyStack<IStmt>();
 			MyIDictionary<Integer,IStmt> exeDictionary3=new MyDictionary<Integer,IStmt>((HashMap<Integer, IStmt>) map3);
 			MyIDictionary<String, Value> symTable3=new MyDictionary<String, Value>();

@@ -1,0 +1,36 @@
+public static void constructMap(){
+        int count = list.size();
+        int depth = 0;
+        Stack<Integer> nestedStatementsStack = new Stack<>();
+        Collections.reverse(list);
+
+        for(IStmt stmt : list) {
+            int statementNumber = count - stmt.getNumberOfNestedStatements() + depth;
+            stmt.setStatementNumber(statementNumber);
+            map.put(statementNumber,stmt);
+            count--;
+            while (!nestedStatementsStack.empty() && nestedStatementsStack.peek().equals(statementNumber)){
+                depth--;
+                nestedStatementsStack.pop();
+            }
+            if ((stmt instanceof IfStmt) ||  (stmt instanceof WhileStmt)){
+                depth++;
+                nestedStatementsStack.push(statementNumber+1);
+            }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

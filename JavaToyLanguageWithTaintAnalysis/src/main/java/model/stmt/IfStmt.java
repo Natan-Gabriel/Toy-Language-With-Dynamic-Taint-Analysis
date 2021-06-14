@@ -50,7 +50,7 @@ public class IfStmt implements IStmt{
 			 BoolValue v = (BoolValue) val;
 			 System.out.println("instructionNumber+thenS.size()+elseS.size()+1:"+(instructionNumber+thenS.size()+elseS.size()+1));
 			 System.out.println("instructionNumber "+instructionNumber+" thenS.size() "+thenS.size()+" elseS.size() "+elseS.size());
-			 if (nextInstructions.getSize()==0 || nextInstructions.lastElement()!=instructionNumber+totalLength+1) // to avoid adding of same if ending instruction (in case of nested if's)
+			 if (nextInstructions.getSize()==0)// || nextInstructions.lastElement()!=instructionNumber+totalLength+1) // to avoid adding of same if ending instruction (in case of nested if's)
 			 	nextInstructions.push(instructionNumber+totalLength+1);
 			 if (v.getVal()) {
 

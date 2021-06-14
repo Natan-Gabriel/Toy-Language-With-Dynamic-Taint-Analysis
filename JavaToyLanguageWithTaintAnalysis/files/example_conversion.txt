@@ -1,0 +1,16 @@
+int a;
+a=1;
+while(a>0){
+    int b;
+    b=1;
+    while(b>0){
+        int c;
+        if(c==0){
+            b=b-1;
+        }
+        else{
+            print("c is not 0");
+        }
+    }
+    a=a-1;
+}

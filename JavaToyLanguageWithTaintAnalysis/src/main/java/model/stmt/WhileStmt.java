@@ -51,7 +51,7 @@ public class WhileStmt implements IStmt{
 
 			 }
 			 else{
-				 if (nextInstructions.getSize()==0 || nextInstructions.lastElement()!=instructionNumber+totalLength+1) {// to avoid adding of same if ending instruction (in case of nested if's)
+				 if (nextInstructions.getSize()==0){// || nextInstructions.lastElement()!=instructionNumber+totalLength+1) {// to avoid adding of same if ending instruction (in case of nested if's)
 					System.out.println("instructionNumber "+instructionNumber+" totalLength "+totalLength+" numberOfNestedStatements "+numberOfNestedStatements);
 				 	nextInstructions.push(instructionNumber + numberOfNestedStatements + 1);
 				 }

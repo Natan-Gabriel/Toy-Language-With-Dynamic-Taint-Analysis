@@ -262,3 +262,51 @@ SymTable:
 Out:
 FileTable:
 
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+(v is of IntType;((v=readInteger();(goto v;v=3));print(v)))
+SymTable:
+Out:
+FileTable:
+
