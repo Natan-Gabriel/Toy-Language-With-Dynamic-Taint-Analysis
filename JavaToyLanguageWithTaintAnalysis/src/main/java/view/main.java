@@ -108,7 +108,7 @@ public class main {
 //
 //		IStmt ex = (IStmt) Parser.parse(arg[0]);
 //		IStmt ex = (IStmt) Parser.parse("files/goto_inside_while.txt");
-		IStmt ex = (IStmt) Parser.parse("files/dumb6.txt");
+		IStmt ex = (IStmt) Parser.parse("files/intermediate_representation.txt");
 		System.out.println(ex);
 //		ex = new CompStmt(new CompStmt(new CompStmt(new CompStmt(new VarDeclStmt("v",new RefType(new IntType()),1),
 //				new New("v",new ValueExp(new IntValue(20)),1)),
