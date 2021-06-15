@@ -36,9 +36,15 @@ public class writeFile implements IStmt{
         MyIHeap hp= state.getHeap();
 
         Value val = exp.eval(symTbl,hp);
+
+        if(val.getSecret())
+            throw new CustomException("you cannot write to  a file a secret value");
+
         if( !(val.getType()).equals(new StringType()) )
             throw new VarNotDefined("The var is not a string");
         StringValue val1=(StringValue)val;
+
+
 
         Value text_value = text.eval(symTbl,hp);
         if( !(text_value.getType()).equals(new StringType()) )

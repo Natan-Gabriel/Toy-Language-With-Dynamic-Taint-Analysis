@@ -60,11 +60,15 @@ public class wH implements IStmt{
 		 } else {
 			 if (!hp.isDefined(key))
 				 throw new VarNotDefined("Given key is not defined in Heap(dangling reference)");
+
+			 if(val.getSecret())
+				 throw new CustomException("you cannot write into heap a secret value");
+
 			 hp.update(key, val);
 		 }
 		 
 		 return state;
-	 }
+	}
 	public int getStatementNumber(){return 1;}
 	public int  getLineNumber(){return lineNumber;}
 	public int getEndingLine() {return lineNumber;}

@@ -57,4 +57,5 @@ public class RSAKeyPairValue implements Value{
     public void setSecret(boolean s) {
         secret=s;
     }
+    public void setTaint(boolean s){ taint=s;}
 }

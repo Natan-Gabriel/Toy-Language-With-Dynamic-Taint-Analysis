@@ -108,7 +108,7 @@ public class main {
 //
 //		IStmt ex = (IStmt) Parser.parse(arg[0]);
 //		IStmt ex = (IStmt) Parser.parse("files/goto_inside_while.txt");
-		IStmt ex = (IStmt) Parser.parse("files/intermediate_representation.txt");
+		IStmt ex = (IStmt) Parser.parse("files/example_to_present.txt");
 		System.out.println(ex);
 //		ex = new CompStmt(new CompStmt(new CompStmt(new CompStmt(new VarDeclStmt("v",new RefType(new IntType()),1),
 //				new New("v",new ValueExp(new IntValue(20)),1)),
@@ -131,7 +131,11 @@ public class main {
 		list.add(prg);
 		iRepo repo=new Repo(list,"log.txt");
 		iCtrl ctrl=new Ctrl(repo,false);
+		long startTime = System.nanoTime();
 		ctrl.allStep();
+		long endTime = System.nanoTime();
+		System.out.println("time elapsed:"+(endTime - startTime)/1000000);
+
 //		System.out.println("IStmt ex:"+ex);
 	} catch ( Exception e) {
 		System.out.println("Error: "+e);

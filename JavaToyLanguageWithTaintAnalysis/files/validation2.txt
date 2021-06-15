@@ -1,0 +1,7 @@
+int a;
+
+while(a<10){
+    a=a+1;
+}
+change_status(a);
+print(a);

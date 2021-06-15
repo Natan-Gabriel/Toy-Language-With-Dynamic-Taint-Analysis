@@ -19,7 +19,7 @@ public class readFromConsole implements Exp{
         Scanner console = new Scanner(System.in);
 
         String s = console.next();
-        return new StringValue(s,true,false);
+        return new StringValue(s,true,true);
 
 
     }

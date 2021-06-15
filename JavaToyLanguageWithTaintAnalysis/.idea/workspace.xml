@@ -7,10 +7,18 @@
     <list default="true" id="4ad2f867-6df6-4d3f-b133-2b66a0bc0ac0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/CompStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/ArithExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/LogicExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/rH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/rH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/readFromConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/readFromConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/GenerateRSAKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/GenerateRSAKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/wH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/wH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/writeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/writeFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/stmt/CompStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/stmt/CompStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +80,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,7 +185,8 @@
       <workItem from="1623343825356" duration="395000" />
       <workItem from="1623400038484" duration="9585000" />
       <workItem from="1623595475379" duration="4078000" />
-      <workItem from="1623666347339" duration="5384000" />
+      <workItem from="1623666347339" duration="7313000" />
+      <workItem from="1623794487657" duration="4609000" />
     </task>
     <servers />
   </component>

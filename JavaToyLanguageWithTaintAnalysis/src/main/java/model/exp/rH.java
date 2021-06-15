@@ -17,7 +17,10 @@ public class rH implements Exp{
 		 int a=((RefValue)v).getAddr();
 		 if( !(hp.isDefined(a)))
 			throw new VarNotDefined("address is not a key in Heap table");
-		 return hp.getValue(a);
+		 Value val = hp.getValue(a);
+		 val.setSecret(true);
+		 val.setTaint(true);
+		 return val;
 			 
 	}
 	public Type getType(MyIDictionary<String,Value> tbl,MyIHeap hp) throws VarNotDefined, DivByZero, CustomException {

@@ -23,8 +23,8 @@ public class LogicExp implements Exp{
 				 boolean n1,n2;
 				 n1= i1.getVal();
 				 n2 = i2.getVal();
-				 if (op==1) return new BoolValue(n1 && n2,i1.getTaint() || i2.getTaint(),true);
-				 if (op ==2) return new BoolValue(n1||n2,i1.getTaint() || i2.getTaint(),true);
+				 if (op==1) return new BoolValue(n1 && n2,i1.getTaint() || i2.getTaint(),false);
+				 if (op ==2) return new BoolValue(n1||n2,i1.getTaint() || i2.getTaint(),false);
 				 throw new CustomException("is an invalid operator");
 				 
 			 }else

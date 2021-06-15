@@ -20,4 +20,5 @@ public class IntValue implements Value{
 	public String toString() {return Integer.toString(val);}
 	public boolean getSecret(){return secret;}
 	public void setSecret(boolean s) { secret=s;}
+	public void setTaint(boolean s){ taint=s;}
 }
