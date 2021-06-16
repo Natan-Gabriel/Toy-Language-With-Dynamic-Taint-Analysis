@@ -86,7 +86,7 @@ public class readFile implements IStmt{
 		try {
 			data = Files.readAllBytes(Paths.get(val1.getVal()));
 		} catch (IOException e) {
-			System.out.println("e.toString()\n\n: "+e.toString());
+			//System.out.println("e.toString()\n\n: "+e.toString());
 			throw new CustomException(e.toString());
 		}
 

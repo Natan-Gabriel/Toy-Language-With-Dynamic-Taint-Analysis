@@ -51,11 +51,8 @@ public class GenerateRSAKey implements IStmt {
 
             if( (new StringType()).equals(typ_private_key) && (new StringType()).equals(typ_public_key) ) {
                 symTbl.update(private_key, new StringValue(encodeBase64String(pair.getPrivate().getEncoded()),false,true));
-                System.out.println("private_key1:"+new StringValue(encodeBase64String(pair.getPrivate().getEncoded())));
                 symTbl.update(public_key, new StringValue(encodeBase64String(pair.getPublic().getEncoded())));
-                System.out.println("public_key1:"+new StringValue(encodeBase64String(pair.getPublic().getEncoded()),false,false));
                 Key kk = pair.getPublic();
-                System.out.println("public_key2:"+kk);
 
             }
             else throw new VarNotDefined("declared type of at least a variable is not string");

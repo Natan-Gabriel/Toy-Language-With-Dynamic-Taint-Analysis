@@ -78,7 +78,7 @@ public class VarDeclStmt implements IStmt{
 //		 sym.add(name,newVal);
 		 sym.add(name,val);
 
-		 System.out.println("sym:"+sym);
+//		 System.out.println("sym:"+sym);
 		 state.setSymTable(sym);
 		 
 		 return state;

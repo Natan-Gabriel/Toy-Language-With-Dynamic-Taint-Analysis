@@ -50,8 +50,7 @@ public class wH implements IStmt{
 		 	 key = ((RefValue)v).getAddr();
 
 		 }
-		 System.out.println("typId: "+typId);
-		 System.out.println("locationType: "+locationType);
+
 		 if(!typId.equals(locationType))
 			 throw new VarNotDefined("Types don't match");
 		 if (key == 1) {

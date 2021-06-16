@@ -1,7 +1,10 @@
 int a;
 
-while(a<10){
+while(a<1000){
     a=a+1;
 }
-change_status(a);
+
 print(a);
+
+
+
