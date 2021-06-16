@@ -2,8 +2,6 @@ int i,j,k,sum,jump_to;
 i=1;
 j=1;
 k=1;
-jump_to = read_integer();
-jump_to = jump_to + 21;
 goto 21;
 while(i<5)
 {

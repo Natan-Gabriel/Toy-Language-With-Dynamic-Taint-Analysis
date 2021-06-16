@@ -49,9 +49,9 @@ public class closeRFile implements IStmt{
 		 catch(Exception e){
 			 return state;
 		 }
-		 System.out.println(fTbl);
+//		 System.out.println(fTbl);
 		 fTbl.remove(val1);
-		 System.out.println(fTbl);
+//		 System.out.println(fTbl);
 		 
 		 return state;
 	 }

@@ -54,7 +54,7 @@ public class writeFile implements IStmt{
         try {
             Files.write(Paths.get(val1.getVal()), text_string.getVal().getBytes(), StandardOpenOption.CREATE);
         } catch (IOException e) {
-            System.out.println("e.toString()\n\n: "+e.toString());
+            //System.out.println("e.toString()\n\n: "+e.toString());
             throw new CustomException(e.toString());
         }
 

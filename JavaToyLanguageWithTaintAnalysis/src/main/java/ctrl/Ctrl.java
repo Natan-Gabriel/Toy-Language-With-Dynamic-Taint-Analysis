@@ -78,7 +78,7 @@ public class Ctrl implements iCtrl{
 			IStmt crtStmt = stk.pop();
 			if(crtStmt instanceof CompStmt){
 				crtStmt.execute(state);
-				System.out.println("I reached here. stk is: "+stk);
+				//System.out.println("I reached here. stk is: "+stk);
 			}
 			else if((crtStmt instanceof AssignStmt) && ((AssignStmt)crtStmt).getLineNumber()==jumpLine ){
 				stk.push(crtStmt);
@@ -86,7 +86,7 @@ public class Ctrl implements iCtrl{
 			}
 			else if ((crtStmt instanceof WhileStmt) && ((WhileStmt)crtStmt).getLineNumber()<=jumpLine && jumpLine<=((WhileStmt)crtStmt).getEndingLine()  ){ //(crtStmt instanceof IfStmt) ||
 				crtStmt.execute(state);
-				System.out.println("crtStmt instanceof WhileStmt. stk is: "+stk);
+				//System.out.println("crtStmt instanceof WhileStmt. stk is: "+stk);
 
 			}
 

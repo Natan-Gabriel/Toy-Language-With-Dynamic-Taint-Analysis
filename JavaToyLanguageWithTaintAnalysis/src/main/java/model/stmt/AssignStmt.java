@@ -34,14 +34,15 @@ public class AssignStmt implements IStmt{
 				 {
 					 throw new CustomException("the given string cannot be converted to an integer");
 				 }
-				 symTbl.update(id, new IntValue(new_integer));
+			 	 //System.out.println("val.getTaint()"+val.getTaint());
+				 symTbl.update(id, new IntValue(new_integer,val.getTaint(),val.getSecret()));
 			 }
 
 			 else if( typId.equals(new StringType()) && (val.getType()).equals(new IntType()) ) {
 				 int integer = ((IntValue)val).getVal();
 				 String new_string="";
 				 new_string = String.valueOf(integer);
-				 symTbl.update(id, new StringValue(new_string));
+				 symTbl.update(id, new StringValue(new_string,val.getTaint(),val.getSecret()));
 			 }
 			 else if( (val.getType()).equals(typId) )
 				 symTbl.update(id, val);

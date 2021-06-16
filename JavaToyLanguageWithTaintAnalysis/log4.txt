@@ -4409,3 +4409,2343 @@ Out:
 1
 FileTable:
 
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+CompStmt(CompStmt(a is of IntType;CompStmt(b is of IntType;nop));CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop))))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a is of IntType;CompStmt(b is of IntType;nop))
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+a is of IntType
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b is of IntType;nop)
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+b is of IntType
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+Out:
+FileTable:
+
+ExeStack:
+nop
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop);CompStmt(print(a);CompStmt(print(b);nop)))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))))ELSE(nop)
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=1;CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop))))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=1
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=0
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop);CompStmt(a=5;CompStmt(b=3;nop)))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))))ELSE(nop)
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=2;CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop))))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=2
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=1
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop);CompStmt(a=4;CompStmt(b=2;nop)))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+IF(true) THEN(CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop))))ELSE(nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(a=3;CompStmt(b=1;CompStmt(goto 15;nop)))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+a=3
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=2
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(b=1;CompStmt(goto 15;nop))
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+b=1
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=0
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(goto 15;nop)
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+goto 15
+nop
+CompStmt(a=4;CompStmt(b=2;nop))
+CompStmt(a=5;CompStmt(b=3;nop))
+CompStmt(print(a);CompStmt(print(b);nop))
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+print(a)
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+FileTable:
+
+ExeStack:
+CompStmt(print(b);nop)
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+print(b)
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+FileTable:
+
+ExeStack:
+nop
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+
+ExeStack:
+SymTable:
+a=3
+b=1
+Out:
+3
+1
+FileTable:
+

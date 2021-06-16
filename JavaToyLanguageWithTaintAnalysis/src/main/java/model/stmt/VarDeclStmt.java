@@ -32,8 +32,7 @@ public class VarDeclStmt implements IStmt{
 			 return name+" is of "+"RefType";
 		 else
 		 {
-			 System.out.println(typ.defaultValue());
-			 System.out.println(new RefValue(0,new IntType()));
+
 			 return typ+"Eroare la declarare";}
 		 }
 	 public PrgState execute(PrgState state) throws VarIsDefined{

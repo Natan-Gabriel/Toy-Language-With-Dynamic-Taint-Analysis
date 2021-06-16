@@ -62,7 +62,7 @@ public class AssignStmt_BBT {
     }
 
     @Test
-    public void tc_ValueAndVariableHaveDifferentTypes() throws CustomException, VarNotDefined, DivByZero, TaintedAddress, VarIsDefined {
+    public void tc_ValueAndVariableHaveDifferentTypes() throws Exception {
 
         IStmt ex = new CompStmt(new VarDeclStmt("x",new StringType(),1),new AssignStmt("x",new ValueExp(new IntValue(10)),1));
         MyIStack<IStmt> exeStack=new MyStack<IStmt>();
@@ -83,14 +83,10 @@ public class AssignStmt_BBT {
         iCtrl ctrl=new Ctrl(repo);
 
         boolean aux=true;
-        try {
-            ctrl.allStep();
-        }
-        catch(Exception e){
-            aux=false;
-        }
-        System.out.println("aux:"+aux);
-        assertFalse(aux);
+
+        ctrl.allStep();
+
+        assertEquals(new VarExp("x").eval(symTable,heap),new StringValue("10"));
 
     }
 

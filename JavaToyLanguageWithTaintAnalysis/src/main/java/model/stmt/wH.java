@@ -37,7 +37,7 @@ public class wH implements IStmt{
 		 int key = ((RefValue) symTbl.lookup(var_name)).getAddr();
 //		 System.out.println("key:"+key);
 //		 System.out.println("hp.isDefined(val):"+hp.isDefined(key));
-		 System.out.println("count:"+count);
+		 //System.out.println("count:"+count);
 		 while(count>1) {
 		 	 count--;
 			 if (!hp.isDefined(key))

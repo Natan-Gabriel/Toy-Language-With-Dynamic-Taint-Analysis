@@ -55,7 +55,7 @@ public class EncryptRSA implements Exp {
         //I used https://www.baeldung.com/java-rsa
         Cipher encryptCipher = null;
         String encrypted_message="";
-        System.out.println("message_as_string:"+message_as_string);
+//        System.out.println("message_as_string:"+message_as_string);
         try {
             encryptCipher = Cipher.getInstance("RSA");
             encryptCipher.init(Cipher.ENCRYPT_MODE, key);

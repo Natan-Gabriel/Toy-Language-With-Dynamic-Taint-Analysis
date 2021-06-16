@@ -1,5 +1,5 @@
 int a,b,c;
-a = read_integer();
+a = read();
 b = 4;
 c = a + b;
 goto c;
@@ -10,3 +10,6 @@ print("\nb=");
 print(b);
 print("\nc=");
 print(c);
+
+
+

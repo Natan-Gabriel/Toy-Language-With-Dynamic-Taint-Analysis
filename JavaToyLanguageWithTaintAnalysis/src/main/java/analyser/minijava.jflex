@@ -64,7 +64,7 @@ white_space = {new_line} | [ \t\f]
 
 <YYINITIAL>{
 /* keywords */
-{int_type}           {  System.out.println("yytext().length()"+yytext().length());
+{int_type}           {  //System.out.println("yytext().length()"+yytext().length());
                         Type type = new IntType();
 
                         for(int i=0; i<yytext().length()-3;i++){

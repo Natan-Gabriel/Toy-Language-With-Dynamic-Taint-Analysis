@@ -6,14 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="4ad2f867-6df6-4d3f-b133-2b66a0bc0ac0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/example_to_present.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/example_to_present.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/validation2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/validation2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/goto_inside_while.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/goto_inside_while.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/tainted_jump.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/tainted_jump.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/GenerateRSAKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/GenerateRSAKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyser/minijava.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ctrl/Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ctrl/Ctrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/DecryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/DecryptRSA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/exp/EncryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exp/EncryptRSA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/AssignStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/OpenRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/OpenRFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/VarDeclStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/readFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/closeRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/closeRFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/wH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/wH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/stmt/writeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/stmt/writeFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/exp/readInteger_BBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/exp/readInteger_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/AssignStmt_BBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/AssignStmt_BBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/stmt/readFile_BBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/stmt/readFile_BBT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +79,7 @@
       <recent name="model.exp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="JUnit.All in JavaToyLanguageWithTaintAnalysis">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.main" />
       <module name="JavaToyLanguageWithTaintAnalysis" />
@@ -75,15 +93,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,21 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GotoStmt_BBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaToyLanguageWithTaintAnalysis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.stmt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.stmt" />
-      <option name="MAIN_CLASS_NAME" value="model.stmt.GotoStmt_BBT" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="model.stmt in JavaToyLanguageWithTaintAnalysis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaToyLanguageWithTaintAnalysis" />
       <extension name="coverage">
@@ -140,12 +141,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="readFile_BBT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaToyLanguageWithTaintAnalysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.stmt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.stmt" />
+      <option name="MAIN_CLASS_NAME" value="model.stmt.readFile_BBT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
         <item itemvalue="JUnit.All in JavaToyLanguageWithTaintAnalysis" />
-        <item itemvalue="JUnit.GotoStmt_BBT" />
+        <item itemvalue="Application.main" />
         <item itemvalue="JUnit.Big_Bang_Integration" />
+        <item itemvalue="JUnit.readFile_BBT" />
         <item itemvalue="JUnit.model.stmt in JavaToyLanguageWithTaintAnalysis" />
       </list>
     </recent_temporary>
@@ -181,7 +197,8 @@
       <workItem from="1623400038484" duration="9585000" />
       <workItem from="1623595475379" duration="4078000" />
       <workItem from="1623666347339" duration="7313000" />
-      <workItem from="1623794487657" duration="7615000" />
+      <workItem from="1623794487657" duration="8044000" />
+      <workItem from="1623803554318" duration="6945000" />
     </task>
     <servers />
   </component>

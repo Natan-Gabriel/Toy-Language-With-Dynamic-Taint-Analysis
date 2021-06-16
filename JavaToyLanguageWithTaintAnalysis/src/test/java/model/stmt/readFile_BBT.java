@@ -4,6 +4,7 @@ import MyException.*;
 import model.PrgState;
 import model.adt.*;
 import model.exp.ValueExp;
+import model.types.BoolType;
 import model.types.IntType;
 import model.types.StringType;
 import model.values.BoolValue;
@@ -71,18 +72,14 @@ public class readFile_BBT {
 
         boolean aux=true;
         try {
-            IStmt stmt1 = new VarDeclStmt("x",new StringType(),1);
-            IStmt stmt2 = new OpenRFile(new ValueExp(new StringValue("files/test_read5.txt")),1);
+            IStmt stmt1 = new VarDeclStmt("x",new BoolType(),1);
             IStmt stmt3 = new readFile(new ValueExp(new StringValue("files/test_read5.txt")),"x",1);
             stmt1.execute(prg);
-            stmt2.execute(prg);
             stmt3.execute(prg);
 
         }
         catch(VarNotDefined e){
             aux=false;
-            IStmt stmt4 = new closeRFile(new ValueExp(new StringValue("files/test_read5.txt")),1);
-            stmt4.execute(prg);
         }
         assertFalse(aux);
 
@@ -195,17 +192,13 @@ public class readFile_BBT {
         boolean aux=true;
         try {
             IStmt stmt1 = new VarDeclStmt("x",new IntType(),1);
-            IStmt stmt2 = new OpenRFile(new ValueExp(new StringValue("files/test_read6.txt")),1);
             IStmt stmt3 = new readFile(new ValueExp(new StringValue("files/test_read6.txt")),"x",1);
             stmt1.execute(prg);
-            stmt2.execute(prg);
             stmt3.execute(prg);
 
         }
-        catch(CustomException e){
+        catch(Exception e){
             aux=false;
-            IStmt stmt4 = new closeRFile(new ValueExp(new StringValue("files/test_read6.txt")),1);
-            stmt4.execute(prg);
 
         }
         assertFalse(aux);
@@ -228,15 +221,11 @@ public class readFile_BBT {
 
         PrgState prg=new PrgState(exeStack,exeStack_executed,exeDictionary,symTable,dynaimcSymTable,out,fTbl,heap,ex);
 
-        IStmt stmt1 = new VarDeclStmt("x",new IntType(),1);
-        IStmt stmt2 = new OpenRFile(new ValueExp(new StringValue("files/test_read.txt")),1);
+        IStmt stmt1 = new VarDeclStmt("x",new StringType(),1);
         IStmt stmt3 = new readFile(new ValueExp(new StringValue("files/test_read.txt")),"x",1);
-        IStmt stmt4 = new closeRFile(new ValueExp(new StringValue("files/test_read.txt")),1);
         stmt1.execute(prg);
-        stmt2.execute(prg);
         stmt3.execute(prg);
-        stmt4.execute(prg);
-        assertEquals(symTable.lookup("x"),new IntValue(0));
+        assertEquals(symTable.lookup("x"),new StringValue(""));
 
 
     }
@@ -256,15 +245,11 @@ public class readFile_BBT {
 
         PrgState prg=new PrgState(exeStack,exeStack_executed,exeDictionary,symTable,dynaimcSymTable,out,fTbl,heap,ex);
 
-        IStmt stmt1 = new VarDeclStmt("x",new IntType(),1);
-        IStmt stmt2 = new OpenRFile(new ValueExp(new StringValue("files/test_read2.txt")),1);
+        IStmt stmt1 = new VarDeclStmt("x",new StringType(),1);
         IStmt stmt3 = new readFile(new ValueExp(new StringValue("files/test_read2.txt")),"x",1);
-        IStmt stmt4 = new closeRFile(new ValueExp(new StringValue("files/test_read2.txt")),1);
         stmt1.execute(prg);
-        stmt2.execute(prg);
         stmt3.execute(prg);
-        stmt4.execute(prg);
-        assertEquals(symTable.lookup("x"),new IntValue(4));
+        assertEquals(symTable.lookup("x"),new StringValue("4"));
 
 
     }

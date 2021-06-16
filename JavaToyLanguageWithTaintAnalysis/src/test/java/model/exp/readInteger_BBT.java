@@ -54,38 +54,17 @@ public class readInteger_BBT {
         readFromConsole exp = new readFromConsole();
 
         InputStream original = System.in; // backup System.in to restore it later
-        ByteArrayInputStream in = new ByteArrayInputStream("44".getBytes());
-        System.setIn(in);
-
-        IntValue res = (IntValue)exp.eval(symTable,heap);
-
-        System.setIn(original);
-
-        assertEquals(res.getVal(),44);
-
-    }
-
-    @Test
-    public void tc_AllInvalid() throws CustomException, VarNotDefined, DivByZero {
-
-        readFromConsole exp = new readFromConsole();
-
-        InputStream original = System.in; // backup System.in to restore it later
         ByteArrayInputStream in = new ByteArrayInputStream("string".getBytes());
         System.setIn(in);
 
-        boolean aux=true;
-        try {
-            Value res = exp.eval(symTable,heap);
-        }
-        catch(CustomException e){
-            aux=false;
-        }
-        assertFalse(aux);
+        StringValue res = (StringValue)exp.eval(symTable,heap);
 
         System.setIn(original);
 
+        assertEquals(res.getVal(),"string");
 
     }
+
+
 
 }

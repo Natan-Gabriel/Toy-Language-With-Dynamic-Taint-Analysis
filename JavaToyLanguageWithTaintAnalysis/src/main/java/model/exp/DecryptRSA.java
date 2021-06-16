@@ -50,7 +50,7 @@ public class DecryptRSA implements Exp {
             key = fact.generatePrivate(keySpec);
         }
         catch(Exception e){
-            System.out.println("aici1");
+
             throw new CustomException(e.toString());
         }
 
@@ -65,16 +65,14 @@ public class DecryptRSA implements Exp {
             byte[] encryptedMessageBytes = decodeBase64(message_as_string);
             byte[] decryptedMessageBytes = decryptCipher.doFinal(encryptedMessageBytes);
             decrypted_message = new String(decryptedMessageBytes, StandardCharsets.UTF_8);
-            System.out.println("decrypted_message: "+decrypted_message);
 
         } catch (Exception e) {
-            System.out.println("aici2");
+
             e.printStackTrace();
             throw new CustomException(e.toString());
         }
 
 
-        System.out.println("aici:"+decrypted_message+decrypted_message.length());
         return new StringValue(decrypted_message,false,true);
     }
     //public int getStatementNumber(){return instructionNumber;}

@@ -53,7 +53,6 @@ public class OpenRFile implements IStmt{
 		 } catch (IOException e) {
 			 e.printStackTrace();
 		 }
-		 System.out.println("new String(data): "+new String(data));
 
 		 return state;
 	 }
